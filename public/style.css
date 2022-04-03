@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  color: rgb(51, 46, 46);
+}
+
+button {
+  background-color: blueviolet;
+  color: aliceblue;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 70px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: large;
+}
+
+div {
+  margin-left: 10px;
+}
