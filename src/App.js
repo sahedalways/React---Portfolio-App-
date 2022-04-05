@@ -1,8 +1,10 @@
+import Home from "./Component/Home"
+
 function App() {
   return (
-    <div>
-      <h2>Hello world</h2>
-    </div>
+ <div>
+   <Home />
+ </div>
   );
 }
 
