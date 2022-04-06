@@ -1,10 +1,10 @@
-import FAQs from "./Component/FAQ/FAQs";
+import UseEffect from "./Component/USEEFFECT/UseEffect";
 
 
 function App() {
   return (
  <div>
-<FAQs />
+<UseEffect />
  </div>
   );
 }
