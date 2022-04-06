@@ -1,4 +1,4 @@
-import UseEffect from "./Component/USEEFFECT/UseEffect";
+import UseEffect from "./Component/INCREMENT_DECREMENT/IncrementDecrement";
 
 
 function App() {
