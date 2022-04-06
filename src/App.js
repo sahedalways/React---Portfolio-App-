@@ -1,9 +1,10 @@
-import Home from "./Component/Home"
+import FAQs from "./Component/FAQ/FAQs";
+
 
 function App() {
   return (
  <div>
-   <Home />
+<FAQs />
  </div>
   );
 }
