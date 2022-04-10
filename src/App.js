@@ -61,13 +61,11 @@ render () {
 <button className='btn' onClick={this.handleIncrement} >+</button>
     </div>
 
-
-<div className="container">
+    <div className="container">
   <button onClick={this.handleStartTimer} className="btn">Start</button>
   <button onClick={this.handleResetTimer} className="btn">Reset</button>
   <button onClick={this.handleStopTimer} className="btn">Stop</button>
 </div>
-
   </div>
 }
 }
