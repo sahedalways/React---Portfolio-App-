@@ -1,7 +1,8 @@
-import Form from "./Form";
+import React from "react";
+import Calculator from "./Components/Calculator";
 
 function App() {
-  return <Form />;
+  return <Calculator />;
 }
 
 export default App;
