@@ -1,35 +1,28 @@
-import React, { Component } from "react";
-import SignUp from "./Components/ControlledForm/SignUp";
-import { v4 as uuidv4 } from "uuid";
+import React from "react";
+import Header from "./Components/Header/Header";
+import Navbar from "./Components/Navbar/Nav";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Services from "./Components/Services/Services";
+import About from "./Components/About/About";
+import Experience from "./Components/Experience/Experience";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
+import Testimonial from "./Components/Testimonial/Testimonial";
 
-class App extends Component {
-  state = {
-    users: [],
-  };
-
-  getUsers = (user) => {
-    this.setState({
-      users: [...this.state.users, user],
-    });
-  };
-  render() {
-    return (
-      <div>
-        <SignUp getUser={this.getUsers} />
-
-        <div>
-          <h3 className={`my-5 text-center`}>All registered users are here!</h3>
-          <ul className="list-group">
-            {this.state.users.map((user) => (
-              <li key={uuidv4()} className={`list-group-item text-center`}>
-                Name : {user.name} ------- Email : {user.email}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <About />
+      <Experience />
+      <Services />
+      <Portfolio />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
 export default App;

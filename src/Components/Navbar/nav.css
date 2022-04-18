@@ -1,0 +1,44 @@
+nav {
+  position: fixed;
+  padding: 0.7rem 1.7rem;
+  top: 0;
+  width: max-content;
+  background: #56404059;
+  margin: 0 auto;
+  left: 50%;
+  z-index: 2;
+  gap: 0.8rem;
+  transform: translateX(-50%);
+  display: flex;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+
+#exeptional__menu {
+  background: transparent;
+  padding: 0.7rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light) !important;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: rgba(3, 3, 3, 0.461);
+}
+
+nav a.active {
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+/*===========Finished All Css here==============*/

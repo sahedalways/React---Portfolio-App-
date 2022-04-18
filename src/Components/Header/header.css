@@ -1,0 +1,86 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+}
+
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+/*CTA Css starts from here*/
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/*Header socials Css starts from here*/
+.header__socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 17rem;
+}
+
+.header__socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/*Sahed(me) image Css starts from here*/
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 22rem;
+  height: 82vh;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  padding: 4rem 0.6rem 1.5rem 0.6rem;
+}
+
+#pic {
+  border-radius: 12rem 12rem 0 0;
+  height: 80vh;
+  margin-top: -3.5rem;
+}
+
+/*Scroll below Css starts from here*/
+.scroll__down {
+  position: absolute;
+  right: 2.3rem;
+  top: 20rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*Media queries for MEDIUM DEVICES ----->>> */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+/*Media queries for SMALL DEVICES ----->>> */
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}
+
+/*===========Finished All Css here==============*/
