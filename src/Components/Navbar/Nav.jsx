@@ -43,9 +43,9 @@ const Nav = () => {
       </a>
 
       <a
-        href="#services"
-        onClick={() => setActiveNav("#services")}
-        className={activeNav === "#services" ? "active" : ""}
+        href="#contact"
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
       >
         <RiContactsFill />
       </a>
