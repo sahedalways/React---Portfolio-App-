@@ -43,7 +43,7 @@ const About = () => {
             <article data-aos="fade-down" className="about__card">
               <FaUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>100+ Worldwide</small>
+              <small>40+ Worldwide</small>
             </article>
 
             <article data-aos="fade-left" className="about__card">
@@ -53,10 +53,18 @@ const About = () => {
             </article>
           </div>
           <p>
-            I always love to learn new skills. Clean coding is my passion. I
-            always maintain my work's quality. I believe that, There should not
-            compromise about increasing quality. Because quality is an infinity
-            matter.
+            Hi There! I am MERN/Frontend web developer. I am good at HTML, CSS,
+            Bootstarp, JavaScript, REACT, NodeJS/ExpressJS, PHP, SASS, Firebase,
+            Wordpress etc. I'm also good at video editing and M/S application. I
+            have worked as an Web Developer in IT Department in Satkhira
+            Municipality. I was responsible for all the IT related work of that
+            organization. Then I worked with different clients in different
+            programs. I am currently working on online marketplaces. And I'm
+            expanding my skills day by day. I'm so active and confident
+            everywhere and front of anyone. I always love to struggle. I always
+            priority to quality. I believe that 'there are no end position to
+            increase the quality of anything, quality is an infinity matter
+            indeed. Thank you!
           </p>
 
           <a

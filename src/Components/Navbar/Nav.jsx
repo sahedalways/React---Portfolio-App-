@@ -6,19 +6,20 @@ import { GiNotebook } from "react-icons/gi";
 import { MdMedicalServices } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
 
   return (
     <nav>
-      <a
-        href="#header"
+      <Link
+        to="/"
         onClick={() => setActiveNav("#header")}
         className={activeNav === "#header" ? "active" : ""}
       >
         <AiOutlineHome />
-      </a>
+      </Link>
       <a
         href="#about"
         onClick={() => setActiveNav("#about")}

@@ -1,14 +1,23 @@
-#about {
-  margin-top: 85vh;
+#project__view {
+  margin-top: 30vh;
 }
 
-.about__container {
+.project__container {
   display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 15%;
+  grid-template-columns: 43% 50%;
+  gap: 10%;
 }
 
-.about__sahed {
+.project__subtitle {
+  color: var(--color-light);
+}
+
+.project__title {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.project__sahed__wrapper {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 2rem;
@@ -22,97 +31,99 @@
   place-items: center;
 }
 
-.about__sahed__image {
-  border-radius: 2rem;
-  overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
+.project__img__wrapper img {
+  height: 15rem;
 }
 
-.about__sahed__image img {
-  height: 25rem;
-}
-
-.about__sahed__image:hover {
-  transform: rotate(0deg);
-}
-
-.about__cards {
+.project__cards {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 49.5% 49.5%;
   gap: 1.5rem;
 }
 
-.about__card {
+.project__card {
   background: var(--color-bg-variant);
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   transition: var(--transition);
+  width: 100%;
 }
 
-.about__card:hover {
+.project__card:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
   cursor: default;
 }
 
-.about__icon {
+.project__icon {
   color: var(--color-primary);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.about__card h5 {
+.project__card h5 {
   font-size: 0.95rem;
 }
 
-.about__card small {
+.project__card small {
   font-size: 0.7rem;
   color: var(--color-light);
 }
 
-.about__content p {
+.project__content p {
   margin: 2rem 0 2.6rem 0;
   color: var(--color-light);
 }
 
+.project__btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
 /*Media queries for MEDIUM DEVICES ----->>> */
 @media screen and (max-width: 1024px) {
-  .about__container {
+  .project__container {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .about__sahed {
+  .project__sahed__wrapper {
     width: 50%;
     margin: 2rem auto 4rem;
     height: 18.5rem;
   }
 
-  .about__content {
+  .project__content {
     text-align: center;
   }
 
-  .about__content p {
+  .project__content p {
     margin: 1rem 0 1.5rem;
+  }
+  .project__btn {
+    justify-content: center;
   }
 }
 
 /*Media queries for SMALL DEVICES ----->>> */
 @media screen and (max-width: 600px) {
-  .about__sahed {
+  .project__sahed__wrapper {
     width: 65%;
   }
 
-  .about__cards {
+  .project__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-  .about__content {
+  .project__content {
     text-align: center;
   }
-  .about__content p {
+  .project__content p {
     margin: 1.5rem 0;
+  }
+  .project__btn {
+    justify-content: center;
   }
 }

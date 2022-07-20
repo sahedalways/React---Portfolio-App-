@@ -6,6 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import LOGO from "../../Assets/sahed_logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   useEffect(() => {
@@ -28,7 +29,7 @@ const Footer = () => {
 
       <ul data-aos="fade-left" className="permalinks">
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <a href="#about">About</a>

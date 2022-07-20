@@ -28,11 +28,11 @@ const Header = () => {
         <h5 className="text-light">
           <Typical
             steps={[
-              "Full Stack PHP Developer",
+              "React Developer",
               3000,
-              "Full Stack JavaScript Developer",
+              "Mern Stack Developer",
               3000,
-              "Full Stack React Developer",
+              "Content Creator",
               3000,
             ]}
             loop={Infinity}

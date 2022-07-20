@@ -30,8 +30,18 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  display: none;
+html::-webkit-scrollbar {
+  width: 15px;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+*::selection {
+  background: var(--color-bg-variant);
+  color: var(--color-white);
 }
 
 body {
@@ -39,6 +49,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
+  overflow-x: hidden;
   /* background-image: url(../src/Assets/bg-texture.png);
   background-repeat: no-repeat;
   background-size: cover; */

@@ -12,7 +12,9 @@ import { FaLaravel } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { AiOutlineNodeCollapse } from "react-icons/ai";
 import { SiMongodb } from "react-icons/si";
-import { FaPython } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiFirebase } from "react-icons/si";
+import { DiSass } from "react-icons/di";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -49,7 +51,7 @@ const Experience = () => {
               <FaCss3 className="experience__details__icon" />
               <div>
                 <h4>CSS</h4>
-                <small className="text-light">Midway</small>
+                <small className="text-light">Skilled</small>
               </div>
             </article>
 
@@ -92,6 +94,22 @@ const Experience = () => {
                 <small className="text-light">Skilled</small>
               </div>
             </article>
+
+            <article className="experience__details">
+              <SiFirebase className="experience__details__icon" />
+              <div>
+                <h4>Firebase</h4>
+                <small className="text-light">Skilled</small>
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <DiSass className="experience__details__icon" />
+              <div>
+                <h4>SASS</h4>
+                <small className="text-light">Midway</small>
+              </div>
+            </article>
           </div>
         </div>
         {/* End of the frontend section */}
@@ -104,7 +122,7 @@ const Experience = () => {
               <SiPhp className="experience__details__icon" />
               <div>
                 <h4>PHP</h4>
-                <small className="text-light">Skilled</small>
+                <small className="text-light">Midway</small>
               </div>
             </article>
 
@@ -112,7 +130,7 @@ const Experience = () => {
               <FaLaravel className="experience__details__icon" />
               <div>
                 <h4>Laravel</h4>
-                <small className="text-light">Skilled</small>
+                <small className="text-light">Basic</small>
               </div>
             </article>
 
@@ -141,10 +159,10 @@ const Experience = () => {
             </article>
 
             <article className="experience__details">
-              <FaPython className="experience__details__icon" />
+              <SiExpress className="experience__details__icon" />
               <div>
-                <h4>Python</h4>
-                <small className="text-light">Basic</small>
+                <h4>Express Js</h4>
+                <small className="text-light">Midway</small>
               </div>
             </article>
           </div>

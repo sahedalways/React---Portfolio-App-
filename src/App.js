@@ -1,26 +1,27 @@
 import React from "react";
-import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Nav";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import Services from "./Components/Services/Services";
-import About from "./Components/About/About";
-import Experience from "./Components/Experience/Experience";
-import Contact from "./Components/Contact/Contact";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./Components/Screens/Home/Home";
 import Footer from "./Components/Footer/Footer";
-import Testimonial from "./Components/Testimonial/Testimonial";
+import ProjectDetails from "./Components/Screens/Project_Details/ProjectDetails";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Navbar />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonial />
-      <Contact />
-      <Footer />
+      <Router>
+        <Navbar />
+
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route
+            exact
+            path="/project-details/:id"
+            element={<ProjectDetails />}
+          />
+          <Route exact path="*" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 };
