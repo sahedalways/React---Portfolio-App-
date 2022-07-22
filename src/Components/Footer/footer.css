@@ -52,6 +52,10 @@ footer a {
   color: var(--color-bg);
 }
 
+.footer__copyright small span {
+  color: var(--color-light);
+}
+
 /*Media queries for SMALL DEVICES ----->>> */
 @media screen and (max-width: 600px) {
   .permalinks {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { HashLoader } from "react-spinners";
 import About from "../../About/About";
 import Contact from "../../Contact/Contact";
 import Experience from "../../Experience/Experience";
@@ -14,6 +15,7 @@ const Home = () => {
       <Helmet>
         <title>Sahed's Portfolio - Home</title>
       </Helmet>
+
       <Header />
       <About />
       <Experience />

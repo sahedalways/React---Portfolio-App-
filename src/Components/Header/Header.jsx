@@ -30,7 +30,7 @@ const Header = () => {
             steps={[
               "React Developer",
               3000,
-              "Mern Stack Developer",
+              "Mern-Stack Developer",
               3000,
               "Content Creator",
               3000,

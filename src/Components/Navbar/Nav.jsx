@@ -5,6 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { GiNotebook } from "react-icons/gi";
 import { MdMedicalServices } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
+import { AiFillProject } from "react-icons/ai";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -20,36 +21,44 @@ const Nav = () => {
       >
         <AiOutlineHome />
       </Link>
-      <a
-        href="#about"
+      <Link
+        to="/about"
         onClick={() => setActiveNav("#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
         <AiOutlineUser />
-      </a>
-      <a
-        href="#experience"
+      </Link>
+      <Link
+        to="/experience"
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
         <GiNotebook />
-      </a>
+      </Link>
 
-      <a
-        href="#services"
+      <Link
+        to="/services"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : ""}
       >
         <MdMedicalServices />
-      </a>
+      </Link>
 
-      <a
-        href="#contact"
+      <Link
+        to="/portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <AiFillProject />
+      </Link>
+
+      <Link
+        to="/contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
         <RiContactsFill />
-      </a>
+      </Link>
     </nav>
   );
 };

@@ -1,6 +1,7 @@
 header {
   height: 100vh;
   padding-top: 7rem;
+  margin-bottom: 60vh;
 }
 
 .header_container {
@@ -52,6 +53,7 @@ header {
   border-radius: 12rem 12rem 0 0;
   height: 80vh;
   margin-top: -3.5rem;
+
 }
 
 /*Scroll below Css starts from here*/

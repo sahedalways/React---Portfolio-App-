@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { allProjects } from "./PortfolioData";
+import { Helmet } from "react-helmet-async";
 
 const Portfolio = () => {
   const [data, setData] = useState("reactFullApp");
@@ -34,6 +35,10 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
+      <Helmet>
+        <title>Projects of Sahed</title>
+      </Helmet>
+
       <h5>My Recent Works</h5>
       <h2>Portfolio</h2>
 
@@ -90,7 +95,7 @@ const Portfolio = () => {
       </div>
 
       <div className="container portfolio__container">
-        {project.slice(0, 9).map(({ id, image, title, github, demo }) => {
+        {project.slice(0, 6).map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} data-aos="slide-left" className="portfolio__item">
               <div className="portfolio__item__image">
@@ -115,6 +120,17 @@ const Portfolio = () => {
             </article>
           );
         })}
+      </div>
+
+      <div className="seeMore__btn">
+        <Link
+          to="/projects/all"
+          className="btn"
+          rel="noreferrer"
+          target="_blank"
+        >
+          See More
+        </Link>
       </div>
     </section>
   );

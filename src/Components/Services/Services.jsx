@@ -3,6 +3,7 @@ import "./services.css";
 import { BiCheck } from "react-icons/bi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 const Services = () => {
   useEffect(() => {
@@ -19,6 +20,9 @@ const Services = () => {
 
   return (
     <section id="services">
+      <Helmet>
+        <title>Sahed's Services</title>
+      </Helmet>
       <h5>Offers I Provide</h5>
       <h2>Services</h2>
 

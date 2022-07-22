@@ -17,6 +17,7 @@ import { SiFirebase } from "react-icons/si";
 import { DiSass } from "react-icons/di";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 const Experience = () => {
   useEffect(() => {
@@ -33,6 +34,9 @@ const Experience = () => {
 
   return (
     <section id="experience">
+      <Helmet>
+        <title>Experience of Sahed</title>
+      </Helmet>
       <h5>Skills I Have</h5>
       <h2>My Experience</h2>
 
@@ -58,7 +62,7 @@ const Experience = () => {
             <article className="experience__details">
               <SiTailwindcss className="experience__details__icon" />
               <div>
-                <h4>Tailwind</h4>
+                <h4>Tailwind CSS</h4>
                 <small className="text-light">Basic</small>
               </div>
             </article>
@@ -90,7 +94,7 @@ const Experience = () => {
             <article className="experience__details">
               <FaReact className="experience__details__icon" />
               <div>
-                <h4>React</h4>
+                <h4>React Js</h4>
                 <small className="text-light">Skilled</small>
               </div>
             </article>
@@ -137,7 +141,7 @@ const Experience = () => {
             <article className="experience__details">
               <GrMysql className="experience__details__icon" />
               <div>
-                <h4>Mysql</h4>
+                <h4>MySQL</h4>
                 <small className="text-light">Skilled</small>
               </div>
             </article>

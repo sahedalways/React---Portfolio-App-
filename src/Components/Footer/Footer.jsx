@@ -64,7 +64,10 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Sk Sahed Ahmed. All right reserved.</small>
+        <small>
+          Designed & Developed by <span>Sk Sahed Ahmed</span>
+          <br /> Copyright &copy; 2022, All rights reserved
+        </small>
       </div>
     </footer>
   );

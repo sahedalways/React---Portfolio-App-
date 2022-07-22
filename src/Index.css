@@ -55,6 +55,11 @@ body {
   background-size: cover; */
 }
 
+.override {
+  display: block;
+  margin: 20% auto;
+}
+
 /*General style starts from here------>>> */
 .container {
   width: var(--container-width-lg);

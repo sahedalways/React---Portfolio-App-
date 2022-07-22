@@ -6,6 +6,7 @@ import { FaUsers } from "react-icons/fa";
 import { AiOutlineProject } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   useEffect(() => {
@@ -22,6 +23,10 @@ const About = () => {
 
   return (
     <section id="about">
+      <Helmet>
+        <title>About of Sahed</title>
+      </Helmet>
+
       <h5>Get to Know</h5>
       <h2>About Me</h2>
 

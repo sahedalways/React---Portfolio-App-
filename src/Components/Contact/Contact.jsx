@@ -7,6 +7,7 @@ import { useRef } from "react";
 import emailjs from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   useEffect(() => {
@@ -46,6 +47,10 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <Helmet>
+        <title>Sk Sahed Ahmed</title>
+      </Helmet>
+
       <h5>Be in Touch</h5>
       <h2>Contact Me</h2>
 
