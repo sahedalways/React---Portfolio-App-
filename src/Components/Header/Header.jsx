@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 const Header = () => {
   useEffect(() => {
     AOS.init({
-      duration: 900,
+      duration: 2000,
       disable: false,
       startEvent: "DOMContentLoaded",
       offset: 120,
