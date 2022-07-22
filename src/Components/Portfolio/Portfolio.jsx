@@ -124,7 +124,7 @@ const Portfolio = () => {
 
       <div className="seeMore__btn">
         <Link
-          to="/projects/all"
+          to="projects/all"
           className="btn"
           rel="noreferrer"
           target="_blank"
