@@ -15,7 +15,7 @@ const Header = () => {
       startEvent: "DOMContentLoaded",
       offset: 120,
       easing: "ease",
-      mirror: false,56
+      mirror: false,
       anchorPlacement: "top-bottom",
     });
   }, []);
