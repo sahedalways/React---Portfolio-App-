@@ -118,8 +118,8 @@ export const allProjects = [
     desc: "A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location.",
     use: "React, React-router-dom, React-Icons, Styled-Components etc.",
     github:
-      "https://github.com/sahedalways/React---Ecommerce-Website/tree/master",
-    demo: "https://sahedalways.github.io/React---Ecommerce-Website/",
+      "https://github.com/sahedalways/react---Ecommerce-App/tree/master",
+    demo: "https://sahedalways.github.io/react---Ecommerce-App/",
   },
 
   {
