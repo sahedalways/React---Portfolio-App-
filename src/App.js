@@ -33,28 +33,30 @@ const App = () => {
         />
       ) : (
         <Router>
-          <Navbar />
+          <div style={{ overflow: "hidden" }}>
+            <Navbar />
 
-          <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Routes>
+              <Route exact path="/" element={<Home />} />
 
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/experience" element={<Experience />} />
-            <Route exact path="/services" element={<Services />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
-            <Route exact path="/testimonial" element={<Testimonial />} />
-            <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/about" element={<About />} />
+              <Route exact path="/experience" element={<Experience />} />
+              <Route exact path="/services" element={<Services />} />
+              <Route exact path="/portfolio" element={<Portfolio />} />
+              <Route exact path="/testimonial" element={<Testimonial />} />
+              <Route exact path="/contact" element={<Contact />} />
 
-            <Route exact path="/projects" element={<SeeMore />} />
-            <Route
-              exact
-              path="/project-details/:id"
-              element={<ProjectDetails />}
-            />
+              <Route exact path="/projects" element={<SeeMore />} />
+              <Route
+                exact
+                path="/project-details/:id"
+                element={<ProjectDetails />}
+              />
 
-            <Route exact path="*" element={<Home />} />
-          </Routes>
-          <Footer />
+              <Route exact path="*" element={<Home />} />
+            </Routes>
+            <Footer />
+          </div>
         </Router>
       )}
     </>
