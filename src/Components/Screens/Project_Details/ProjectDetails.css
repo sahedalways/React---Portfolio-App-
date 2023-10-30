@@ -83,6 +83,13 @@
   gap: 1rem;
 }
 
+.project__desc__btn {
+ margin-left: 2px;
+ color: var(--color-white);
+ cursor: pointer;
+}
+
+
 /*Media queries for MEDIUM DEVICES ----->>> */
 @media screen and (max-width: 1024px) {
   .project__container {

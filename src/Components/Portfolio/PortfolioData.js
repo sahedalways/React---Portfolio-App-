@@ -1,12 +1,4 @@
 import Project1 from "../../Assets/Project1.png";
-import Project2 from "../../Assets/Project2.png";
-import Project3 from "../../Assets/Project3.png";
-import Project4 from "../../Assets/Project4.png";
-import Project5 from "../../Assets/Project5.png";
-import Project6 from "../../Assets/Project6.png";
-import Project7 from "../../Assets/Project7.png";
-import Project8 from "../../Assets/Project8.png";
-import Project9 from "../../Assets/Project9.png";
 import Project10 from "../../Assets/Project10.png";
 import Project11 from "../../Assets/Project11.png";
 import Project12 from "../../Assets/Project12.png";
@@ -17,105 +9,250 @@ import Project16 from "../../Assets/Project16.png";
 import Project17 from "../../Assets/Project17.png";
 import Project18 from "../../Assets/Project18.png";
 import Project19 from "../../Assets/Project19.png";
+import Project2 from "../../Assets/Project2.png";
 import Project20 from "../../Assets/Project20.png";
 import Project21 from "../../Assets/Project21.png";
 import Project22 from "../../Assets/Project22.png";
 import Project23 from "../../Assets/Project23.png";
 import Project24 from "../../Assets/Project24.png";
 import Project25 from "../../Assets/Project25.png";
+import Project26 from "../../Assets/Project26.png";
+import Project27 from "../../Assets/Project27.png";
+import Project28 from "../../Assets/Project28.png";
+import Project29 from "../../Assets/Project29.png";
+import Project3 from "../../Assets/Project3.png";
+import Project4 from "../../Assets/Project4.png";
+import Project5 from "../../Assets/Project5.png";
+import Project6 from "../../Assets/Project6.png";
+import Project7 from "../../Assets/Project7.png";
+import Project8 from "../../Assets/Project8.png";
+import Project9 from "../../Assets/Project9.png";
 
 export const allProjects = [
-  {
+{
     id: 1,
+    image: Project26,
+    category: "webApp",
+    title: `Caredoom - Matrimony Website`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Developed Caredoom, a matrimony website, using Next.js and PHP Laravel to address unique challenges and functionalities in the matrimonial domain.
+
+    Implemented Solutions:
+    - Multi-Mode Registration: Streamlined user onboarding with a versatile registration system, accommodating various user types efficiently.
+    - Enhanced Communication Channels: Integrated text, video, and audio chatting features, fostering diverse and seamless communication options for users.
+    - Multilingual Support: Implemented multi-language support, catering to a broader audience and ensuring inclusivity.
+    - Image Resizing: Resolved challenges by implementing image resizing functionalities, optimizing user uploads for performance and experience enhancement.
+    - Ranking Mechanism: Implemented a system to enhance user interaction and prioritize profiles, improving overall user engagement.
+
+    Challenges Addressed:
+    - Diverse Communication: Fostering connections through varied communication channels - text, video, and audio features.
+    - Cultural Inclusivity: Overcoming language barriers by providing a multi-language interface, ensuring inclusivity for a diverse user base.
+    - Optimized User Experience: Resolved image-related issues by implementing image resizing functionalities, ensuring better performance.
+    - Improved User Interaction: Implemented a ranking mechanism to enhance user engagement and profile visibility.
+      `,
+    use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
+    github: "https://github.com/hasancse016/matrimony-frontend-next-react",
+    demo: "https://womanspeech.com/",
+  },
+
+  {
+    id: 2,
+    image: Project27,
+    category: "webApp",
+    title: `Multikart - Comprehensive eCommerce Website`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Overview:
+    Led end-to-end development of a robust eCommerce platform using Next.js for the frontend, PHP-Laravel for the backend, and MySQL for database management. The project embodies essential features for a seamless eCommerce experience.
+
+    Functionalities Implemented:
+    - Frontend Development:
+      - Utilized Next.js for an intuitive, responsive, and visually compelling user interface, enhancing user experience.
+      - Implemented robust logical functionalities for product listing, dynamic cart management, and a user-friendly checkout process.
+
+    - Backend Operations:
+      - Employed PHP-Laravel for backend management, focusing on database architecture, API design, and logic integration for an efficient transactional flow.
+      - Integrated MySQL for extensive product data, user details, and secure database structure.
+
+    Key Features Included:
+    - User Authentication and Account Management
+    - Product Catalog and Search Functionality
+    - Shopping Cart, Secure Checkout, and Payment Gateway Integration
+    - Order Tracking and Admin Dashboard for Management
+
+    Contributions:
+    Orchestrated the development of a responsive and secure eCommerce platform, integrating frontend and backend functionalities for a comprehensive and efficient system.
+
+    This eCommerce project showcases my ability to deliver a complete, high-functioning solution meeting the vital requirements of a thriving eCommerce application.
+
+      `,
+    use: "JavaScript · PHP · MySQL · Next.js · Laravel.",
+    github: "https://github.com/hasancse016/ecommerce-frontend",
+    demo: "https://womanspeech.com/",
+  },
+
+    {
+    id: 3,
+    image: Project28,
+    category: "webApp",
+    title: `Aporadhkantha - Newspaper Website`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Contribution: Within a collaborative team effort, I made substantial contributions to the "Aporadhkantha" newspaper project, utilizing PHP and the Laravel framework. My key responsibilities included:
+
+    News Management:
+
+    Oversaw comprehensive news article management, including addition, editing, updating, removal, and viewing functionalities within specific sections.
+    API Design:
+
+    Designed and implemented efficient APIs to facilitate seamless communication between project components, significantly enhancing overall functionality.
+    Ajax Requests:
+
+    Implemented Ajax requests for dynamic, real-time interactions, ensuring a seamless and responsive user experience on the platform.
+    These contributions streamlined news management processes and introduced interactive features that significantly enhanced user engagement. This experience underscores my expertise in web development and my ability to contribute effectively within collaborative projects.`,
+    use: "JavaScript · PHP · MySQL · Laravel.",
+    github: "https://github.com/hasancse016/aporadhkontha.com",
+    demo: "https://www.aporadhkantha.com/",
+  },
+
+   {
+    id: 4,
+    image: Project29,
+    category: "mobileApp",
+    title: `Kleancor - Cleaning Service App`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Project Overview: Developed Kleancor, a robust cleaning service application, addressing challenges faced by service providers and seekers.
+
+    Technologies Used:
+
+    Utilized React Native for the front-end and PHP Laravel for the back-end, ensuring scalability and efficiency.
+
+    Key Features Implemented:
+
+    Multi-Mode Registration:
+
+    Simplified user onboarding with a multi-mode registration system for various user types.
+    Text Chat Integration:
+
+    Facilitated seamless communication between service providers and seekers with text chat.
+    Public Job View:
+
+    Enhanced job listing transparency, improving accessibility for potential service providers.
+    Worker & Client Dashboards:
+
+    Improved user experience with dedicated dashboards for both service providers and clients.
+    Admin Oversight & Push Notifications:
+
+    Implemented an admin oversight system and push notifications for real-time updates.
+    Challenges Overcome:
+
+    Enhanced User Engagement:
+
+    Tailored user-friendly features to increase overall app usage and satisfaction.
+    Real-Time Communication:
+
+    Integrated text chat for prompt and effective communication between users.
+    Transparency and Accessibility:
+
+    Improved transparency via public job views, facilitating successful job placements.`,
+    use: "JavaScript · PHP · MySQL · React Native · Laravel",
+    github: "https://github.com/hasancse016/kleancor-backend",
+    demo: "https://play.google.com/store/apps/details?id=com.kleancor.kleancorapp&pcampaignid=web_share",
+  },
+
+
+
+
+
+  {
+    id: 5,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
     authorName: "Sk Sahed Ahmed",
-    desc: "A restaurant review app is a restaurant directory where you can look through the venues nearby, find more detailed information about each one of them, and read actual reviews from the people who visited them.",
+    desc: "The restaurant review app serves as a dynamic restaurant directory enabling users to explore nearby venues, access in-depth information about each, and review firsthand experiences from visitors. Leveraging technologies such as React.js, React-Bootstrap, React-Redux, React-Slick, Reactstrap, Remixicon, among others, the platform ensures an immersive and user-friendly experience for discovering and evaluating various dining options.",
     use: "React, React-Bootstrap, React-Redux, React-Slick, Reactstrap, Remixicon etc.",
     github: "https://github.com/sahedalways/React---Restaurant-App",
     demo: "https://saheds-food.netlify.app/",
   },
 
   {
-    id: 2,
+    id: 6,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
     authorName: "Sk Sahed Ahmed",
-    desc: "Educational websites can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching.",
+    desc: "Educational websites encompass platforms featuring a range of tools such as games, videos, and topic-specific resources aimed at enriching learning experiences and supporting traditional classroom instruction. These resources serve as valuable supplements to academic teaching, enhancing comprehension and engagement among students.",
     use: "React, React-router-dom etc.",
     github: "https://github.com/sahedalways/React-Educational-Website",
     demo: "https://react-saheds-educare.netlify.app",
   },
 
   {
-    id: 3,
+    id: 7,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
     authorName: "Sk Sahed Ahmed",
-    desc: "Make your business shine online with a custom IT website designed just for you by a professional designer.",
+    desc: "Elevate your business's online presence with a tailored IT website meticulously crafted by a seasoned professional designer. Let your brand shine through a customized online platform designed to uniquely represent your IT services and offerings.",
     use: "React, React-Bootstrap, Mdbreact, React-router-dom etc.",
     github: "https://github.com/sahedalways/React---Tech-Website/tree/master",
     demo: "https://saheds-technology.netlify.app/",
   },
 
   {
-    id: 4,
+    id: 8,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
     authorName: "Sk Sahed Ahmed",
-    desc: "A blog of is a discussion or informational website published on the World Wide Web consisting of discrete, often informal diary-style text entries.",
+    desc: "A blog is an online platform found on the World Wide Web, facilitating discussions and the dissemination of information through discrete, often informal, diary-style text entries.",
     use: "React, Styled-Components, React-Scripts, React-Icons, React-router-dom etc.",
     github: "https://github.com/sahedalways/React---Blog-Website/tree/master",
     demo: "https://saheds-blog.netlify.app/",
   },
 
   {
-    id: 5,
+    id: 9,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
     authorName: "Sk Sahed Ahmed",
-    desc: "Make your business shine online with a custom travel agency website designed just for you by a professional designer.",
+    desc: `Elevate your business's online presence with a tailored travel agency website meticulously crafted by a seasoned professional designer. Let your agency's services shine through a customized online platform designed with technologies such as React, React-Icons, Scroll-Reveal, Styled-Components, and React-router-dom to provide a dynamic and captivating user experience.`,
     use: "React, React-Icons, Scroll-Reveal, Styled-Components, React-router-dom, React-Scroll etc.",
     github: "https://github.com/sahedalways/React---Agency-Website/tree/master",
     demo: "https://travelsa-agency.netlify.app/",
   },
 
   {
-    id: 6,
+    id: 10,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
     authorName: "Sk Sahed Ahmed",
-    desc: "A news portal is an access point to news; This is generally thought of as a Internet connection to a news source but the definition of a “Portal” would include a newspaper, magazine or any other access to news.",
+    desc: `A news portal serves as a gateway to access current news. It's typically considered an internet gateway to news sources, but the broader definition of a "Portal" can encompass newspapers, magazines, or any medium offering news content.Developing a news portal involves leveraging technologies like React, React-router-dom, React-Slick, and Slick-Carousel to create a dynamic and engaging platform for users to access and interact with current news content.`,
     use: "React, React-router-dom, React-Slick, Slick-Carousel etc.",
     github: "https://github.com/sahedalways/React---News-App",
     demo: "https://react-news-portal-sahed.netlify.app/",
   },
 
   {
-    id: 7,
+    id: 11,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
     authorName: "Sk Sahed Ahmed",
-    desc: "Being physically and mentally fit is necessary for an individual to live a happy, long life. Typically, exercise is one of the best ways to keep a person healthy.",
+    desc: `Maintaining physical and mental fitness is crucial for a fulfilling and enduring life. Generally, exercise stands as one of the prime methods to ensure overall well-being." Leveraging technologies like React, React-Bootstrap, and React-router-dom can aid in creating platforms or applications that promote and support exercise, thus contributing to individual health and wellness.`,
     use: "React, React-Bootstrap, React-router-dom etc.",
     github: "https://github.com/sahedalways/React---Fitness-Gym-Website",
     demo: "https://ruhi-fitness-gym.netlify.app/",
   },
 
   {
-    id: 8,
+    id: 12,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
     authorName: "Sk Sahed Ahmed",
-    desc: "A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location.",
+    desc: `A website facilitating the online exchange of physical goods, services, and digital products, enabling transactions over the internet instead of at a physical store location. Utilizing technologies like React, React-router-dom, React-Icons, and Styled-Components can enable the development user-friendly online marketplace for buying and selling various items and services.`,
     use: "React, React-router-dom, React-Icons, Styled-Components etc.",
     github:
       "https://github.com/sahedalways/react---Ecommerce-App/tree/master",
@@ -123,12 +260,12 @@ export const allProjects = [
   },
 
   {
-    id: 9,
+    id: 13,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
     authorName: "Sk Sahed Ahmed",
-    desc: "A restaurant review app is a restaurant directory where you can look through the venues nearby, find more detailed information about each one of them, and read actual reviews from the people who visited them.",
+    desc: `A restaurant review app acts as a comprehensive restaurant directory, allowing users to explore nearby venues, access detailed information about each establishment, and read authentic reviews from patrons who have visited them.By utilizing technologies such as React, React-router-dom, Styled-Components, and React-Icons, a user-friendly and visually appealing platform can be developed for browsing, reviewing, and accessing restaurant information.`,
     use: "React, React-router-dom, Styled-Components, React-Icons etc.",
     github:
       "https://github.com/sahedalways/React---Restraunt-Website/tree/master",
@@ -136,12 +273,12 @@ export const allProjects = [
   },
 
   {
-    id: 10,
+    id: 14,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
     authorName: "Sk Sahed Ahmed",
-    desc: "The admin dashboard is the User Interface (UI) of the backend of your web application or software.",
+    desc: `The admin dashboard serves as the User Interface (UI) for the backend of your web application or software, providing access to manage and control various aspects of the system. Utilizing technologies such as React, ChartJS, React-Icons, React-router-dom, Recharts, Scrollreveal, and Styled-Components can help create a robust and visually engaging admin dashboard, offering intuitive control and oversight for the application's backend functionalities.`,
     use: "React, ChartJS, React-Icons, React-router-dom, Recharts, Scrollreveal, Styled-Components etc.",
     github:
       "https://github.com/sahedalways/React---Admin-Dashboard/tree/master",
@@ -149,12 +286,12 @@ export const allProjects = [
   },
 
   {
-    id: 11,
+    id: 15,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
     authorName: "Sk Sahed Ahmed",
-    desc: "E-commerce Website. A website that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location.",
+    desc: `An e-commerce website is a digital platform that facilitates the buying and selling of physical goods, services, and digital products over the internet, eliminating the need for physical brick-and-mortar locations.Leveraging technologies like React, React-Bootstrap, React-Icons, and React-router-dom can enable the development of a user-friendly and visually engaging e-commerce platform for online transactions.`,
     use: "React, React-Bootstrap, React-Icons, React-router-dom etc.",
     github:
       "https://github.com/sahedalways/React---Add-Shopping-to-Cart/tree/master",
@@ -162,7 +299,7 @@ export const allProjects = [
   },
 
   {
-    id: 12,
+    id: 16,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -174,7 +311,7 @@ export const allProjects = [
   },
 
   {
-    id: 13,
+    id: 17,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -186,7 +323,7 @@ export const allProjects = [
   },
 
   {
-    id: 14,
+    id: 18,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -199,7 +336,7 @@ export const allProjects = [
   },
 
   {
-    id: 15,
+    id: 19,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -211,7 +348,7 @@ export const allProjects = [
   },
 
   {
-    id: 16,
+    id: 20,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -223,7 +360,7 @@ export const allProjects = [
   },
 
   {
-    id: 17,
+    id: 21,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -236,7 +373,7 @@ export const allProjects = [
   },
 
   {
-    id: 18,
+    id: 22,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -249,7 +386,7 @@ export const allProjects = [
   },
 
   {
-    id: 19,
+    id: 23,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -262,7 +399,7 @@ export const allProjects = [
   },
 
   {
-    id: 20,
+    id: 24,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -275,7 +412,7 @@ export const allProjects = [
   },
 
   {
-    id: 21,
+    id: 25,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -288,7 +425,7 @@ export const allProjects = [
   },
 
   {
-    id: 22,
+    id: 26,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -301,7 +438,7 @@ export const allProjects = [
   },
 
   {
-    id: 23,
+    id: 27,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -313,7 +450,7 @@ export const allProjects = [
   },
 
   {
-    id: 24,
+    id: 28,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -326,7 +463,7 @@ export const allProjects = [
   },
 
   {
-    id: 25,
+    id: 29,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",

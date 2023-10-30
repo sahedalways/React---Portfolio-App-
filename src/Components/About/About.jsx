@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
-import "./about.css";
-import SAHED from "../../Assets/about-sahed.jpg";
-import { BsBookmarkCheckFill } from "react-icons/bs";
-import { FaUsers } from "react-icons/fa";
-import { AiOutlineProject } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { AiOutlineProject } from "react-icons/ai";
+import { BsBookmarkCheckFill } from "react-icons/bs";
+import { FaUsers } from "react-icons/fa";
+import SAHED from "../../Assets/about-sahed.jpg";
+import "./about.css";
 
 const About = () => {
   useEffect(() => {
@@ -42,7 +42,7 @@ const About = () => {
             <article data-aos="fade-right" className="about__card">
               <BsBookmarkCheckFill className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <small>2.5+ Years Working</small>
             </article>
 
             <article data-aos="fade-down" className="about__card">
@@ -58,18 +58,13 @@ const About = () => {
             </article>
           </div>
           <p>
-            Hi There! I am MERN/Frontend web developer. I am good at HTML, CSS,
-            Bootstarp, JavaScript, REACT, NodeJS/ExpressJS, PHP, SASS, Firebase,
-            Wordpress etc. I'm also good at video editing and M/S application. I
-            have worked as an Web Developer in IT Department in Satkhira
-            Municipality. I was responsible for all the IT related work of that
-            organization. Then I worked with different clients in different
-            programs. I am currently working on online marketplaces. And I'm
-            expanding my skills day by day. I'm so active and confident
-            everywhere and front of anyone. I always love to struggle. I always
-            priority to quality. I believe that 'there are no end position to
-            increase the quality of anything, quality is an infinity matter
-            indeed. Thank you!
+           Introduction: Fullstack Software Developer
+
+            Proficient in React.js/Next.js, React Native for front-end development, and PHP-Laravel for back-end solutions, I am dedicated to delivering high-quality software products.
+
+            Currently employed at WPmarts Company, I spearhead comprehensive web and app development initiatives. Collaborating with diverse clients across various projects, I continuously expand my skill set, ensuring adaptability to meet unique program requirements.
+
+            My passion for problem-solving drives me to embrace challenges, consistently aiming for excellence in every aspect of development. Quality is not just a priority, but a cornerstone of my work ethic, reflecting in the solutions I craft.
           </p>
 
           <a

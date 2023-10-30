@@ -1,15 +1,27 @@
-import React, { useState, useEffect } from "react";
-import "./contact.css";
-import { AiOutlineMail } from "react-icons/ai";
-import { RiMessengerLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
-import { useRef } from "react";
-import emailjs from "emailjs-com";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
+import { RiMessengerLine } from "react-icons/ri";
+import "./contact.css";
 
 const Contact = () => {
+const [isSentMessage, setIsSentMessage] = useState("")
+
+  // show isEmailSentmessage till specific time
+  useEffect(() => {
+    const messageTimer = setTimeout(() => {
+      setIsSentMessage("");
+    }, 5000);
+
+    return () => {
+      clearTimeout(messageTimer);
+    };
+  }, [isSentMessage]);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -29,7 +41,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_5qhohv8",
+        "service_7cgfed9",
         "template_p8nkbxh",
         form.current,
         "Nk-hMLTrGFcKehoTP",
@@ -37,10 +49,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setIsSentMessage("Your message has been sent. Keep in touch.")
+          console.log("message", result.text);
         },
         (error) => {
-          console.log(error.text);
+          setIsSentMessage("Sorry! Your message send failed!")
+          console.log("message",error.text);
         }
       );
   };
@@ -69,7 +83,7 @@ const Contact = () => {
             <h4>Messanger</h4>
             <h5>Sk Sahed Ahmed</h5>
             <a
-              href="https://www.m.me/altamish.sahed.5"
+              href="https://www.m.me/sahedstar"
               rel="noreferrer"
               target="_blank"
             >
@@ -80,7 +94,7 @@ const Contact = () => {
           <article className="contact__option">
             <BsWhatsapp className="contact__option__icon" />
             <h4>WhatsApp</h4>
-            <h5>+8801791674690</h5>
+            <h5>+8801602646902</h5>
             <a
               href="https://api.whatsapp.com/send?phone=+8801791674690"
               rel="noreferrer"
@@ -129,10 +143,13 @@ const Contact = () => {
             placeholder="Write your message..."
             required
           ></textarea>
-
+        
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
+            {
+            isSentMessage && <p>{isSentMessage}</p>
+          }
         </form>
       </div>
     </section>

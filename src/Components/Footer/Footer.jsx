@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
-import "./footer.css";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import LOGO from "../../Assets/sahed_logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import LOGO from "../../Assets/sahed_logo.png";
+import "./footer.css";
 
 const Footer = () => {
   useEffect(() => {
@@ -52,13 +50,13 @@ const Footer = () => {
       </ul>
 
       <div data-aos="fade-down" className="footer__socials">
-        <a href="https://www.facebook.com/altamish.sahed.5">
+        <a href="https://www.facebook.com/sahedstar">
           <FaFacebookSquare />
         </a>
-        <a href="https://twitter.com/Rockstar_Sahed">
+        <a href="https://twitter.com/sahedstar">
           <FaTwitterSquare />
         </a>
-        <a href="https://www.instagram.com/sk.sahed.ahmed/">
+        <a href="https://www.instagram.com/sahedstar">
           <FaInstagramSquare />
         </a>
       </div>
@@ -66,7 +64,7 @@ const Footer = () => {
       <div className="footer__copyright">
         <small>
           Designed & Developed by <span>Sk Sahed Ahmed</span>
-          <br /> Copyright &copy; 2022, All rights reserved
+          <br /> Copyright &copy; 2023, All rights reserved
         </small>
       </div>
     </footer>

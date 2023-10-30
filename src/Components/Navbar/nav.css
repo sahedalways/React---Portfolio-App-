@@ -38,7 +38,7 @@ nav a:hover {
 
 nav a.active {
   background: var(--color-primary);
-  color: var(--color-bg);
+  color: var(--color-white);
 }
 
 /*===========Finished All Css here==============*/

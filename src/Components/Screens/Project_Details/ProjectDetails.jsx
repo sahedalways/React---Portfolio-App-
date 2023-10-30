@@ -1,17 +1,38 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { BsFileCodeFill } from "react-icons/bs";
+import { CgProfile } from "react-icons/cg";
 import { useParams } from "react-router-dom";
+import { HashLoader } from "react-spinners";
 import { allProjects } from "../../Portfolio/PortfolioData";
 import "./ProjectDetails.css";
-import { CgProfile } from "react-icons/cg";
-import { BsFileCodeFill } from "react-icons/bs";
-import { Helmet } from "react-helmet-async";
-import { HashLoader } from "react-spinners";
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState(null);
-
+  const [showFullText, setShowFullText] = useState(false);
   const [loading, setLoading] = useState(false);
+ const [showDesc, setShowDesc] = useState(false);
+ const [isInitialFocusDesc, setIsInitialFocusDesc] = useState(false);
+  const descRef = useRef(null);
+
+  // toggle show more and less more button
+ const toggleShowFullText = () => {
+    setShowFullText(!showFullText);
+     setIsInitialFocusDesc(true);
+    setShowDesc(!showDesc);
+  };
+
+    useEffect(() => {
+    if (showDesc && descRef.current && isInitialFocusDesc) {
+      descRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [showDesc]);
+
+    const maxLength = 300;
+  const truncatedText = item?.desc?.slice(0, maxLength);
+
+  
 
   useEffect(() => {
     setLoading(true);
@@ -42,7 +63,7 @@ const ProjectDetails = () => {
           ) : (
             <>
               <Helmet>
-                <title>Sahed's Project</title>
+                <title>Sahed's Projects</title>
               </Helmet>
 
               <section id="project__view">
@@ -70,12 +91,36 @@ const ProjectDetails = () => {
 
                       <article data-aos="fade-left" className="project__card">
                         <BsFileCodeFill className="project__icon" />
-                        <h5>Used Elements</h5>
+                        <h5>Used Technologies</h5>
                         <small>{item.use}</small>
                       </article>
                     </div>
+                  
+                      {truncatedText && item.desc && (
+                        <p   ref={descRef}>
+                     
+                          {showFullText
+                            ? item.desc
+                            : truncatedText !== undefined && truncatedText}
+                          {!showFullText && item.desc ? (
+                            <a
+                            className="project__desc__btn"
+                              onClick={toggleShowFullText}
+                            >
+                              ...Show more
+                            </a>
+                          ) : (
+                            <a
+                              className="project__desc__btn"
+                              onClick={toggleShowFullText}
+                            >
+                              See less
+                            </a>
+                          )}
+                        </p>
+                      )}
 
-                    <p>{item.desc}</p>
+                
 
                     <div className="project__btn">
                       <a

@@ -1,54 +1,48 @@
 import avatar1 from "../../Assets/avatar1.jpg";
 import avatar2 from "../../Assets/avatar2.jpg";
 import avatar3 from "../../Assets/avatar3.jpg";
+import avatar4 from "../../Assets/avatar4.jpg";
+
 
 const Data = [
   {
     id: 1,
     avatar: avatar1,
-    name: "Sk Shahin Alam",
+    name: "James Wilson",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
+      "Exceptional work! The team delivered a robust solution ahead of schedule, exceeding our expectations. Highly recommended.",
   },
 
   {
     id: 2,
     avatar: avatar2,
-    name: "Sk Subhan Ali",
+    name: "David Johnson",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
+      "The quality of work and attention to detail were remarkable. Great communication throughout the project. A pleasure to work with!",
   },
 
   {
     id: 3,
     avatar: avatar3,
-    name: "Sk Sarif Khan",
+    name: "Michael Anderson",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
+      "Impressed with the level of professionalism and commitment to delivering a top-notch solution. Will definitely engage for future projects!",
   },
 
   {
     id: 4,
-    avatar: avatar3,
-    name: "Sk Sadif Khan",
+    avatar: avatar4,
+    name: "Olivia Martinez",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
+      "Outstanding service! The team's ability to understand and translate our requirements into a functional solution was impressive. Highly satisfied!",
   },
 
   {
     id: 5,
-    avatar: avatar2,
-    name: "Sk Arif Gazi",
+    avatar: avatar4,
+    name: "Emily Clark",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
-  },
-
-  {
-    id: 6,
-    avatar: avatar1,
-    name: "Sk Sakib Hasan",
-    review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?",
+      "The team's expertise and dedication were evident in the flawless end product. Delivered on time and within budget. 5 stars!",
   },
 ];
 

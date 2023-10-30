@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
-import "./portfolio.css";
-import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { allProjects } from "./PortfolioData";
-import { Helmet } from "react-helmet-async";
+import "./portfolio.css";
 
 const Portfolio = () => {
-  const [data, setData] = useState("reactFullApp");
-  const [btn, setBtn] = useState("reactFullApp");
+  const [data, setData] = useState("webApp");
+  const [btn, setBtn] = useState("webApp");
   const [project, setProject] = useState(allProjects);
   const filterResult = (item) => {
     const result = allProjects.filter((curProjects) => {
@@ -43,6 +42,23 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="btn_Area">
+        <button
+          className={`filter-btn ${
+            btn === "webApp" ? "active_btn btn btn-primary" : "btn"
+          }`}
+          onClick={() => filterResult("webApp")}
+        >
+        Web Development
+        </button>
+
+         <button
+          className={`filter-btn ${
+            btn === "mobileApp" ? "active_btn btn btn-primary" : "btn"
+          }`}
+          onClick={() => filterResult("mobileApp")}
+        >
+          Apps Development
+        </button>
         <button
           className={`filter-btn ${
             btn === "reactFullApp" ? "active_btn btn btn-primary" : "btn"
@@ -95,7 +111,7 @@ const Portfolio = () => {
       </div>
 
       <div className="container portfolio__container">
-        {project.slice(0, 6).map(({ id, image, title, github, demo }) => {
+        {project.slice(0, 3).map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} data-aos="slide-left" className="portfolio__item">
               <div className="portfolio__item__image">

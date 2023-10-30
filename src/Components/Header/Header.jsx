@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
-import "./header.css";
-import CTA from "./CTA";
-import SAHED from "../../Assets/sahed.jpg";
-import HeaderSocials from "./HeaderSocials";
-import Typical from "react-typical";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+import Typical from "react-typical";
+import SAHED from "../../Assets/sahed.jpg";
+import CTA from "./CTA";
+import HeaderSocials from "./HeaderSocials";
+import "./header.css";
 
 const Header = () => {
   useEffect(() => {
@@ -28,11 +28,11 @@ const Header = () => {
         <h5 className="text-light">
           <Typical
             steps={[
-              "React Developer",
+              "NextJS Developer",
               3000,
-              "Mern-Stack Developer",
+              "PHP-Laravel Developer",
               3000,
-              "Content Creator",
+               "Fullstack Software Developer",
               3000,
             ]}
             loop={Infinity}
@@ -43,7 +43,7 @@ const Header = () => {
         <HeaderSocials />
 
         <div data-aos="fade-up" className="me">
-          <img id="pic" src={SAHED} alt="" />
+          <img id="pic" src={SAHED} alt="sahed-photo" />
         </div>
 
         <a href="#contact" className="scroll__down">
