@@ -96,7 +96,7 @@ const [isSentMessage, setIsSentMessage] = useState("")
             <h4>WhatsApp</h4>
             <h5>+8801602646902</h5>
             <a
-              href="https://api.whatsapp.com/send?phone=+8801791674690"
+              href="https://api.whatsapp.com/send?phone=8801602646902"
               rel="noreferrer"
               target="_blank"
             >

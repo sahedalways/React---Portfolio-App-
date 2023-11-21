@@ -1,7 +1,7 @@
 nav {
   position: fixed;
   padding: 0.7rem 1.7rem;
-  top: 0;
+  bottom: 0;
   width: max-content;
   background: #56404059;
   margin: 0 auto;
