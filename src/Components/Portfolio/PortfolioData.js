@@ -21,6 +21,9 @@ import Project27 from "../../Assets/Project27.png";
 import Project28 from "../../Assets/Project28.png";
 import Project29 from "../../Assets/Project29.png";
 import Project3 from "../../Assets/Project3.png";
+import Project30 from "../../Assets/Project30.png";
+import Project31 from "../../Assets/Project31.png";
+import Project32 from "../../Assets/Project32.png";
 import Project4 from "../../Assets/Project4.png";
 import Project5 from "../../Assets/Project5.png";
 import Project6 from "../../Assets/Project6.png";
@@ -55,8 +58,49 @@ export const allProjects = [
     demo: "https://womanspeech.com/",
   },
 
+
+
   {
     id: 2,
+    image: Project31,
+    category: "webApp",
+    title: `Netmark Bangladesh - MLM Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Netmark Bangladesh is a comprehensive MLM (Multi-Level Marketing) application designed to facilitate efficient management of a network marketing business. Leveraging PHP Laravel for backend development, MySQL for database management, and React.js for frontend interface, Netmark Bangladesh offers a robust platform for handling various MLM functionalities seamlessly.
+
+    Product Management: The application enables easy management of products including listing, adding, updating, and deleting products.
+
+    Shopping Cart and Checkout: Seamless shopping experience with features like product purchase, cart management, and secure checkout process.
+
+    Payment Gateway Integration: Integrated with popular payment gateways such as bKash and Nagad for convenient and secure online transactions.
+
+    MLM Functionality:
+
+    Tree Generation: Hierarchical representation of network members for easy visualization and management.
+
+    Bonus Calculation:
+    Generation Bonus: Calculation and distribution of bonuses based on network generation levels.
+    Matching Bonus: Reward system for matching sales within the network.
+    Purchase Cashback Bonus: Incentives for purchases made within the network.
+    Referral System: Tracks referrals and calculates bonuses accordingly.
+
+    API Design: Well-structured API design for seamless communication between frontend and backend components.
+
+    Reporting: Generates comprehensive reports including purchase sales reports on a monthly and annual basis for better business insights and analysis.
+
+    Banking Functionalities:
+
+    Balance Withdrawal: Facilitates easy withdrawal of earned balances by network members.
+    Cron Job Integration: Scheduled tasks for automated processes like bonus calculations and report generation.
+      `,
+    use: "JavaScript · jQuery · PHP · MySQL · Laravel.",
+    github: "https://github.com/hasancse016/netmarkbangladesh.com",
+    demo: "https://www.netmarkbangladesh.com/",
+  },
+
+
+  {
+    id: 3,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -90,8 +134,76 @@ export const allProjects = [
     demo: "https://womanspeech.com/",
   },
 
+
     {
-    id: 3,
+    id: 4,
+    image: Project30,
+    category: "webApp",
+    title: `Grace Interio - Interio Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `DynamicCMS is a versatile Content Management System designed to streamline content creation, management, and distribution. With a user-friendly interface and powerful backend functionalities, DynamicCMS offers an intuitive platform for managing blogs, along with additional features such as city search and integrated mail functionalities.
+
+    Blog Management: DynamicCMS provides comprehensive CRUD (Create, Read, Update, Delete) functionalities for managing blog content efficiently. Users can create, edit, delete, and publish blog posts seamlessly.
+
+    Content Creation: The CMS offers a rich text editor for creating engaging and visually appealing blog posts. Users can easily format text, add images, embed multimedia content, and more.
+
+    City Search: Integrated city search functionality allows users to search for specific cities within the application. This feature enhances user experience by providing relevant information related to cities and locations.
+
+    Mail Functionalities:
+
+    Email Notification: Users receive email notifications for various events such as new blog comments, subscription updates, and system alerts.
+    Mail Configuration: Administrators can configure SMTP settings for seamless email communication within the application.
+    User Management: DynamicCMS includes user management functionalities for managing user accounts, roles, and permissions. Administrators can create user accounts, assign roles, and define access levels as per organizational requirements.
+
+    SEO Optimization: Built-in SEO tools help optimize blog content for search engines, improving visibility and driving organic traffic to the website.
+
+    Responsive Design: The CMS features a responsive design that ensures seamless user experience across devices, including desktops, tablets, and smartphones.
+      `,
+    use: "JavaScript · Next · MySQL · Laravel.",
+    github: "https://github.com/hasancse016/netmarkbangladesh.com",
+    demo: "https://www.graceinterio.com",
+  },
+
+
+      {
+    id: 5,
+    image: Project32,
+    category: "webApp",
+    title: `Propane - Trading Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Propane is a robust trading web application built with PHP Laravel and MySQL, offering comprehensive functionalities for managing trades, user accounts, and content through an intuitive CMS (Content Management System). With dynamic CMS capabilities, customizable site elements, and seamless trading features, Propane provides a powerful platform for online trading and investment management.
+    
+    Dynamic CMS Management:
+
+    Admin Panel: Empowers administrators to dynamically manage site metadata including meta tags, site title, copyright, footer, menus, site slogan, and background images.
+    Page Content Customization: Enables easy editing of dynamic page content such as Contact Us, Terms, Agent, and Introduction pages directly from the admin panel.
+    Currency Management:
+
+    Multiple Currency Support: Supports three major currencies - SGD, USD, and IDR, allowing users to trade in their preferred currency.
+    Currency Rate Management: Admins can dynamically update currency exchange rates to reflect real-time market changes.
+    Trading Functionalities:
+
+    Deposit and Withdrawal: Seamless deposit and withdrawal functionalities, facilitating smooth transaction processing for users.
+    Trade Execution: Enables users to execute trades efficiently within the platform, with real-time updates on market conditions and trade statuses.
+    User Management:
+
+    Admin Control: Administrators can manage user accounts, permissions, and activities through the admin panel.
+    Membership Packages: Offers customizable membership packages with varying features and benefits to cater to different user needs.
+    Membership Levels: Implements membership level functionalities, allowing users to unlock additional features and privileges based on their membership tier.
+    Notification System:
+
+    Real-time Notifications: Sends timely notifications to users regarding account activities, trade updates, and system announcements, ensuring a seamless user experience.
+    Product Inventory Management:
+
+    Inventory Tracking: Admins can manage product inventory and availability within the platform, ensuring accurate representation and availability of tradable assets.
+      `,
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/propane-ecommerce",
+    demo: "https://com-checkout.app/",
+  },
+
+    {
+    id: 6,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -114,7 +226,7 @@ export const allProjects = [
   },
 
    {
-    id: 4,
+    id: 7,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -163,7 +275,7 @@ export const allProjects = [
 
 
   {
-    id: 5,
+    id: 8,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -175,7 +287,7 @@ export const allProjects = [
   },
 
   {
-    id: 6,
+    id: 9,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -187,7 +299,7 @@ export const allProjects = [
   },
 
   {
-    id: 7,
+    id: 10,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -199,7 +311,7 @@ export const allProjects = [
   },
 
   {
-    id: 8,
+    id: 11,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -211,7 +323,7 @@ export const allProjects = [
   },
 
   {
-    id: 9,
+    id: 12,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -223,7 +335,7 @@ export const allProjects = [
   },
 
   {
-    id: 10,
+    id: 13,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -235,7 +347,7 @@ export const allProjects = [
   },
 
   {
-    id: 11,
+    id: 14,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -247,7 +359,7 @@ export const allProjects = [
   },
 
   {
-    id: 12,
+    id: 15,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -260,7 +372,7 @@ export const allProjects = [
   },
 
   {
-    id: 13,
+    id: 16,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -273,7 +385,7 @@ export const allProjects = [
   },
 
   {
-    id: 14,
+    id: 17,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -286,7 +398,7 @@ export const allProjects = [
   },
 
   {
-    id: 15,
+    id: 18,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -299,7 +411,7 @@ export const allProjects = [
   },
 
   {
-    id: 16,
+    id: 19,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -311,7 +423,7 @@ export const allProjects = [
   },
 
   {
-    id: 17,
+    id: 20,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -323,7 +435,7 @@ export const allProjects = [
   },
 
   {
-    id: 18,
+    id: 21,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -336,7 +448,7 @@ export const allProjects = [
   },
 
   {
-    id: 19,
+    id: 22,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -348,7 +460,7 @@ export const allProjects = [
   },
 
   {
-    id: 20,
+    id: 23,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -360,7 +472,7 @@ export const allProjects = [
   },
 
   {
-    id: 21,
+    id: 24,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -373,7 +485,7 @@ export const allProjects = [
   },
 
   {
-    id: 22,
+    id: 25,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -386,7 +498,7 @@ export const allProjects = [
   },
 
   {
-    id: 23,
+    id: 26,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -399,7 +511,7 @@ export const allProjects = [
   },
 
   {
-    id: 24,
+    id: 27,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -412,7 +524,7 @@ export const allProjects = [
   },
 
   {
-    id: 25,
+    id: 28,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -425,7 +537,7 @@ export const allProjects = [
   },
 
   {
-    id: 26,
+    id: 29,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -438,7 +550,7 @@ export const allProjects = [
   },
 
   {
-    id: 27,
+    id: 30,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -450,7 +562,7 @@ export const allProjects = [
   },
 
   {
-    id: 28,
+    id: 31,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -463,7 +575,7 @@ export const allProjects = [
   },
 
   {
-    id: 29,
+    id: 32,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",

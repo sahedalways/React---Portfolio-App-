@@ -64,7 +64,7 @@ const Footer = () => {
       <div className="footer__copyright">
         <small>
           Designed & Developed by <span>Sk Sahed Ahmed</span>
-          <br /> Copyright &copy; 2023, All rights reserved
+          <br /> Copyright &copy; 2024, All rights reserved
         </small>
       </div>
     </footer>
