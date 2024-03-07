@@ -24,6 +24,7 @@ import Project3 from "../../Assets/Project3.png";
 import Project30 from "../../Assets/Project30.png";
 import Project31 from "../../Assets/Project31.png";
 import Project32 from "../../Assets/Project32.png";
+import Project33 from "../../Assets/Project33.png";
 import Project4 from "../../Assets/Project4.png";
 import Project5 from "../../Assets/Project5.png";
 import Project6 from "../../Assets/Project6.png";
@@ -36,22 +37,49 @@ export const allProjects = [
     id: 1,
     image: Project26,
     category: "webApp",
-    title: `Caredoom - Matrimony Website`,
+    title: `Caredoom - Matrimony Application`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Developed Caredoom, a matrimony website, using Next.js and PHP Laravel to address unique challenges and functionalities in the matrimonial domain.
+    desc: `Caredoom is a revolutionary matrimony website designed to address the unique challenges and requirements of the matrimonial domain. Leveraging the power of Next.js and PHP Laravel, Caredoom offers innovative solutions and functionalities tailored to enhance user experience and foster meaningful connections.
 
-    Implemented Solutions:
-    - Multi-Mode Registration: Streamlined user onboarding with a versatile registration system, accommodating various user types efficiently.
-    - Enhanced Communication Channels: Integrated text, video, and audio chatting features, fostering diverse and seamless communication options for users.
-    - Multilingual Support: Implemented multi-language support, catering to a broader audience and ensuring inclusivity.
-    - Image Resizing: Resolved challenges by implementing image resizing functionalities, optimizing user uploads for performance and experience enhancement.
-    - Ranking Mechanism: Implemented a system to enhance user interaction and prioritize profiles, improving overall user engagement.
+    Key Features
+    Multi-Mode Registration
 
-    Challenges Addressed:
-    - Diverse Communication: Fostering connections through varied communication channels - text, video, and audio features.
-    - Cultural Inclusivity: Overcoming language barriers by providing a multi-language interface, ensuring inclusivity for a diverse user base.
-    - Optimized User Experience: Resolved image-related issues by implementing image resizing functionalities, ensuring better performance.
-    - Improved User Interaction: Implemented a ranking mechanism to enhance user engagement and profile visibility.
+    Simplified onboarding process accommodating various user types efficiently.
+    Versatile registration system streamlining user registration.
+    Enhanced Communication Channels
+
+    Integrated text, video, and audio chatting features for seamless communication.
+    Diverse communication options fostering meaningful connections.
+    Multilingual Support
+
+    Implemented multi-language support to cater to a broader audience.
+    Ensured inclusivity by overcoming language barriers.
+    Image Resizing
+
+    Optimized user uploads for better performance and experience.
+    Implemented image resizing functionalities to enhance performance.
+    Ranking Mechanism
+
+    Enhanced user interaction through a ranking system.
+    Prioritized profiles to improve user engagement and visibility.
+    Challenges Addressed
+    Diverse Communication
+
+    Fostered connections through varied communication channels - text, video, and audio.
+    Provided seamless communication options for users.
+    Cultural Inclusivity
+
+    Overcame language barriers by offering a multi-language interface.
+    Ensured inclusivity for a diverse user base.
+    Optimized User Experience
+
+    Resolved image-related issues with image resizing functionalities.
+    Ensured better performance and user experience.
+    Improved User Interaction
+
+    Implemented a ranking mechanism to enhance user engagement.
+    Increased profile visibility for better interaction.
+    Caredoom Matrimony stands as a testament to innovation and inclusivity in the matrimonial domain. With its array of features and solutions, it aims to revolutionize the way people connect and find their life partners.
       `,
     use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
     github: "https://github.com/hasancse016/matrimony-frontend-next-react",
@@ -98,9 +126,103 @@ export const allProjects = [
     demo: "https://www.netmarkbangladesh.com/",
   },
 
+        {
+    id: 3,
+    image: Project32,
+    category: "webApp",
+    title: `Propane - Trading Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Propane is a robust trading web application built with PHP Laravel and MySQL, offering comprehensive functionalities for managing trades, user accounts, and content through an intuitive CMS (Content Management System). With dynamic CMS capabilities, customizable site elements, and seamless trading features, Propane provides a powerful platform for online trading and investment management.
+    
+    Dynamic CMS Management:
+
+    Admin Panel: Empowers administrators to dynamically manage site metadata including meta tags, site title, copyright, footer, menus, site slogan, and background images.
+    Page Content Customization: Enables easy editing of dynamic page content such as Contact Us, Terms, Agent, and Introduction pages directly from the admin panel.
+    Currency Management:
+
+    Multiple Currency Support: Supports three major currencies - SGD, USD, and IDR, allowing users to trade in their preferred currency.
+    Currency Rate Management: Admins can dynamically update currency exchange rates to reflect real-time market changes.
+    Trading Functionalities:
+
+    Deposit and Withdrawal: Seamless deposit and withdrawal functionalities, facilitating smooth transaction processing for users.
+    Trade Execution: Enables users to execute trades efficiently within the platform, with real-time updates on market conditions and trade statuses.
+    User Management:
+
+    Admin Control: Administrators can manage user accounts, permissions, and activities through the admin panel.
+    Membership Packages: Offers customizable membership packages with varying features and benefits to cater to different user needs.
+    Membership Levels: Implements membership level functionalities, allowing users to unlock additional features and privileges based on their membership tier.
+    Notification System:
+
+    Real-time Notifications: Sends timely notifications to users regarding account activities, trade updates, and system announcements, ensuring a seamless user experience.
+
+     Multiple Currency Support: Supports SGD, USD, and IDR, allowing users to trade in their preferred currency.
+    Currency Rate Management: Admins can dynamically update currency exchange rates to reflect real-time market changes.
+    Product Inventory Management:
+
+    Inventory Tracking: Admins can manage product inventory and availability within the platform, ensuring accurate representation and availability of tradable assets.
+      `,
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/propane-ecommerce",
+    demo: "https://com-checkout.app/",
+  },
+
+       {
+    id: 4,
+    image: Project33,
+    category: "webApp",
+    title: `Hymus Sports: Revolutionizing Sports Booking`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Hymus Sports is an innovative booking application designed to streamline the process of booking sports facilities and managing bookings efficiently. Developed with PHP Laravel, jQuery, and MySQL, Hymus Sports offers a comprehensive solution for both users and administrators.
+
+    Key Features
+    Booking System
+
+    Users can book sports facilities by selecting date and time slots.
+    VIP code feature for privileged bookings or discounts.
+    Payment Gateway Integration
+
+    Secure payment gateway for hassle-free transactions.
+    Multiple payment options for user convenience.
+    User Authentication
+
+    Register and login functionalities for users to access the platform.
+    Forgot password feature for account recovery.
+    User Dashboard
+
+    View booking details, payment status, and cancellation status.
+    Access to booking history and account information.
+    Admin Control Panel
+
+    Comprehensive control over booking information.
+    Add, delete, and edit sports facilities/games.
+    CRUD operations for site settings to customize the platform.
+    Reports Generation
+
+    Generate detailed reports on bookings, payments, and cancellations.
+    Analyze data to make informed decisions and optimizations.
+    Additional Features
+    Notification System: Real-time notifications for booking confirmations, reminders, and cancellations.
+    Booking Confirmation: Automatic confirmation of bookings upon successful payment.
+    Email Notifications: Automated emails for account verification, booking confirmations, and password resets.
+    Customizable Booking Options: Flexible booking options such as hourly, daily, or weekly bookings.
+    Multi-Language Support: Support for multiple languages to cater to a diverse user base.
+    Beauty in Functionality
+    Hymus Sports not only offers functionality but also ensures an elegant and seamless user experience:
+
+    Intuitive User Interface: User-friendly interface for easy navigation and booking.
+    Responsive Design: Mobile-friendly design for accessibility on various devices.
+    Efficient Backend Management: Streamlined admin panel for efficient management of bookings and settings.
+    Conclusion
+    Hymus Sports transforms sports booking into a hassle-free experience, offering users and administrators a robust platform for managing bookings, payments, and facilities. With its array of features and user-friendly interface, Hymus Sports sets a new standard in sports booking applications.
+      `,
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/sport-booking",
+    demo: "http://hymussports.ca/",
+  },
+
 
   {
-    id: 3,
+    id: 5,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -130,80 +252,59 @@ export const allProjects = [
 
       `,
     use: "JavaScript · PHP · MySQL · Next.js · Laravel.",
-    github: "https://github.com/hasancse016/ecommerce-frontend",
-    demo: "https://womanspeech.com/",
+    github: "https://github.com/hasancse016/ecommerce-backend",
+    demo: "",
   },
 
-
-    {
-    id: 4,
-    image: Project30,
-    category: "webApp",
-    title: `Grace Interio - Interio Application`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `DynamicCMS is a versatile Content Management System designed to streamline content creation, management, and distribution. With a user-friendly interface and powerful backend functionalities, DynamicCMS offers an intuitive platform for managing blogs, along with additional features such as city search and integrated mail functionalities.
-
-    Blog Management: DynamicCMS provides comprehensive CRUD (Create, Read, Update, Delete) functionalities for managing blog content efficiently. Users can create, edit, delete, and publish blog posts seamlessly.
-
-    Content Creation: The CMS offers a rich text editor for creating engaging and visually appealing blog posts. Users can easily format text, add images, embed multimedia content, and more.
-
-    City Search: Integrated city search functionality allows users to search for specific cities within the application. This feature enhances user experience by providing relevant information related to cities and locations.
-
-    Mail Functionalities:
-
-    Email Notification: Users receive email notifications for various events such as new blog comments, subscription updates, and system alerts.
-    Mail Configuration: Administrators can configure SMTP settings for seamless email communication within the application.
-    User Management: DynamicCMS includes user management functionalities for managing user accounts, roles, and permissions. Administrators can create user accounts, assign roles, and define access levels as per organizational requirements.
-
-    SEO Optimization: Built-in SEO tools help optimize blog content for search engines, improving visibility and driving organic traffic to the website.
-
-    Responsive Design: The CMS features a responsive design that ensures seamless user experience across devices, including desktops, tablets, and smartphones.
-      `,
-    use: "JavaScript · Next · MySQL · Laravel.",
-    github: "https://github.com/hasancse016/netmarkbangladesh.com",
-    demo: "https://www.graceinterio.com",
-  },
-
-
-      {
-    id: 5,
-    image: Project32,
-    category: "webApp",
-    title: `Propane - Trading Application`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `Propane is a robust trading web application built with PHP Laravel and MySQL, offering comprehensive functionalities for managing trades, user accounts, and content through an intuitive CMS (Content Management System). With dynamic CMS capabilities, customizable site elements, and seamless trading features, Propane provides a powerful platform for online trading and investment management.
-    
-    Dynamic CMS Management:
-
-    Admin Panel: Empowers administrators to dynamically manage site metadata including meta tags, site title, copyright, footer, menus, site slogan, and background images.
-    Page Content Customization: Enables easy editing of dynamic page content such as Contact Us, Terms, Agent, and Introduction pages directly from the admin panel.
-    Currency Management:
-
-    Multiple Currency Support: Supports three major currencies - SGD, USD, and IDR, allowing users to trade in their preferred currency.
-    Currency Rate Management: Admins can dynamically update currency exchange rates to reflect real-time market changes.
-    Trading Functionalities:
-
-    Deposit and Withdrawal: Seamless deposit and withdrawal functionalities, facilitating smooth transaction processing for users.
-    Trade Execution: Enables users to execute trades efficiently within the platform, with real-time updates on market conditions and trade statuses.
-    User Management:
-
-    Admin Control: Administrators can manage user accounts, permissions, and activities through the admin panel.
-    Membership Packages: Offers customizable membership packages with varying features and benefits to cater to different user needs.
-    Membership Levels: Implements membership level functionalities, allowing users to unlock additional features and privileges based on their membership tier.
-    Notification System:
-
-    Real-time Notifications: Sends timely notifications to users regarding account activities, trade updates, and system announcements, ensuring a seamless user experience.
-    Product Inventory Management:
-
-    Inventory Tracking: Admins can manage product inventory and availability within the platform, ensuring accurate representation and availability of tradable assets.
-      `,
-    use: "JavaScript · MySQL · PHP · Laravel.",
-    github: "https://github.com/sahedalways/propane-ecommerce",
-    demo: "https://com-checkout.app/",
-  },
 
     {
     id: 6,
+    image: Project30,
+    category: "webApp",
+    title: `Exinstore - Redefining Online Shopping`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Exinstor E-commerce is a cutting-edge online shopping platform built with PHP Laravel and Next.js, offering a seamless shopping experience with advanced features and functionalities.
+
+    Key Features
+    Dynamic Region-Based Settings
+
+    Country name change by region for personalized user experience.
+    Currency change based on the selected region for convenient transactions.
+    Product Category CRUD
+
+    Create, read, update, and delete product categories effortlessly.
+    Seamless integration with the frontend to display categories for easy navigation.
+    Server-Side Rendering (SSR)
+
+    Implemented SSR on the frontend for improved performance and SEO optimization.
+    Ensured fast loading times and enhanced user experience.
+    Product Details Management
+
+    Add and manage product details efficiently, including images, descriptions, and pricing.
+    Display product details dynamically on the frontend for users to explore.
+    Additional Features
+    Responsive Design: Mobile-friendly design ensures accessibility across devices.
+    User Authentication: Secure login and registration functionalities for user accounts.
+    Search Functionality: Easy product search for users to find desired items quickly.
+    Shopping Cart: Seamless shopping cart management for convenient checkout process.
+    Order Tracking: Track order status and delivery updates for a transparent shopping experience.
+    Beauty in Functionality
+    Exinstor E-commerce not only offers advanced functionality but also prioritizes elegance and user experience:
+
+    Intuitive User Interface: Modern and visually appealing interface for easy navigation and shopping.
+    Efficient Backend Management: Streamlined backend processes for smooth operations and management.
+    Seamless Integration: Seamless integration of frontend and backend technologies for a cohesive user experience.
+      `,
+    use: "JavaScript · Next · MySQL · Laravel.",
+    github: "https://github.com/sahedalways/exinostore-backend",
+    demo: "https://www.exinostore.com",
+  },
+
+
+
+
+    {
+    id: 7,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -226,7 +327,7 @@ export const allProjects = [
   },
 
    {
-    id: 7,
+    id: 8,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -275,7 +376,7 @@ export const allProjects = [
 
 
   {
-    id: 8,
+    id: 9,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -287,7 +388,7 @@ export const allProjects = [
   },
 
   {
-    id: 9,
+    id: 10,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -299,7 +400,7 @@ export const allProjects = [
   },
 
   {
-    id: 10,
+    id: 11,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -311,7 +412,7 @@ export const allProjects = [
   },
 
   {
-    id: 11,
+    id: 12,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -323,7 +424,7 @@ export const allProjects = [
   },
 
   {
-    id: 12,
+    id: 13,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -335,7 +436,7 @@ export const allProjects = [
   },
 
   {
-    id: 13,
+    id: 14,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -347,7 +448,7 @@ export const allProjects = [
   },
 
   {
-    id: 14,
+    id: 15,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -359,7 +460,7 @@ export const allProjects = [
   },
 
   {
-    id: 15,
+    id: 16,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -372,7 +473,7 @@ export const allProjects = [
   },
 
   {
-    id: 16,
+    id: 17,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -385,7 +486,7 @@ export const allProjects = [
   },
 
   {
-    id: 17,
+    id: 18,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -398,7 +499,7 @@ export const allProjects = [
   },
 
   {
-    id: 18,
+    id: 19,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -411,7 +512,7 @@ export const allProjects = [
   },
 
   {
-    id: 19,
+    id: 20,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -423,7 +524,7 @@ export const allProjects = [
   },
 
   {
-    id: 20,
+    id: 21,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -435,7 +536,7 @@ export const allProjects = [
   },
 
   {
-    id: 21,
+    id: 22,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -448,7 +549,7 @@ export const allProjects = [
   },
 
   {
-    id: 22,
+    id: 23,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -460,7 +561,7 @@ export const allProjects = [
   },
 
   {
-    id: 23,
+    id: 24,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -472,7 +573,7 @@ export const allProjects = [
   },
 
   {
-    id: 24,
+    id: 25,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -485,7 +586,7 @@ export const allProjects = [
   },
 
   {
-    id: 25,
+    id: 26,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -498,7 +599,7 @@ export const allProjects = [
   },
 
   {
-    id: 26,
+    id: 27,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -511,7 +612,7 @@ export const allProjects = [
   },
 
   {
-    id: 27,
+    id: 28,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -524,7 +625,7 @@ export const allProjects = [
   },
 
   {
-    id: 28,
+    id: 29,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -537,7 +638,7 @@ export const allProjects = [
   },
 
   {
-    id: 29,
+    id: 30,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -550,7 +651,7 @@ export const allProjects = [
   },
 
   {
-    id: 30,
+    id: 31,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -562,7 +663,7 @@ export const allProjects = [
   },
 
   {
-    id: 31,
+    id: 32,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -575,7 +676,7 @@ export const allProjects = [
   },
 
   {
-    id: 32,
+    id: 33,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
