@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { HashLoader } from "react-spinners";
 import About from "../../About/About";
+import Blog from "../../Blog/Blog";
 import Contact from "../../Contact/Contact";
 import Experience from "../../Experience/Experience";
 import Header from "../../Header/Header";
@@ -21,6 +21,7 @@ const Home = () => {
       <Experience />
       <Services />
       <Portfolio />
+      <Blog />
       <Testimonial />
       <Contact />
     </>

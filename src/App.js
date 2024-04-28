@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Components/Navbar/Nav";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Components/Screens/Home/Home";
-import Footer from "./Components/Footer/Footer";
-import ProjectDetails from "./Components/Screens/Project_Details/ProjectDetails";
-import About from "./Components/About/About";
-import Experience from "./Components/Experience/Experience";
-import Services from "./Components/Services/Services";
-import Portfolio from "./Components/Portfolio/Portfolio";
-import Testimonial from "./Components/Testimonial/Testimonial";
-import SeeMore from "./Components/Screens/See_More/SeeMore";
-import Contact from "./Components/Contact/Contact";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { HashLoader } from "react-spinners";
+import About from "./Components/About/About";
+import BlogDetails from "./Components/Blog/BlogDetails";
+import SeeMoreBlogs from "./Components/Blog/SeeMoreBlogs";
+import Contact from "./Components/Contact/Contact";
+import Experience from "./Components/Experience/Experience";
+import Footer from "./Components/Footer/Footer";
+import Navbar from "./Components/Navbar/Nav";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Home from "./Components/Screens/Home/Home";
+import ProjectDetails from "./Components/Screens/Project_Details/ProjectDetails";
+import SeeMore from "./Components/Screens/See_More/SeeMore";
+import Services from "./Components/Services/Services";
+import Testimonial from "./Components/Testimonial/Testimonial";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -47,10 +49,17 @@ const App = () => {
               <Route exact path="/contact" element={<Contact />} />
 
               <Route exact path="/projects" element={<SeeMore />} />
+              <Route exact path="/blogs" element={<SeeMoreBlogs />} />
               <Route
                 exact
                 path="/project-details/:id"
                 element={<ProjectDetails />}
+              />
+
+              <Route
+                exact
+                path="/blog-details/:id"
+                element={<BlogDetails />}
               />
 
               <Route exact path="*" element={<Home />} />
