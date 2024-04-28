@@ -3,7 +3,6 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { HashLoader } from "react-spinners";
 import About from "./Components/About/About";
 import BlogDetails from "./Components/Blog/BlogDetails";
-import SeeMoreBlogs from "./Components/Blog/SeeMoreBlogs";
 import Contact from "./Components/Contact/Contact";
 import Experience from "./Components/Experience/Experience";
 import Footer from "./Components/Footer/Footer";
@@ -12,6 +11,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Home from "./Components/Screens/Home/Home";
 import ProjectDetails from "./Components/Screens/Project_Details/ProjectDetails";
 import SeeMore from "./Components/Screens/See_More/SeeMore";
+import SeeMoreBlogs from "./Components/Screens/See_More_Blogs/SeeMoreBlogs";
 import Services from "./Components/Services/Services";
 import Testimonial from "./Components/Testimonial/Testimonial";
 
@@ -50,16 +50,17 @@ const App = () => {
 
               <Route exact path="/projects" element={<SeeMore />} />
               <Route exact path="/blogs" element={<SeeMoreBlogs />} />
-              <Route
+
+               <Route
                 exact
-                path="/project-details/:id"
-                element={<ProjectDetails />}
+                path="/blog-details/:id"
+                element={<BlogDetails />}
               />
 
               <Route
                 exact
-                path="/blog-details/:id"
-                element={<BlogDetails />}
+                path="/project-details/:id"
+                element={<ProjectDetails />}
               />
 
               <Route exact path="*" element={<Home />} />

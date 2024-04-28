@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from "react-helmet-async";
+import { CgProfile } from 'react-icons/cg';
+import { FaCalendarAlt } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import { HashLoader } from "react-spinners";
 import { allBlogs } from "./BlogData";
@@ -29,7 +31,7 @@ const BlogDetails = () => {
 
 
 return (
-    <> 
+    <>
       {item ? (
         <>
           {loading ? (
@@ -42,17 +44,54 @@ return (
           ) : (
             <>
               <Helmet>
-                <title>Blog Details</title>
+                <title>Sahed's blogs</title>
               </Helmet>
-              {/* Your blog details content goes here */}
+
+              <section id="blog__view">
+                <div className="container blog__container__details">
+                  <div className="blog__sahed__wrapper__details">
+                    <div className="blog__img__wrapper">
+                      <img
+                        data-aos="zoom-in-up"
+                        src={item.image}
+                        alt={item.title}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="blog__content">
+                    <h5 className="blog__subtitle">Title of the blog</h5>
+                    <h2 className="blog__title">{item.title}</h2>
+
+                    <div className="blog__cards">
+                      <article data-aos="fade-right" className="blog__card">
+                        <CgProfile className="blog__icon" />
+                        <h5>Author Name</h5>
+                        <small>{item.author}</small>
+                      </article>
+
+                      <article data-aos="fade-left" className="blog__card">
+                        <FaCalendarAlt className="blog__icon" />
+                        <h5>Publish Date</h5>
+                        <small>{item.date}</small>
+                      </article>
+                    </div>
+                  
+                   <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
+
+
+                  </div>
+                </div>
+              </section>
             </>
           )}
         </>
       ) : (
-        <p>No blog item found.</p>
+        <h1>Item not found!</h1>
       )}
     </>
   );
 };
-
 export default BlogDetails;
+
+

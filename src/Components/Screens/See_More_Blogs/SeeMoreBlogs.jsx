@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { allBlogs } from "./BlogData";
+import { allBlogs } from "../../Blog/BlogData";
 import "./seeMoreBlogs.css";
 
 const SeeMoreBlogs = () => {
@@ -24,7 +24,7 @@ const SeeMoreBlogs = () => {
             <div className="blog__item__image">
                 <img src={image} alt={title} />
                 <h3 className="blog_title">{title}</h3>
-                <Link to={`blog-details/${id}`}>
+                <Link to={`/blog-details/${id}`}>
                   <h4 className="view__Details">View Details</h4>
                   <div className="blog_sub_info">
                   <span className="blog_author">{author}</span>
