@@ -111,7 +111,7 @@ const Portfolio = () => {
       </div>
 
       <div className="container portfolio__container">
-        {project.slice(0, 3).map(({ id, image, title, github, demo }) => {
+        {project.slice(0, 6).map(({ id, image, title, github, demo }) => {
           return (
             <article key={id} data-aos="slide-left" className="portfolio__item">
               <div className="portfolio__item__image">

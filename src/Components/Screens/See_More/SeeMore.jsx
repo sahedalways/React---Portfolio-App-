@@ -19,7 +19,7 @@ const SeeMore = () => {
 
         <h3 className="project__category__title">Web development</h3>
         <div className="container portfolio__container">
-          {projects.slice(0, 7).map(({ id, image, title, github, demo }) => {
+          {projects.slice(0, 8).map(({ id, image, title, github, demo }) => {
             return (
               <article
                 key={id}
@@ -57,7 +57,7 @@ const SeeMore = () => {
 
         <h3 className="project__category__title">Apps Development</h3>
         <div className="container portfolio__container">
-          {projects.slice(7, 8).map(({ id, image, title, github, demo }) => {
+          {projects.slice(8, 9).map(({ id, image, title, github, demo }) => {
             return (
               <article
                 key={id}
@@ -133,7 +133,7 @@ const SeeMore = () => {
 
         <h3 className="project__category__title">React Mini App</h3>
         <div className="container portfolio__container">
-          {projects.slice(18, 23).map(({ id, image, title, github, demo }) => {
+          {projects.slice(18, 24).map(({ id, image, title, github, demo }) => {
             return (
               <article
                 key={id}
@@ -171,7 +171,7 @@ const SeeMore = () => {
 
         <h3 className="project__category__title">Mern App</h3>
         <div className="container portfolio__container">
-          {projects.slice(23, 24).map(({ id, image, title, github, demo }) => {
+          {projects.slice(24, 25).map(({ id, image, title, github, demo }) => {
             return (
               <article
                 key={id}
@@ -209,7 +209,7 @@ const SeeMore = () => {
 
         <h3 className="project__category__title">DOM Manipulations</h3>
         <div className="container portfolio__container">
-          {projects.slice(24, 29).map(({ id, image, title, github, demo }) => {
+          {projects.slice(25, 31).map(({ id, image, title, github, demo }) => {
             return (
               <article
                 key={id}
@@ -247,7 +247,7 @@ const SeeMore = () => {
 
           <h3 className="project__category__title">PHP App</h3>
         <div className="container portfolio__container">
-          {projects.slice(29, 31).map(({ id, image, title, github, demo }) => {
+          {projects.slice(31, 33).map(({ id, image, title, github, demo }) => {
             return (
               <article
                 key={id}

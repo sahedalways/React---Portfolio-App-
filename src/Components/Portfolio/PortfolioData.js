@@ -25,6 +25,7 @@ import Project30 from "../../Assets/Project30.png";
 import Project31 from "../../Assets/Project31.png";
 import Project32 from "../../Assets/Project32.png";
 import Project33 from "../../Assets/Project33.png";
+import Project34 from "../../Assets/Project34.png";
 import Project4 from "../../Assets/Project4.png";
 import Project5 from "../../Assets/Project5.png";
 import Project6 from "../../Assets/Project6.png";
@@ -166,11 +167,44 @@ export const allProjects = [
     demo: "https://com-checkout.app/",
   },
 
-       {
+
+  {
     id: 4,
+    image: Project34,
+    category: "webApp",
+    title: `Strategic Web - Empowering Your Digital Presence`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `Crafted with precision using PHP Laravel and JavaScript jQuery, Strategic Web offers a comprehensive suite of features to elevate your digital strategy to new heights.
+
+    Key Features:
+
+    Robust Authentication: Securely manage user access with advanced authentication protocols, ensuring only authorized personnel can access sensitive information.
+
+    Stringent Validation: Built-in validation mechanisms guarantee data integrity and prevent unauthorized access, providing peace of mind for both you and your users.
+
+    Seamless Stripe Payment Integration: Easily accept payments through the secure Stripe payment gateway, offering your customers a convenient and trustworthy transaction experience.
+
+    Sales Point of Sale (POS): Streamline your sales process with our intuitive POS system, enabling quick and efficient transactions while keeping track of inventory and sales data in real-time.
+    Dynamic Blog Management: Effortlessly create, edit, and manage engaging blog content to captivate your audience and drive traffic to your site.
+
+    Package Management: Simplify package handling and delivery with our comprehensive package management system, ensuring timely and efficient service for your clients.
+
+    Seamless Company Contact Integration: Enable seamless communication between your clients and your company through our integrated contact system, fostering strong relationships and enhancing customer satisfaction.
+
+    Email Configuration: Customize and streamline your email communication with clients through easy-to-configure email settings, ensuring your messages always reach their intended recipients.
+
+    At Strategic Web, we've meticulously crafted every aspect of our platform to empower agencies like yours to thrive in the digital landscape. From powerful authentication and payment processing to dynamic blog management and seamless communication tools, Strategic Web is your all-in-one solution for success.
+      `,
+    use: "JavaScript · jQuery · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/strategicwebnew",
+    demo: "https://strategicweb.net/",
+  },
+
+  {
+    id: 5,
     image: Project33,
     category: "webApp",
-    title: `Hymus Sports: Revolutionizing Sports Booking`,
+    title: `Hymus Sports - Revolutionizing Sports Booking`,
     authorName: "Sk Sahed Ahmed",
     desc: `Hymus Sports is an innovative booking application designed to streamline the process of booking sports facilities and managing bookings efficiently. Developed with PHP Laravel, jQuery, and MySQL, Hymus Sports offers a comprehensive solution for both users and administrators.
 
@@ -222,7 +256,7 @@ export const allProjects = [
 
 
   {
-    id: 5,
+    id: 6,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -258,7 +292,7 @@ export const allProjects = [
 
 
     {
-    id: 6,
+    id: 7,
     image: Project30,
     category: "webApp",
     title: `Exinstore - Redefining Online Shopping`,
@@ -304,7 +338,7 @@ export const allProjects = [
 
 
     {
-    id: 7,
+    id: 8,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -327,7 +361,7 @@ export const allProjects = [
   },
 
    {
-    id: 8,
+    id: 9,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -376,7 +410,7 @@ export const allProjects = [
 
 
   {
-    id: 9,
+    id: 10,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -388,7 +422,7 @@ export const allProjects = [
   },
 
   {
-    id: 10,
+    id: 11,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -400,7 +434,7 @@ export const allProjects = [
   },
 
   {
-    id: 11,
+    id: 12,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -412,7 +446,7 @@ export const allProjects = [
   },
 
   {
-    id: 12,
+    id: 13,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -424,7 +458,7 @@ export const allProjects = [
   },
 
   {
-    id: 13,
+    id: 14,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -436,7 +470,7 @@ export const allProjects = [
   },
 
   {
-    id: 14,
+    id: 15,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -448,7 +482,7 @@ export const allProjects = [
   },
 
   {
-    id: 15,
+    id: 16,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -460,7 +494,7 @@ export const allProjects = [
   },
 
   {
-    id: 16,
+    id: 17,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -473,7 +507,7 @@ export const allProjects = [
   },
 
   {
-    id: 17,
+    id: 18,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -486,7 +520,7 @@ export const allProjects = [
   },
 
   {
-    id: 18,
+    id: 19,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -499,7 +533,7 @@ export const allProjects = [
   },
 
   {
-    id: 19,
+    id: 20,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -512,7 +546,7 @@ export const allProjects = [
   },
 
   {
-    id: 20,
+    id: 21,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -524,7 +558,7 @@ export const allProjects = [
   },
 
   {
-    id: 21,
+    id: 22,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -536,7 +570,7 @@ export const allProjects = [
   },
 
   {
-    id: 22,
+    id: 23,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -549,7 +583,7 @@ export const allProjects = [
   },
 
   {
-    id: 23,
+    id: 24,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -561,7 +595,7 @@ export const allProjects = [
   },
 
   {
-    id: 24,
+    id: 25,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -573,7 +607,7 @@ export const allProjects = [
   },
 
   {
-    id: 25,
+    id: 26,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -586,7 +620,7 @@ export const allProjects = [
   },
 
   {
-    id: 26,
+    id: 27,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -599,7 +633,7 @@ export const allProjects = [
   },
 
   {
-    id: 27,
+    id: 28,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -612,7 +646,7 @@ export const allProjects = [
   },
 
   {
-    id: 28,
+    id: 29,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -625,7 +659,7 @@ export const allProjects = [
   },
 
   {
-    id: 29,
+    id: 30,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -638,7 +672,7 @@ export const allProjects = [
   },
 
   {
-    id: 30,
+    id: 31,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -651,7 +685,7 @@ export const allProjects = [
   },
 
   {
-    id: 31,
+    id: 32,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -663,7 +697,7 @@ export const allProjects = [
   },
 
   {
-    id: 32,
+    id: 33,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -676,7 +710,7 @@ export const allProjects = [
   },
 
   {
-    id: 33,
+    id: 34,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
