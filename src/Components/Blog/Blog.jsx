@@ -35,7 +35,7 @@ const Blog = () => {
 
       <div className="container blog__container">
         {blogs.slice(0, 3).map(({ id, image, title, desc, author, date }) => {
-          const truncatedDesc = desc.length > 55 ? desc.slice(0, 55) + "..." : desc;
+          const truncatedDesc = desc.length > 100 ? desc.slice(0, 100) + "..." : desc;
           return (
             <article key={id} data-aos="slide-left" className="blog__item">
               <div className="blog__item__image">
@@ -47,7 +47,8 @@ const Blog = () => {
                   <span className="blog_author">{author}</span>
                   <span className="blog_date">{date}</span>
                   </div>
-                  <p className="blog_desc">{truncatedDesc}</p>
+                  <p className="blog_desc" dangerouslySetInnerHTML={{ __html: truncatedDesc }}>
+                   </p>
                 </Link>
               </div>
             </article>
