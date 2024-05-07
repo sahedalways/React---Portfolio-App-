@@ -13,13 +13,26 @@ const BlogDetails = () => {
   const [loading, setLoading] = useState(false);
 
 
-   useEffect(() => {
-    const item = allBlogs.find((item) => item.id === parseInt(id));
-    window.scrollTo(0, 0);
-    if (item) {
-      setItem(item);
+useEffect(() => {
+  const item = allBlogs.find((item) => item.id === parseInt(id));
+  window.scrollTo(0, 0);
+  if (item) {
+    setItem(item);
+    // Update document title
+    document.title = item.title;
+
+    // Update Open Graph meta tags dynamically
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) {
+      ogTitle.setAttribute('content', item.title);
     }
-  }, [id]);
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) {
+      ogImage.setAttribute('content', item.image);
+    }
+  }
+}, [id, allBlogs]);
+
 
 
   useEffect(() => {
