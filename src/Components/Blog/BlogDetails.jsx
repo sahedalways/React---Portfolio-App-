@@ -17,7 +17,6 @@ useEffect(() => {
   const item = allBlogs.find((item) => item.id === parseInt(id));
   window.scrollTo(0, 0);
   if (item) {
-    setItem(item);
     // Update document title
     document.title = item.title;
 
@@ -30,8 +29,10 @@ useEffect(() => {
     if (ogImage) {
       ogImage.setAttribute('content', item.image);
     }
+
+      setItem(item);
   }
-}, [id, allBlogs]);
+}, [id]);
 
 
 
