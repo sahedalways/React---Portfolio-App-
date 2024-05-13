@@ -34,7 +34,7 @@ const Blog = () => {
  
 
       <div className="container blog__container">
-        {blogs.slice(0, 3).map(({ id, image, title, desc, author, date }) => {
+        {blogs.slice(0, 6).map(({ id, image, title, desc, author, date }) => {
           const truncatedDesc = desc.length > 100 ? desc.slice(0, 100) + "..." : desc;
           return (
             <article key={id} data-aos="slide-left" className="blog__item">
