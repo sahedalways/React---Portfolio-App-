@@ -26,6 +26,7 @@ import Project31 from "../../Assets/Project31.png";
 import Project32 from "../../Assets/Project32.png";
 import Project33 from "../../Assets/Project33.png";
 import Project34 from "../../Assets/Project34.png";
+import Project35 from "../../Assets/Project35.png";
 import Project4 from "../../Assets/Project4.png";
 import Project5 from "../../Assets/Project5.png";
 import Project6 from "../../Assets/Project6.png";
@@ -34,8 +35,67 @@ import Project8 from "../../Assets/Project8.png";
 import Project9 from "../../Assets/Project9.png";
 
 export const allProjects = [
+
 {
     id: 1,
+    image: Project35,
+    category: "webApp",
+    title: `Buzzhiring - Job Portal Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `
+Overview
+BuzzHiring is a comprehensive job portal web application designed to streamline the recruitment process for both job seekers and employers. Developed using PHP Laravel, JavaScript, jQuery, and MySQL, the platform offers robust authentication, role management, and a host of features that facilitate efficient job searching and hiring. The application supports multi-authentication methods, including Google and manual authentication, ensuring a secure and user-friendly experience.
+
+Key Features
+Authentication and Authorization
+Multi-Auth Service: Supports Google authentication and manual login for job seekers, employers, and admin.
+Admin, Seeker, and Employer Auth: Separate authentication mechanisms for each user type, ensuring tailored access and functionality.
+Roles Management: Admin panel includes comprehensive roles and permissions management to control access across the platform.
+Admin Panel
+Seeker Management: Admin can view, edit, and manage job seekers' profiles and resumes.
+Employer Management: Admin can view, approve, and manage employers' profiles and submitted company documents.
+Job Management: Admin can oversee all job postings, edit or delete listings, and manage application processes.
+Application Management: Admin can track and manage all job applications submitted by seekers.
+Payment and Coins Management: Integration with Stripe for secure payments, managing the purchase of coins used for job posting and resume viewing.
+Site Settings and CMS: Admin can configure site settings, manage content, and update platform information.
+Password Management: Secure password change and reset functionalities for all user types.
+Chat Functionalities: Real-time chat feature between job seekers and employers.
+Employer Features
+Job Posting: Employers can post up to 3 jobs for free each week; beyond that, 10 coins are required per job posting.
+Coin Purchase: Employers purchase coins using INR through the Stripe payment gateway.
+Resume Viewing: Employers specify how many resumes they wish to view per job post, with 2 coins charged per resume after the first 5 free views.
+Job Management: Employers have a dedicated dashboard to manage their job listings, view applications, and communicate with applicants.
+Document Submission: Employers must submit all necessary company documents for verification.
+Free Job Posting Reset: Free job posting limit resets weekly via a cron job.
+Seeker Features
+Profile and Resume Management: Job seekers can store and update their personal information and resumes.
+Job Applications: Apply for jobs directly through the platform and track application statuses.
+Job Bookmarking: Save favorite job listings for later review.
+Dashboard: Personalized dashboard to manage applications, bookmarked jobs, and profile settings.
+General Features
+Payment Gateway: Secure Stripe integration for purchasing coins.
+Wallet System: Integrated wallet for managing coin balance.
+Job Filters: Advanced filtering options by location, job title, and other criteria to help seekers find relevant opportunities.
+Automatic Reset: Weekly automatic reset for free job postings implemented via cron jobs.
+Technical Stack
+Backend: PHP Laravel
+Frontend: JavaScript, jQuery
+Database: MySQL
+Payment Integration: Stripe
+Authentication: Google OAuth, Manual Authentication
+Real-Time Communication: Implemented chat functionalities
+Conclusion
+BuzzHiring provides a powerful and flexible platform for both job seekers and employers, offering a range of features that facilitate the recruitment process. With robust admin controls, seamless payment integration, and user-friendly interfaces, BuzzHiring stands out as a comprehensive solution in the job portal market.
+      `,
+    use: "JavaScript · PHP · React.js · MySQL · Laravel.",
+    github: "https://github.com/sahedalways/buzzhiring-job-portal",
+    demo: "https://buzzhiring.com/",
+  },
+
+
+
+{
+    id: 2,
     image: Project26,
     category: "webApp",
     title: `Caredoom - Matrimony Application`,
@@ -90,7 +150,7 @@ export const allProjects = [
 
 
   {
-    id: 2,
+    id: 3,
     image: Project31,
     category: "webApp",
     title: `Netmark Bangladesh - MLM Application`,
@@ -128,7 +188,7 @@ export const allProjects = [
   },
 
         {
-    id: 3,
+    id: 4,
     image: Project32,
     category: "webApp",
     title: `Propane - Trading Application`,
@@ -169,7 +229,7 @@ export const allProjects = [
 
 
   {
-    id: 4,
+    id: 5,
     image: Project34,
     category: "webApp",
     title: `Strategic Web - Empowering Your Digital Presence`,
@@ -201,7 +261,7 @@ export const allProjects = [
   },
 
   {
-    id: 5,
+    id: 6,
     image: Project33,
     category: "webApp",
     title: `Hymus Sports - Revolutionizing Sports Booking`,
@@ -256,7 +316,7 @@ export const allProjects = [
 
 
   {
-    id: 6,
+    id: 7,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -292,7 +352,7 @@ export const allProjects = [
 
 
     {
-    id: 7,
+    id: 8,
     image: Project30,
     category: "webApp",
     title: `Exinstore - Redefining Online Shopping`,
@@ -338,7 +398,7 @@ export const allProjects = [
 
 
     {
-    id: 8,
+    id: 9,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -361,7 +421,7 @@ export const allProjects = [
   },
 
    {
-    id: 9,
+    id: 10,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -410,7 +470,7 @@ export const allProjects = [
 
 
   {
-    id: 10,
+    id: 11,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
