@@ -27,6 +27,7 @@ import Project32 from "../../Assets/Project32.png";
 import Project33 from "../../Assets/Project33.png";
 import Project34 from "../../Assets/Project34.png";
 import Project35 from "../../Assets/Project35.png";
+import Project36 from "../../Assets/Project36.png";
 import Project4 from "../../Assets/Project4.png";
 import Project5 from "../../Assets/Project5.png";
 import Project6 from "../../Assets/Project6.png";
@@ -35,8 +36,7 @@ import Project8 from "../../Assets/Project8.png";
 import Project9 from "../../Assets/Project9.png";
 
 export const allProjects = [
-
-{
+  {
     id: 1,
     image: Project35,
     category: "webApp",
@@ -92,9 +92,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://buzzhiring.com/",
   },
 
-
-
-{
+  {
     id: 2,
     image: Project26,
     category: "webApp",
@@ -147,8 +145,6 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://womanspeech.com/",
   },
 
-
-
   {
     id: 3,
     image: Project31,
@@ -187,8 +183,28 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://www.netmarkbangladesh.com/",
   },
 
-        {
+  {
     id: 4,
+    image: Project36,
+    category: "webApp",
+    title: `Course Elevate - Course Selling Website`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `I developed a fully functional course selling platform that allows users to browse, add to cart, and purchase technology-related courses. The platform features an intuitive user interface and secure payment integration using the Stripe payment gateway.
+
+    Key functionalities include:
+
+    Course Listings: Displaying a variety of technology courses with details such as pricing, descriptions, and instructors.
+    Add to Cart and Checkout: Users can easily add courses to their cart, manage their selections, and proceed with secure payment.
+    Admin Panel: Built for course management, the admin panel allows the admin to create, update, and delete courses (CRUD functionality), manage sales, and view course selling information.
+    The project utilizes PHP and Laravel for the backend, with a MySQL database to store user and course data. JavaScript was used to enhance the user experience and ensure seamless interaction throughout the site.
+      `,
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/course-elevate",
+    demo: "https://courseelevate.net/",
+  },
+
+  {
+    id: 5,
     image: Project32,
     category: "webApp",
     title: `Propane - Trading Application`,
@@ -227,9 +243,8 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://com-checkout.app/",
   },
 
-
   {
-    id: 5,
+    id: 6,
     image: Project34,
     category: "webApp",
     title: `Strategic Web - Empowering Your Digital Presence`,
@@ -261,7 +276,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 6,
+    id: 7,
     image: Project33,
     category: "webApp",
     title: `Hymus Sports - Revolutionizing Sports Booking`,
@@ -314,9 +329,8 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "http://hymussports.ca/",
   },
 
-
   {
-    id: 7,
+    id: 8,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -350,9 +364,8 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "",
   },
 
-
-    {
-    id: 8,
+  {
+    id: 9,
     image: Project30,
     category: "webApp",
     title: `Exinstore - Redefining Online Shopping`,
@@ -394,11 +407,8 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://www.exinostore.com",
   },
 
-
-
-
-    {
-    id: 9,
+  {
+    id: 10,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -420,8 +430,8 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://www.aporadhkantha.com/",
   },
 
-   {
-    id: 10,
+  {
+    id: 11,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -465,12 +475,8 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     demo: "https://play.google.com/store/apps/details?id=com.kleancor.kleancorapp&pcampaignid=web_share",
   },
 
-
-
-
-
   {
-    id: 11,
+    id: 12,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -482,7 +488,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 11,
+    id: 13,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -494,7 +500,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 12,
+    id: 14,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -506,7 +512,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 13,
+    id: 15,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -518,7 +524,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 14,
+    id: 16,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -530,7 +536,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 15,
+    id: 17,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -542,7 +548,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 16,
+    id: 18,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -554,20 +560,19 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 17,
+    id: 19,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
     authorName: "Sk Sahed Ahmed",
     desc: `A website facilitating the online exchange of physical goods, services, and digital products, enabling transactions over the internet instead of at a physical store location. Utilizing technologies like React, React-router-dom, React-Icons, and Styled-Components can enable the development user-friendly online marketplace for buying and selling various items and services.`,
     use: "React, React-router-dom, React-Icons, Styled-Components etc.",
-    github:
-      "https://github.com/sahedalways/react---Ecommerce-App/tree/master",
+    github: "https://github.com/sahedalways/react---Ecommerce-App/tree/master",
     demo: "https://sahedalways.github.io/react---Ecommerce-App/",
   },
 
   {
-    id: 18,
+    id: 20,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -580,7 +585,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 19,
+    id: 21,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -593,7 +598,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 20,
+    id: 22,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -606,7 +611,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 21,
+    id: 23,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -618,7 +623,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 22,
+    id: 24,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -630,7 +635,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 23,
+    id: 25,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -643,7 +648,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 24,
+    id: 26,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -655,7 +660,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 25,
+    id: 27,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -667,7 +672,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 26,
+    id: 28,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -680,7 +685,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 27,
+    id: 29,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -693,7 +698,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 28,
+    id: 30,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -706,7 +711,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 29,
+    id: 31,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -719,7 +724,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 30,
+    id: 32,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -732,7 +737,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 31,
+    id: 33,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -745,7 +750,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 32,
+    id: 34,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -757,7 +762,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 33,
+    id: 35,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -770,7 +775,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 34,
+    id: 36,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
