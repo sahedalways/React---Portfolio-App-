@@ -42,7 +42,7 @@ const About = () => {
             <article data-aos="fade-right" className="about__card">
               <BsBookmarkCheckFill className="about__icon" />
               <h5>Experience</h5>
-              <small>3.01+ Years Working</small>
+              <small>3.05+ Years Working</small>
             </article>
 
             <article data-aos="fade-down" className="about__card">
@@ -58,13 +58,17 @@ const About = () => {
             </article>
           </div>
           <p>
-           Introduction: Fullstack Software Developer
-
-            Proficient in React.js/Next.js, React Native for front-end development, and PHP-Laravel for back-end solutions, I am dedicated to delivering high-quality software products.
-
-            Currently employed at WPmarts Company, I spearhead comprehensive web and app development initiatives. Collaborating with diverse clients across various projects, I continuously expand my skill set, ensuring adaptability to meet unique program requirements.
-
-            My passion for problem-solving drives me to embrace challenges, consistently aiming for excellence in every aspect of development. Quality is not just a priority, but a cornerstone of my work ethic, reflecting in the solutions I craft.
+            Introduction: Fullstack Software Developer Proficient in
+            React.js/Next.js, React Native for front-end development, and
+            PHP-Laravel for back-end solutions, I am dedicated to delivering
+            high-quality software products. Currently employed at WPmarts
+            Company, I spearhead comprehensive web and app development
+            initiatives. Collaborating with diverse clients across various
+            projects, I continuously expand my skill set, ensuring adaptability
+            to meet unique program requirements. My passion for problem-solving
+            drives me to embrace challenges, consistently aiming for excellence
+            in every aspect of development. Quality is not just a priority, but
+            a cornerstone of my work ethic, reflecting in the solutions I craft.
           </p>
 
           <a
