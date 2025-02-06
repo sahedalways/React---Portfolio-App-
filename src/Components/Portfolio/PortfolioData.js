@@ -28,6 +28,7 @@ import Project33 from "../../Assets/Project33.png";
 import Project34 from "../../Assets/Project34.png";
 import Project35 from "../../Assets/Project35.png";
 import Project36 from "../../Assets/Project36.png";
+import Project37 from "../../Assets/Project37.png";
 import Project4 from "../../Assets/Project4.png";
 import Project5 from "../../Assets/Project5.png";
 import Project6 from "../../Assets/Project6.png";
@@ -38,6 +39,45 @@ import Project9 from "../../Assets/Project9.png";
 export const allProjects = [
   {
     id: 1,
+    image: Project37,
+    category: "webApp",
+    title: "Lotus PMC - Property Management Application",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
+      Lotus PMC is a comprehensive property management application designed to streamline property-related operations. The platform includes four user roles: Admin, Manager, Client, and Vendor.
+
+      ### User Roles:
+      - **Admin**: Controls site information, creates and manages Clients, Managers, and Vendors. Can create properties and assign them to Managers and Clients.
+      - **Manager**: Oversees assigned properties, handles reports submitted by Clients, and coordinates with Vendors.
+      - **Client**: Can submit various types of reports regarding property issues and track the resolution process.
+      - **Vendor**: Receives assigned reports with pricing details, completes tasks, and submits them for approval.
+
+      ### Workflow:
+      - Clients submit reports related to property issues.
+      - Admin or Manager assigns the report to a Vendor with a defined price.
+      - The Vendor completes the task and submits it for review.
+      - Admin reviews the submission and can approve or reject it.
+      - Clients can track the entire process and view the status of their reports.
+
+      ### Additional Features:
+      - **Property Listings & Management**: Admin can list and manage multiple properties, assign Managers and Clients to specific properties.
+      - **Multi-Report Categories**: Clients can submit different types of reports (e.g., maintenance, security issues, utility failures).
+      - **Automated Notifications**: Email and push notifications for report updates, assignment changes, approvals, and rejections.
+      - **Vendor Bidding System**: Multiple Vendors can bid on a report task, and Admin/Manager can select the best option.
+      - **Invoice & Payment Tracking**: Generate invoices for completed tasks and track payments to Vendors.
+      - **Audit Log & History**: Maintain a complete log of actions performed by users for accountability and tracking.
+      - **Document Management**: Upload and manage documents related to properties, repairs, and transactions.
+      - **Role-Based Access Control**: Restrict and control access based on user roles.
+      - **Analytics Dashboard**: View statistics on reports, resolution times, vendor performance, and financial summaries.
+      - **Multi-Language Support**: Option to switch between multiple languages for better accessibility.
+
+    `,
+    use: "JavaScript · PHP · Next.js · MySQL · Laravel.",
+    github: "https://github.com/sahedalways/lotus-pmc-web-backend",
+    demo: "https://lotus-pmc-web-frontend-7m7ylao59-sahed44.vercel.app/",
+  },
+  {
+    id: 2,
     image: Project35,
     category: "webApp",
     title: `Buzzhiring - Job Portal Application`,
@@ -93,7 +133,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 2,
+    id: 3,
     image: Project26,
     category: "webApp",
     title: `Caredoom - Matrimony Application`,
@@ -146,7 +186,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 3,
+    id: 4,
     image: Project31,
     category: "webApp",
     title: `Netmark Bangladesh - MLM Application`,
@@ -184,7 +224,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 4,
+    id: 5,
     image: Project36,
     category: "webApp",
     title: `Course Elevate - Course Selling Website`,
@@ -204,7 +244,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 5,
+    id: 6,
     image: Project32,
     category: "webApp",
     title: `Propane - Trading Application`,
@@ -244,7 +284,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 6,
+    id: 7,
     image: Project34,
     category: "webApp",
     title: `Strategic Web - Empowering Your Digital Presence`,
@@ -276,7 +316,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 7,
+    id: 8,
     image: Project33,
     category: "webApp",
     title: `Hymus Sports - Revolutionizing Sports Booking`,
@@ -330,7 +370,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 8,
+    id: 9,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -362,49 +402,6 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     use: "JavaScript · PHP · MySQL · Next.js · Laravel.",
     github: "https://github.com/hasancse016/ecommerce-backend",
     demo: "",
-  },
-
-  {
-    id: 9,
-    image: Project30,
-    category: "webApp",
-    title: `Exinstore - Redefining Online Shopping`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `Exinstor E-commerce is a cutting-edge online shopping platform built with PHP Laravel and Next.js, offering a seamless shopping experience with advanced features and functionalities.
-
-    Key Features
-    Dynamic Region-Based Settings
-
-    Country name change by region for personalized user experience.
-    Currency change based on the selected region for convenient transactions.
-    Product Category CRUD
-
-    Create, read, update, and delete product categories effortlessly.
-    Seamless integration with the frontend to display categories for easy navigation.
-    Server-Side Rendering (SSR)
-
-    Implemented SSR on the frontend for improved performance and SEO optimization.
-    Ensured fast loading times and enhanced user experience.
-    Product Details Management
-
-    Add and manage product details efficiently, including images, descriptions, and pricing.
-    Display product details dynamically on the frontend for users to explore.
-    Additional Features
-    Responsive Design: Mobile-friendly design ensures accessibility across devices.
-    User Authentication: Secure login and registration functionalities for user accounts.
-    Search Functionality: Easy product search for users to find desired items quickly.
-    Shopping Cart: Seamless shopping cart management for convenient checkout process.
-    Order Tracking: Track order status and delivery updates for a transparent shopping experience.
-    Beauty in Functionality
-    Exinstor E-commerce not only offers advanced functionality but also prioritizes elegance and user experience:
-
-    Intuitive User Interface: Modern and visually appealing interface for easy navigation and shopping.
-    Efficient Backend Management: Streamlined backend processes for smooth operations and management.
-    Seamless Integration: Seamless integration of frontend and backend technologies for a cohesive user experience.
-      `,
-    use: "JavaScript · Next · MySQL · Laravel.",
-    github: "https://github.com/sahedalways/exinostore-backend",
-    demo: "https://www.exinostore.com",
   },
 
   {

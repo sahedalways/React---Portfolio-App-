@@ -9,7 +9,7 @@ import { RiMessengerLine } from "react-icons/ri";
 import "./contact.css";
 
 const Contact = () => {
-const [isSentMessage, setIsSentMessage] = useState("")
+  const [isSentMessage, setIsSentMessage] = useState("");
 
   // show isEmailSentmessage till specific time
   useEffect(() => {
@@ -49,12 +49,12 @@ const [isSentMessage, setIsSentMessage] = useState("")
       )
       .then(
         (result) => {
-          setIsSentMessage("Your message has been sent. Keep in touch.")
+          setIsSentMessage("Your message has been sent. Keep in touch.");
           console.log("message", result.text);
         },
         (error) => {
-          setIsSentMessage("Sorry! Your message send failed!")
-          console.log("message",error.text);
+          setIsSentMessage("Sorry! Your message send failed!");
+          console.log("message", error.text);
         }
       );
   };
@@ -94,7 +94,7 @@ const [isSentMessage, setIsSentMessage] = useState("")
           <article className="contact__option">
             <BsWhatsapp className="contact__option__icon" />
             <h4>WhatsApp</h4>
-            <h5>+8801602646902</h5>
+            <h5>+8801616516753</h5>
             <a
               href="https://api.whatsapp.com/send?phone=8801602646902"
               rel="noreferrer"
@@ -143,13 +143,11 @@ const [isSentMessage, setIsSentMessage] = useState("")
             placeholder="Write your message..."
             required
           ></textarea>
-        
+
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-            {
-            isSentMessage && <p>{isSentMessage}</p>
-          }
+          {isSentMessage && <p>{isSentMessage}</p>}
         </form>
       </div>
     </section>
