@@ -42,7 +42,7 @@ const About = () => {
             <article data-aos="fade-right" className="about__card">
               <BsBookmarkCheckFill className="about__icon" />
               <h5>Experience</h5>
-              <small>3.05+ Years Working</small>
+              <small>4+ Years Working</small>
             </article>
 
             <article data-aos="fade-down" className="about__card">
