@@ -96,31 +96,12 @@ const ProjectDetails = () => {
                       </article>
                     </div>
                   
-                      {truncatedText && item.desc && (
-                        <p   ref={descRef}>
-                     
-                          {showFullText
-                            ? item.desc
-                            : truncatedText !== undefined && truncatedText}
-                          {!showFullText && item.desc ? (
-                            <a
-                            className="project__desc__btn"
-                              onClick={toggleShowFullText}
-                            >
-                              ...Show more
-                            </a>
-                          ) : (
-                            <a
-                              className="project__desc__btn"
-                              onClick={toggleShowFullText}
-                            >
-                              See less
-                            </a>
-                          )}
-                        </p>
-                      )}
-
-                
+                   
+                       
+                   
+                            <div dangerouslySetInnerHTML={{ __html: item.desc }} />
+                         
+                  
 
                     <div className="project__btn">
                       <a

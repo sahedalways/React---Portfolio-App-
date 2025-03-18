@@ -25,6 +25,7 @@ import Project38 from "../../Assets/Project38.png";
 import Project31 from "../../Assets/Project31.png";
 import Project32 from "../../Assets/Project32.png";
 import Project33 from "../../Assets/Project33.png";
+import Project39 from "../../Assets/Project39.png";
 import Project34 from "../../Assets/Project34.png";
 import Project35 from "../../Assets/Project35.png";
 import Project36 from "../../Assets/Project36.png";
@@ -41,26 +42,9 @@ export const allProjects = [
     id: 1,
     image: Project38,
     category: "webApp",
-    title: "Sisfarma - POS App",
+    title: "Sisfarma - POS Application",
     authorName: "Sk Sahed Ahmed",
-    desc: `
-    Sisfarma is a powerful multi-vendor Point of Sale (POS) application that supports multiple languages and offers a variety of features to streamline business operations. The app comes with advanced tools for managing products, stock, and categories, as well as report and delivery management. It also includes a customizable template feature similar to Elementor, allowing users to create personalized layouts.
-
-    Key features:
-    - Multi-language support
-    - Bulk email, SMS, and WhatsApp message sending
-    - Product, stock, and category management
-    - Discount and payment gateway (Stripe) integration
-    - Real-time report and graph management
-    - Delivery and order management
-    - Template customization tools
-    - Asynchronous operations powered by Laravel Queue (for tasks like message sending)
-    - Livewire integration for real-time interactions
-
-    For testing purposes, you can log in with the credentials:
-    - Email: admin@admin.com
-    - Password: 12345678
-  `,
+    desc: "<p><strong>Sisfarma</strong> is a powerful multi-vendor Point of Sale (POS) application designed to support multiple languages and streamline business operations. It offers a variety of advanced features for managing products, stock, categories, reports, and deliveries, as well as customizable templates for a personalized layout experience.</p><br><p><strong>Key Features:</strong></p><ul><li><strong>Multi-language support</strong>: The app supports various languages, making it accessible for businesses around the world.</li><li><strong>Bulk email, SMS, and WhatsApp message sending</strong>: Efficient communication tools to reach customers and staff.</li><li><strong>Product, stock, and category management</strong>: Full control over the products, their stock, and categories.</li><li><strong>Discount and payment gateway (Stripe) integration</strong>: Easy payment processing with Stripe integration.</li><li><strong>Real-time report and graph management</strong>: Live reporting and graphical insights into business performance.</li><li><strong>Delivery and order management</strong>: Track deliveries and manage orders efficiently.</li><li><strong>Template customization tools</strong>: Personalize the app layout with customizable templates, similar to Elementor.</li><li><strong>Asynchronous operations powered by Laravel Queue</strong>: Handle time-consuming tasks like sending messages without affecting app performance.</li><li><strong>Livewire integration</strong>: Real-time user interactions within the application.</li></ul><br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p><ul><li><strong>Email:</strong> admin@admin.com</li><li><strong>Password:</strong> 12345678</li></ul>",
     use: "JavaScript · PHP · MySQL · Livewire · Laravel.",
     github: "https://github.com/sahedalways/laundrybox-pos-system",
     demo: "https://pos.shopsatkhira.com",
@@ -72,150 +56,141 @@ export const allProjects = [
     title: "Lotus PMC - Property Management Application",
     authorName: "Sk Sahed Ahmed",
     desc: `
-      Lotus PMC is a comprehensive property management application designed to streamline property-related operations. The platform includes four user roles: Admin, Manager, Client, and Vendor.
+      <p><strong>Lotus PMC</strong> is a comprehensive property management application designed to streamline property-related operations. It supports four user roles: Admin, Manager, Client, and Vendor, each with specific responsibilities.</p>
 
-      ### User Roles:
-      - **Admin**: Controls site information, creates and manages Clients, Managers, and Vendors. Can create properties and assign them to Managers and Clients.
-      - **Manager**: Oversees assigned properties, handles reports submitted by Clients, and coordinates with Vendors.
-      - **Client**: Can submit various types of reports regarding property issues and track the resolution process.
-      - **Vendor**: Receives assigned reports with pricing details, completes tasks, and submits them for approval.
+<br><p><strong>Key Features:</strong></p>
+<ul>
+  <li><strong>Multi-role user system</strong>: Admin, Manager, Client, and Vendor roles with defined permissions.</li>
+  <li><strong>Property listings & management</strong>: Admin can create and manage multiple properties, assigning Managers and Clients.</li>
+  <li><strong>Report submission & tracking</strong>: Clients can submit various reports (e.g., maintenance, security issues) and track their resolution.</li>
+  <li><strong>Vendor bidding system</strong>: Vendors can bid on tasks, and Admin/Manager can assign tasks based on bids.</li>
+  <li><strong>Automated notifications</strong>: Email and push notifications for report updates, assignments, approvals, and rejections.</li>
+  <li><strong>Invoice & payment tracking</strong>: Generate invoices for completed tasks and track payments to Vendors.</li>
+  <li><strong>Audit logs & history</strong>: Maintain a record of user actions for accountability.</li>
+  <li><strong>Document management</strong>: Upload and manage documents related to properties, repairs, and transactions.</li>
+  <li><strong>Role-based access control</strong>: Restrict and manage access based on user roles.</li>
+  <li><strong>Analytics dashboard</strong>: View statistics on reports, resolution times, vendor performance, and financial summaries.</li>
+  <li><strong>Multi-language support</strong>: Switch between multiple languages for better accessibility.</li>
+</ul>
 
-      ### Workflow:
-      - Clients submit reports related to property issues.
-      - Admin or Manager assigns the report to a Vendor with a defined price.
-      - The Vendor completes the task and submits it for review.
-      - Admin reviews the submission and can approve or reject it.
-      - Clients can track the entire process and view the status of their reports.
-
-      ### Additional Features:
-      - **Property Listings & Management**: Admin can list and manage multiple properties, assign Managers and Clients to specific properties.
-      - **Multi-Report Categories**: Clients can submit different types of reports (e.g., maintenance, security issues, utility failures).
-      - **Automated Notifications**: Email and push notifications for report updates, assignment changes, approvals, and rejections.
-      - **Vendor Bidding System**: Multiple Vendors can bid on a report task, and Admin/Manager can select the best option.
-      - **Invoice & Payment Tracking**: Generate invoices for completed tasks and track payments to Vendors.
-      - **Audit Log & History**: Maintain a complete log of actions performed by users for accountability and tracking.
-      - **Document Management**: Upload and manage documents related to properties, repairs, and transactions.
-      - **Role-Based Access Control**: Restrict and control access based on user roles.
-      - **Analytics Dashboard**: View statistics on reports, resolution times, vendor performance, and financial summaries.
-      - **Multi-Language Support**: Option to switch between multiple languages for better accessibility.
-
-       ### Login Details:
-    - **User Login**: user@gmail.com
-    - **Password**: 12345678
-    - **Backend Access**: [Provide backend URL here if applicable]
-
+<br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
+<ul>
+  <li><strong>Email:</strong> user@gmail.com</li>
+  <li><strong>Password:</strong> 12345678</li>
+</ul>
     `,
     use: "JavaScript · PHP · Next.js · MySQL · Laravel.",
     github: "https://github.com/sahedalways/lotus-pmc-web-backend",
     demo: "https://shopsatkhira.com/",
   },
-  {
-    id: 3,
-    image: Project35,
-    category: "webApp",
-    title: `Buzzhiring - Job Portal Application`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `
-Overview
-BuzzHiring is a comprehensive job portal web application designed to streamline the recruitment process for both job seekers and employers. Developed using PHP Laravel, JavaScript, jQuery, and MySQL, the platform offers robust authentication, role management, and a host of features that facilitate efficient job searching and hiring. The application supports multi-authentication methods, including Google and manual authentication, ensuring a secure and user-friendly experience.
 
-Key Features
-Authentication and Authorization
-Multi-Auth Service: Supports Google authentication and manual login for job seekers, employers, and admin.
-Admin, Seeker, and Employer Auth: Separate authentication mechanisms for each user type, ensuring tailored access and functionality.
-Roles Management: Admin panel includes comprehensive roles and permissions management to control access across the platform.
-Admin Panel
-Seeker Management: Admin can view, edit, and manage job seekers' profiles and resumes.
-Employer Management: Admin can view, approve, and manage employers' profiles and submitted company documents.
-Job Management: Admin can oversee all job postings, edit or delete listings, and manage application processes.
-Application Management: Admin can track and manage all job applications submitted by seekers.
-Payment and Coins Management: Integration with Stripe for secure payments, managing the purchase of coins used for job posting and resume viewing.
-Site Settings and CMS: Admin can configure site settings, manage content, and update platform information.
-Password Management: Secure password change and reset functionalities for all user types.
-Chat Functionalities: Real-time chat feature between job seekers and employers.
-Employer Features
-Job Posting: Employers can post up to 3 jobs for free each week; beyond that, 10 coins are required per job posting.
-Coin Purchase: Employers purchase coins using INR through the Stripe payment gateway.
-Resume Viewing: Employers specify how many resumes they wish to view per job post, with 2 coins charged per resume after the first 5 free views.
-Job Management: Employers have a dedicated dashboard to manage their job listings, view applications, and communicate with applicants.
-Document Submission: Employers must submit all necessary company documents for verification.
-Free Job Posting Reset: Free job posting limit resets weekly via a cron job.
-Seeker Features
-Profile and Resume Management: Job seekers can store and update their personal information and resumes.
-Job Applications: Apply for jobs directly through the platform and track application statuses.
-Job Bookmarking: Save favorite job listings for later review.
-Dashboard: Personalized dashboard to manage applications, bookmarked jobs, and profile settings.
-General Features
-Payment Gateway: Secure Stripe integration for purchasing coins.
-Wallet System: Integrated wallet for managing coin balance.
-Job Filters: Advanced filtering options by location, job title, and other criteria to help seekers find relevant opportunities.
-Automatic Reset: Weekly automatic reset for free job postings implemented via cron jobs.
-Technical Stack
-Backend: PHP Laravel
-Frontend: JavaScript, jQuery
-Database: MySQL
-Payment Integration: Stripe
-Authentication: Google OAuth, Manual Authentication
-Real-Time Communication: Implemented chat functionalities
-Conclusion
-BuzzHiring provides a powerful and flexible platform for both job seekers and employers, offering a range of features that facilitate the recruitment process. With robust admin controls, seamless payment integration, and user-friendly interfaces, BuzzHiring stands out as a comprehensive solution in the job portal market.
-      `,
-    use: "JavaScript · PHP · React.js · MySQL · Laravel.",
-    github: "https://github.com/sahedalways/buzzhiring-job-portal",
-    demo: "https://buzzhiring.com/",
+
+  {
+    "id": 3,
+    "image": Project39,
+    "category": "webApp",
+    "title": "Virtual Mining Machine (VMM) System",
+    "authorName": "Sk Sahed Ahmed",
+    "desc": `
+      <p><strong>Virtual Mining Machine (VMM)</strong> is an advanced investment system that enables users to invest in virtual mining machines and earn coins. Built with <strong>PHP Laravel, MySQL, and JavaScript</strong>, it offers seamless management for both users and administrators.</p>
+
+<br><p><strong>Key Features:</strong></p>
+<ul>
+  <li><strong>VMM Creation by Admin</strong>: Admin can create and manage Virtual Mining Machines (VMMs) with specific attributes like title, lifetime, minimum investment, execution time, preparation time, and status.</li>
+  <li><strong>Coin Distribution Algorithm</strong>: Coins are distributed through a lottery-like mechanism where a user’s probability of winning is based on investment size.</li>
+  <li><strong>Automatic Cloning</strong>: VMMs automatically clone themselves based on execution time to ensure continuous operation.</li>
+  <li><strong>User Investment and Withdrawal</strong>: Users can invest in active VMMs and withdraw their earnings, subject to admin approval.</li>
+  <li><strong>User Wallets</strong>: Users have two wallets—VMM Coins (earned from mining) and TAKA (used for investments).</li>
+  <li><strong>Admin Control Panel</strong>: Admins can manage VMMs, approve/reject withdrawals, and track transactions efficiently.</li>
+  <li><strong>Real-Time Updates</strong>: Live updates on VMM status, investments, and transactions.</li>
+  <li><strong>Lottery Mechanism</strong>: Higher investments increase chances of winning, but outcomes are probability-based.</li>
+</ul>
+
+<br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
+<ul>
+  <li><strong>Admin Login</strong>:  
+    <br>Email: admin@gmail.com  
+    <br>Password: 12345678</li>
+  <li><strong>User Login</strong>:  
+    <br>Email: user@gmail.com  
+    <br>Password: 12345678</li>
+</ul>
+
+<p><strong>Virtual Mining Machine (VMM)</strong> provides an efficient and innovative way for users to invest in virtual mining while ensuring a powerful management system for admins. With automated cloning and a dynamic lottery-based earning system, it redefines investment-based virtual mining.</p>
+`,
+    "use": "PHP · Laravel · MySQL · JavaScript.",
+    "github": "https://github.com/sahedalways/bdcoder-vmm-machine",
+    "demo": "http://vmm.shopsatkhira.com"
   },
+  
 
   {
     id: 4,
-    image: Project26,
+    image: Project32,
     category: "webApp",
-    title: `Caredoom - Matrimony Application`,
+    title: `Propane - Trading Application`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Caredoom is a revolutionary matrimony website designed to address the unique challenges and requirements of the matrimonial domain. Leveraging the power of Next.js and PHP Laravel, Caredoom offers innovative solutions and functionalities tailored to enhance user experience and foster meaningful connections.
+    desc: `<p><strong>Propane</strong> is a powerful trading web application built with <strong>PHP Laravel and MySQL</strong>, designed to manage trades, user accounts, and dynamic content through an intuitive CMS (Content Management System). With customizable site elements and seamless trading features, Propane offers a robust platform for online trading and investment management.</p>
 
-    Key Features
-    Multi-Mode Registration
+<br><p><strong>Key Features:</strong></p>
 
-    Simplified onboarding process accommodating various user types efficiently.
-    Versatile registration system streamlining user registration.
-    Enhanced Communication Channels
+<ul>
+  <li><strong>Dynamic CMS Management:</strong>
+    <ul>
+      <li><strong>Admin Panel:</strong> Allows administrators to manage site metadata, including meta tags, site title, copyright, footer, menus, site slogan, and background images.</li>
+      <li><strong>Page Content Customization:</strong> Enables easy editing of pages such as Contact Us, Terms, Agent, and Introduction directly from the admin panel.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Currency Management:</strong>
+    <ul>
+      <li><strong>Multiple Currency Support:</strong> Supports <strong>SGD, USD, and IDR</strong>, allowing users to trade in their preferred currency.</li>
+      <li><strong>Currency Rate Management:</strong> Admins can dynamically update exchange rates to reflect real-time market changes.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Trading Functionalities:</strong>
+    <ul>
+      <li><strong>Deposit and Withdrawal:</strong> Facilitates smooth transaction processing for users.</li>
+      <li><strong>Trade Execution:</strong> Enables users to execute trades efficiently with real-time updates on market conditions and trade statuses.</li>
+    </ul>
+  </li>
+  
+  <li><strong>User Management:</strong>
+    <ul>
+      <li><strong>Admin Control:</strong> Administrators can manage user accounts, permissions, and activities.</li>
+      <li><strong>Membership Packages:</strong> Customizable membership packages offer different features and benefits.</li>
+      <li><strong>Membership Levels:</strong> Unlock additional features and privileges based on membership tiers.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Notification System:</strong>
+    <ul>
+      <li><strong>Real-time Notifications:</strong> Sends timely alerts regarding account activities, trade updates, and system announcements.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Product Inventory Management:</strong>
+    <ul>
+      <li><strong>Inventory Tracking:</strong> Admins can manage product inventory and ensure accurate availability of tradable assets.</li>
+    </ul>
+  </li>
+</ul>
 
-    Integrated text, video, and audio chatting features for seamless communication.
-    Diverse communication options fostering meaningful connections.
-    Multilingual Support
-
-    Implemented multi-language support to cater to a broader audience.
-    Ensured inclusivity by overcoming language barriers.
-    Image Resizing
-
-    Optimized user uploads for better performance and experience.
-    Implemented image resizing functionalities to enhance performance.
-    Ranking Mechanism
-
-    Enhanced user interaction through a ranking system.
-    Prioritized profiles to improve user engagement and visibility.
-    Challenges Addressed
-    Diverse Communication
-
-    Fostered connections through varied communication channels - text, video, and audio.
-    Provided seamless communication options for users.
-    Cultural Inclusivity
-
-    Overcame language barriers by offering a multi-language interface.
-    Ensured inclusivity for a diverse user base.
-    Optimized User Experience
-
-    Resolved image-related issues with image resizing functionalities.
-    Ensured better performance and user experience.
-    Improved User Interaction
-
-    Implemented a ranking mechanism to enhance user engagement.
-    Increased profile visibility for better interaction.
-    Caredoom Matrimony stands as a testament to innovation and inclusivity in the matrimonial domain. With its array of features and solutions, it aims to revolutionize the way people connect and find their life partners.
-      `,
-    use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
-    github: "https://github.com/hasancse016/matrimony-frontend-next-react",
-    demo: "https://womanspeech.com/",
+<br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
+<ul>
+  <li><strong>Admin Login</strong>:  
+    <br>Email: admin@gmail.com  
+    <br>Password: 12345678</li>
+  <li><strong>User Login</strong>:  
+    <br>Email: user@gmail.com  
+    <br>Password: 12345678</li>
+</ul>
+<p><strong>Propane</strong> provides a feature-rich and efficient platform for online trading and investment, empowering users with real-time updates, customizable features, and a seamless user experience.</p>
+ `,
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/propane-ecommerce",
+    demo: "https://propane.shopsatkhira.com",
   },
 
   {
@@ -224,33 +199,70 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     category: "webApp",
     title: `Netmark Bangladesh - MLM Application`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Netmark Bangladesh is a comprehensive MLM (Multi-Level Marketing) application designed to facilitate efficient management of a network marketing business. Leveraging PHP Laravel for backend development, MySQL for database management, and React.js for frontend interface, Netmark Bangladesh offers a robust platform for handling various MLM functionalities seamlessly.
+    desc: `<p><strong>Netmark Bangladesh</strong> is a comprehensive <strong>MLM (Multi-Level Marketing)</strong> application designed to efficiently manage network marketing businesses. Built with <strong>PHP Laravel</strong> for the backend, <strong>MySQL</strong> for database management, and <strong>React.js</strong> for the frontend, it offers a robust and seamless experience for handling MLM functionalities.</p>
 
-    Product Management: The application enables easy management of products including listing, adding, updating, and deleting products.
+<br><p><strong>Key Features:</strong></p>
 
-    Shopping Cart and Checkout: Seamless shopping experience with features like product purchase, cart management, and secure checkout process.
+<ul>
+  <li><strong>Product Management:</strong>
+    <ul>
+      <li>Easy listing, adding, updating, and deleting of products.</li>
+    </ul>
+  </li>
 
-    Payment Gateway Integration: Integrated with popular payment gateways such as bKash and Nagad for convenient and secure online transactions.
+  <li><strong>Shopping Cart and Checkout:</strong>
+    <ul>
+      <li>Seamless shopping experience with product purchase, cart management, and secure checkout.</li>
+    </ul>
+  </li>
 
-    MLM Functionality:
+  <li><strong>Payment Gateway Integration:</strong>
+    <ul>
+      <li>Supports <strong>bKash</strong> and <strong>Nagad</strong> for secure online transactions.</li>
+    </ul>
+  </li>
 
-    Tree Generation: Hierarchical representation of network members for easy visualization and management.
+  <li><strong>MLM Functionality:</strong>
+    <ul>
+      <li><strong>Tree Generation:</strong> Hierarchical representation of network members for easy management.</li>
+      <li><strong>Bonus Calculation:</strong>
+        <ul>
+          <li><strong>Generation Bonus:</strong> Distributed based on network generation levels.</li>
+          <li><strong>Matching Bonus:</strong> Rewards for matching sales within the network.</li>
+          <li><strong>Purchase Cashback Bonus:</strong> Incentives for purchases made within the network.</li>
+        </ul>
+      </li>
+      <li><strong>Referral System:</strong> Tracks referrals and calculates bonuses accordingly.</li>
+    </ul>
+  </li>
 
-    Bonus Calculation:
-    Generation Bonus: Calculation and distribution of bonuses based on network generation levels.
-    Matching Bonus: Reward system for matching sales within the network.
-    Purchase Cashback Bonus: Incentives for purchases made within the network.
-    Referral System: Tracks referrals and calculates bonuses accordingly.
+  <li><strong>API Design:</strong>
+    <ul>
+      <li>Well-structured APIs for smooth communication between frontend and backend components.</li>
+    </ul>
+  </li>
 
-    API Design: Well-structured API design for seamless communication between frontend and backend components.
+  <li><strong>Reporting:</strong>
+    <ul>
+      <li>Generates comprehensive reports including purchase and sales reports on a monthly and annual basis.</li>
+    </ul>
+  </li>
 
-    Reporting: Generates comprehensive reports including purchase sales reports on a monthly and annual basis for better business insights and analysis.
+  <li><strong>Banking Functionalities:</strong>
+    <ul>
+      <li><strong>Balance Withdrawal:</strong> Allows network members to withdraw earned balances easily.</li>
+    </ul>
+  </li>
 
-    Banking Functionalities:
+  <li><strong>Cron Job Integration:</strong>
+    <ul>
+      <li>Automates tasks such as bonus calculations and report generation.</li>
+    </ul>
+  </li>
+</ul>
 
-    Balance Withdrawal: Facilitates easy withdrawal of earned balances by network members.
-    Cron Job Integration: Scheduled tasks for automated processes like bonus calculations and report generation.
-      `,
+<p><strong>Netmark Bangladesh</strong> offers a powerful, feature-rich, and automated solution for MLM businesses, ensuring seamless operations, real-time reporting, and smooth financial transactions.</p>
+`,
     use: "JavaScript · jQuery · PHP · MySQL · Laravel.",
     github: "https://github.com/hasancse016/netmarkbangladesh.com",
     demo: "https://www.netmarkbangladesh.com/",
@@ -262,58 +274,132 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     category: "webApp",
     title: `Course Elevate - Course Selling Website`,
     authorName: "Sk Sahed Ahmed",
-    desc: `I developed a fully functional course selling platform that allows users to browse, add to cart, and purchase technology-related courses. The platform features an intuitive user interface and secure payment integration using the Stripe payment gateway.
+    desc: `<p><strong>Course Elevate</strong> is a fully functional <strong>online course selling platform</strong> designed for users to browse, add to cart, and purchase technology-related courses. The platform offers an intuitive user experience, a seamless learning journey, and secure payment integration via the <strong>Stripe</strong> payment gateway.</p>
 
-    Key functionalities include:
+<br><p><strong>Key Functionalities:</strong></p>
 
-    Course Listings: Displaying a variety of technology courses with details such as pricing, descriptions, and instructors.
-    Add to Cart and Checkout: Users can easily add courses to their cart, manage their selections, and proceed with secure payment.
-    Admin Panel: Built for course management, the admin panel allows the admin to create, update, and delete courses (CRUD functionality), manage sales, and view course selling information.
-    The project utilizes PHP and Laravel for the backend, with a MySQL database to store user and course data. JavaScript was used to enhance the user experience and ensure seamless interaction throughout the site.
-      `,
+<ul>
+  <li><strong>Course Listings:</strong> Displays a variety of technology courses with details such as pricing, descriptions, and instructors.</li>
+  <li><strong>Add to Cart & Checkout:</strong> Users can easily add courses to their cart, manage selections, and proceed with secure payments.</li>
+  <li><strong>User Dashboard:</strong> Enrolled students can access purchased courses, track progress, and download materials.</li>
+  <li><strong>Video Streaming:</strong> Supports video lectures with playback control for a seamless learning experience.</li>
+  <li><strong>Admin Panel:</strong> 
+    <ul>
+      <li>Full course management system (CRUD functionality).</li>
+      <li>Manage sales, track revenue, and oversee user activity.</li>
+    </ul>
+  </li>
+  <li><strong>Discount & Coupons:</strong> Admins can create and manage promotional discounts and coupon codes.</li>
+  <li><strong>Multi-Payment Support:</strong> Integrated <strong>Stripe</strong> for secure transactions, with future support for <strong>PayPal</strong> and local gateways.</li>
+  <li><strong>Category & Filter System:</strong> Users can search and filter courses based on categories, price range, and instructor.</li>
+  <li><strong>Student Reviews & Ratings:</strong> Users can leave feedback on courses they have purchased.</li>
+  <li><strong>Progress Tracking:</strong> Students can track their course completion status.</li>
+  <li><strong>Instructor Panel:</strong> Enables instructors to upload courses, manage content, and track student enrollment.</li>
+  <li><strong>Email Notifications:</strong> Automated email notifications for purchase confirmations, enrollment updates, and promotional offers.</li>
+  <li><strong>Multi-Language Support:</strong> Supports multiple languages for a global audience.</li>
+  <li><strong>Responsive Design:</strong> Optimized for desktop, tablet, and mobile devices.</li>
+</ul>
+
+<br><p><strong>Tech Stack:</strong></p>
+<ul>
+  <li><strong>Backend:</strong> PHP · Laravel</li>
+  <li><strong>Frontend:</strong> JavaScript · Blade Templates</li>
+  <li><strong>Database:</strong> MySQL</li>
+  <li><strong>Payments:</strong> Stripe Integration</li>
+  <li><strong>Enhancements:</strong> AJAX for smooth interactions, caching for optimized performance.</li>
+</ul>
+
+<br><p><strong>Login Details:</strong></p>
+<ul>
+  <li><strong>Admin Panel:</strong> <a href="https://courseelevate.shopsatkhira.com/login" target="_blank">Admin Login</a></li>
+  <li><strong>Email:</strong> admin@gmail.com</li>
+  <li><strong>Password:</strong> 12345678</li>
+</ul>
+
+<p><strong>Course Elevate</strong> provides a complete solution for online course sales, offering a user-friendly experience for students, instructors, and administrators alike.</p>
+`,
     use: "JavaScript · MySQL · PHP · Laravel.",
     github: "https://github.com/sahedalways/course-elevate",
-    demo: "https://courseelevate.net/",
+    demo: "https://courseelevate.shopsatkhira.com",
   },
 
   {
     id: 7,
-    image: Project32,
+    image: Project26,
     category: "webApp",
-    title: `Propane - Trading Application`,
+    title: `Caredoom - Matrimony Application`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Propane is a robust trading web application built with PHP Laravel and MySQL, offering comprehensive functionalities for managing trades, user accounts, and content through an intuitive CMS (Content Management System). With dynamic CMS capabilities, customizable site elements, and seamless trading features, Propane provides a powerful platform for online trading and investment management.
-    
-    Dynamic CMS Management:
+    desc: `<p><strong>Caredoom</strong> is a revolutionary <strong>matrimony website</strong> designed to address the unique challenges and requirements of the matrimonial domain. Leveraging the power of <strong>Next.js</strong> and <strong>PHP Laravel</strong>, Caredoom offers innovative solutions and functionalities to enhance user experience and foster meaningful connections.</p>
 
-    Admin Panel: Empowers administrators to dynamically manage site metadata including meta tags, site title, copyright, footer, menus, site slogan, and background images.
-    Page Content Customization: Enables easy editing of dynamic page content such as Contact Us, Terms, Agent, and Introduction pages directly from the admin panel.
-    Currency Management:
+<br><p><strong>Key Features:</strong></p>
 
-    Multiple Currency Support: Supports three major currencies - SGD, USD, and IDR, allowing users to trade in their preferred currency.
-    Currency Rate Management: Admins can dynamically update currency exchange rates to reflect real-time market changes.
-    Trading Functionalities:
+<ul>
+  <li><strong>Multi-Mode Registration:</strong> 
+    <ul>
+      <li>Simplified onboarding process accommodating various user types efficiently.</li>
+      <li>Versatile registration system streamlining user registration.</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced Communication Channels:</strong> 
+    <ul>
+      <li>Integrated text, video, and audio chatting features for seamless communication.</li>
+      <li>Diverse communication options fostering meaningful connections.</li>
+    </ul>
+  </li>
+  <li><strong>Multilingual Support:</strong> 
+    <ul>
+      <li>Implemented multi-language support to cater to a broader audience.</li>
+      <li>Ensured inclusivity by overcoming language barriers.</li>
+    </ul>
+  </li>
+  <li><strong>Image Resizing:</strong> 
+    <ul>
+      <li>Optimized user uploads for better performance and experience.</li>
+      <li>Implemented image resizing functionalities to enhance performance.</li>
+    </ul>
+  </li>
+  <li><strong>Ranking Mechanism:</strong> 
+    <ul>
+      <li>Enhanced user interaction through a ranking system.</li>
+      <li>Prioritized profiles to improve user engagement and visibility.</li>
+    </ul>
+  </li>
+</ul>
 
-    Deposit and Withdrawal: Seamless deposit and withdrawal functionalities, facilitating smooth transaction processing for users.
-    Trade Execution: Enables users to execute trades efficiently within the platform, with real-time updates on market conditions and trade statuses.
-    User Management:
+<br><p><strong>Challenges Addressed:</strong></p>
 
-    Admin Control: Administrators can manage user accounts, permissions, and activities through the admin panel.
-    Membership Packages: Offers customizable membership packages with varying features and benefits to cater to different user needs.
-    Membership Levels: Implements membership level functionalities, allowing users to unlock additional features and privileges based on their membership tier.
-    Notification System:
+<ul>
+  <li><strong>Diverse Communication:</strong> 
+    <ul>
+      <li>Fostered connections through varied communication channels - text, video, and audio.</li>
+      <li>Provided seamless communication options for users.</li>
+    </ul>
+  </li>
+  <li><strong>Cultural Inclusivity:</strong> 
+    <ul>
+      <li>Overcame language barriers by offering a multi-language interface.</li>
+      <li>Ensured inclusivity for a diverse user base.</li>
+    </ul>
+  </li>
+  <li><strong>Optimized User Experience:</strong> 
+    <ul>
+      <li>Resolved image-related issues with image resizing functionalities.</li>
+      <li>Ensured better performance and user experience.</li>
+    </ul>
+  </li>
+  <li><strong>Improved User Interaction:</strong> 
+    <ul>
+      <li>Implemented a ranking mechanism to enhance user engagement.</li>
+      <li>Increased profile visibility for better interaction.</li>
+    </ul>
+  </li>
+</ul>
 
-    Real-time Notifications: Sends timely notifications to users regarding account activities, trade updates, and system announcements, ensuring a seamless user experience.
-
-     Multiple Currency Support: Supports SGD, USD, and IDR, allowing users to trade in their preferred currency.
-    Currency Rate Management: Admins can dynamically update currency exchange rates to reflect real-time market changes.
-    Product Inventory Management:
-
-    Inventory Tracking: Admins can manage product inventory and availability within the platform, ensuring accurate representation and availability of tradable assets.
-      `,
-    use: "JavaScript · MySQL · PHP · Laravel.",
-    github: "https://github.com/sahedalways/propane-ecommerce",
-    demo: "https://com-checkout.app/",
+<p><strong>Caredoom Matrimony</strong> stands as a testament to <strong>innovation and inclusivity</strong> in the matrimonial domain. With its array of features and solutions, it aims to revolutionize the way people connect and find their life partners.</p>
+`,
+    use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
+    github: "https://github.com/hasancse016/matrimony-frontend-next-react",
+    demo: "https://matrimony-fn38so6pa-sahed44.vercel.app",
   },
 
   {
@@ -322,191 +408,374 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
     category: "webApp",
     title: `Strategic Web - Empowering Your Digital Presence`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Crafted with precision using PHP Laravel and JavaScript jQuery, Strategic Web offers a comprehensive suite of features to elevate your digital strategy to new heights.
+    desc: `<p><strong>Strategic Web</strong> is a feature-rich platform designed to elevate your digital strategy. Crafted with precision using <strong>PHP Laravel</strong> and <strong>JavaScript jQuery</strong>, it offers a comprehensive suite of tools to optimize business operations.</p>
 
-    Key Features:
+<br><p><strong>Key Features:</strong></p>
 
-    Robust Authentication: Securely manage user access with advanced authentication protocols, ensuring only authorized personnel can access sensitive information.
+<ul>
+  <li><strong>Robust Authentication:</strong>
+    <ul>
+      <li>Securely manage user access with advanced authentication protocols.</li>
+      <li>Ensure only authorized personnel can access sensitive information.</li>
+    </ul>
+  </li>
+  <li><strong>Stringent Validation:</strong>
+    <ul>
+      <li>Built-in validation mechanisms guarantee data integrity.</li>
+      <li>Prevent unauthorized access for enhanced security.</li>
+    </ul>
+  </li>
+  <li><strong>Seamless Stripe Payment Integration:</strong>
+    <ul>
+      <li>Accept secure online payments through Stripe.</li>
+      <li>Offer customers a trustworthy and convenient transaction experience.</li>
+    </ul>
+  </li>
+  <li><strong>Sales Point of Sale (POS):</strong>
+    <ul>
+      <li>Streamline sales processes with an intuitive POS system.</li>
+      <li>Track inventory and sales data in real-time for efficient operations.</li>
+    </ul>
+  </li>
+  <li><strong>Dynamic Blog Management:</strong>
+    <ul>
+      <li>Create, edit, and manage engaging blog content effortlessly.</li>
+      <li>Boost audience engagement and drive traffic to your site.</li>
+    </ul>
+  </li>
+  <li><strong>Package Management:</strong>
+    <ul>
+      <li>Simplify package handling and delivery with a robust system.</li>
+      <li>Ensure timely and efficient service for your clients.</li>
+    </ul>
+  </li>
+  <li><strong>Seamless Company Contact Integration:</strong>
+    <ul>
+      <li>Enable smooth communication between clients and your company.</li>
+      <li>Foster strong relationships and enhance customer satisfaction.</li>
+    </ul>
+  </li>
+  <li><strong>Email Configuration:</strong>
+    <ul>
+      <li>Customize and streamline email communication.</li>
+      <li>Ensure messages always reach their intended recipients.</li>
+    </ul>
+  </li>
+</ul>
 
-    Stringent Validation: Built-in validation mechanisms guarantee data integrity and prevent unauthorized access, providing peace of mind for both you and your users.
-
-    Seamless Stripe Payment Integration: Easily accept payments through the secure Stripe payment gateway, offering your customers a convenient and trustworthy transaction experience.
-
-    Sales Point of Sale (POS): Streamline your sales process with our intuitive POS system, enabling quick and efficient transactions while keeping track of inventory and sales data in real-time.
-    Dynamic Blog Management: Effortlessly create, edit, and manage engaging blog content to captivate your audience and drive traffic to your site.
-
-    Package Management: Simplify package handling and delivery with our comprehensive package management system, ensuring timely and efficient service for your clients.
-
-    Seamless Company Contact Integration: Enable seamless communication between your clients and your company through our integrated contact system, fostering strong relationships and enhancing customer satisfaction.
-
-    Email Configuration: Customize and streamline your email communication with clients through easy-to-configure email settings, ensuring your messages always reach their intended recipients.
-
-    At Strategic Web, we've meticulously crafted every aspect of our platform to empower agencies like yours to thrive in the digital landscape. From powerful authentication and payment processing to dynamic blog management and seamless communication tools, Strategic Web is your all-in-one solution for success.
-      `,
+<p><strong>At Strategic Web</strong>, every feature has been meticulously crafted to empower agencies in the digital landscape. From authentication and payment processing to dynamic blog management and seamless communication tools, Strategic Web is your <strong>all-in-one solution for success.</strong></p>
+`,
     use: "JavaScript · jQuery · MySQL · PHP · Laravel.",
     github: "https://github.com/sahedalways/strategicwebnew",
     demo: "https://strategicweb.net/",
   },
 
+  
+    {
+      id: 9,
+      image: Project33,
+      category: "webApp",
+      title: "Hymus Sports - Revolutionizing Sports Booking",
+      authorName: "Sk Sahed Ahmed",
+      desc: `
+        <p><strong>Hymus Sports</strong> is an innovative booking application designed to streamline the process of booking sports facilities and managing reservations efficiently. Developed with <strong>PHP Laravel, jQuery, and MySQL</strong>, it provides a comprehensive solution for both users and administrators.</p>
+
+<br><h3><strong>Key Features</strong></h3>
+
+<ul>
+  <li><strong>Booking System:</strong>
+    <ul>
+      <li>Users can book sports facilities by selecting date and time slots.</li>
+      <li>VIP code feature for privileged bookings or discounts.</li>
+    </ul>
+  </li>
+  <li><strong>Payment Gateway Integration:</strong>
+    <ul>
+      <li>Secure payment gateway for hassle-free transactions.</li>
+      <li>Multiple payment options for user convenience.</li>
+    </ul>
+  </li>
+  <li><strong>User Authentication:</strong>
+    <ul>
+      <li>Register and login functionalities for users.</li>
+      <li>Forgot password feature for account recovery.</li>
+    </ul>
+  </li>
+  <li><strong>User Dashboard:</strong>
+    <ul>
+      <li>View booking details, payment status, and cancellation history.</li>
+      <li>Access booking history and account information.</li>
+    </ul>
+  </li>
+  <li><strong>Admin Control Panel:</strong>
+    <ul>
+      <li>Comprehensive control over booking information.</li>
+      <li>Manage sports facilities, games, and settings.</li>
+      <li>CRUD operations for site customization.</li>
+    </ul>
+  </li>
+  <li><strong>Reports Generation:</strong>
+    <ul>
+      <li>Generate detailed reports on bookings, payments, and cancellations.</li>
+      <li>Analyze data to make informed business decisions.</li>
+    </ul>
+  </li>
+</ul>
+
+<br><h3><strong>Additional Features</strong></h3>
+
+<ul>
+  <li><strong>Notification System:</strong> Real-time alerts for booking confirmations, reminders, and cancellations.</li>
+  <li><strong>Booking Confirmation:</strong> Automatic confirmation upon successful payment.</li>
+  <li><strong>Email Notifications:</strong> Automated emails for account verification, bookings, and password resets.</li>
+  <li><strong>Customizable Booking Options:</strong> Flexible options like hourly, daily, or weekly bookings.</li>
+  <li><strong>Multi-Language Support:</strong> Supports multiple languages for a diverse user base.</li>
+</ul>
+
+<br><h3><strong>Beauty in Functionality</strong></h3>
+
+<p>Hymus Sports not only offers powerful features but also ensures a seamless and elegant user experience:</p>
+
+<ul>
+  <li><strong>Intuitive User Interface:</strong> User-friendly design for easy navigation.</li>
+  <li><strong>Responsive Design:</strong> Mobile-friendly layout for accessibility on various devices.</li>
+  <li><strong>Efficient Backend Management:</strong> Streamlined admin panel for optimal management.</li>
+</ul>
+
+<br><h3><strong>Login Information</strong></h3>
+
+<ul>
+  <li><strong>Admin Login:</strong><br>
+    Email: <code>admin@gmail.com</code><br>
+    Password: <code>12345678</code>
+  </li>
+  <li><strong>User Login:</strong><br>
+    Email: <code>user@gmail.com</code><br>
+    Password: <code>12345678</code>
+  </li>
+</ul>
+
+<br><h3><strong>Conclusion</strong></h3>
+
+<p><strong>Hymus Sports</strong> transforms sports booking into a hassle-free experience, offering users and administrators a robust platform for managing bookings, payments, and facilities. With its advanced features and user-friendly interface, <strong>Hymus Sports</strong> sets a new standard in sports booking applications.</p>
+`,
+      use: "JavaScript · MySQL · PHP · Laravel.",
+      github: "https://github.com/sahedalways/sport-booking",
+      demo: "http://hymus.shopsatkhira.com",
+    },
+    
+    {
+      id: 10,
+      image: Project35,
+      category: "webApp",
+      title: `Buzzhiring - Job Portal Application`,
+      authorName: "Sk Sahed Ahmed",
+      desc: `
+ <p><strong>BuzzHiring</strong> is a comprehensive job portal web application designed to streamline the recruitment process for both job seekers and employers. Developed using <strong>PHP Laravel, JavaScript, jQuery, and MySQL</strong>, the platform offers robust authentication, role management, and various features to facilitate efficient job searching and hiring. It supports multi-authentication methods, including Google and manual authentication, ensuring a secure and user-friendly experience.</p>
+
+<br><h3><strong>Key Features</strong></h3>
+
+<h4><strong>Authentication and Authorization</strong></h4>
+<ul>
+  <li><strong>Multi-Auth Service:</strong> Supports Google authentication and manual login for job seekers, employers, and admin.</li>
+  <li><strong>Admin, Seeker, and Employer Auth:</strong> Separate authentication mechanisms for each user type, ensuring tailored access and functionality.</li>
+  <li><strong>Roles Management:</strong> Comprehensive roles and permissions system in the admin panel to control access.</li>
+</ul>
+
+<h4><strong>Admin Panel</strong></h4>
+<ul>
+  <li><strong>Seeker Management:</strong> Admin can view, edit, and manage job seekers' profiles and resumes.</li>
+  <li><strong>Employer Management:</strong> Admin can view, approve, and manage employer profiles and company documents.</li>
+  <li><strong>Job Management:</strong> Admin can oversee all job postings, edit or delete listings, and manage applications.</li>
+  <li><strong>Application Management:</strong> Admin can track and manage all job applications submitted by seekers.</li>
+  <li><strong>Payment and Coins Management:</strong> Integration with Stripe for secure transactions, managing coin purchases for job postings and resume views.</li>
+  <li><strong>Site Settings and CMS:</strong> Configure site settings, manage content, and update platform information.</li>
+  <li><strong>Password Management:</strong> Secure password change and reset functionalities for all users.</li>
+  <li><strong>Chat Functionalities:</strong> Real-time chat feature between job seekers and employers.</li>
+</ul>
+
+<h4><strong>Employer Features</strong></h4>
+<ul>
+  <li><strong>Job Posting:</strong> Employers can post up to 3 jobs for free each week; beyond that, 10 coins are required per posting.</li>
+  <li><strong>Coin Purchase:</strong> Employers can buy coins using INR via the Stripe payment gateway.</li>
+  <li><strong>Resume Viewing:</strong> Employers specify how many resumes they wish to view per job post, with 2 coins charged per resume after the first 5 free views.</li>
+  <li><strong>Job Management:</strong> Employers have a dedicated dashboard to manage job listings, view applications, and communicate with applicants.</li>
+  <li><strong>Document Submission:</strong> Employers must submit required company documents for verification.</li>
+  <li><strong>Free Job Posting Reset:</strong> Free job posting limit resets weekly via a cron job.</li>
+</ul>
+
+<h4><strong>Seeker Features</strong></h4>
+<ul>
+  <li><strong>Profile and Resume Management:</strong> Job seekers can store and update their personal information and resumes.</li>
+  <li><strong>Job Applications:</strong> Apply for jobs directly through the platform and track application statuses.</li>
+  <li><strong>Job Bookmarking:</strong> Save favorite job listings for later review.</li>
+  <li><strong>Dashboard:</strong> Personalized dashboard to manage applications, bookmarked jobs, and profile settings.</li>
+</ul>
+
+<h4><strong>General Features</strong></h4>
+<ul>
+  <li><strong>Payment Gateway:</strong> Secure Stripe integration for purchasing coins.</li>
+  <li><strong>Wallet System:</strong> Integrated wallet for managing coin balance.</li>
+  <li><strong>Job Filters:</strong> Advanced filtering options by location, job title, and other criteria to help seekers find relevant opportunities.</li>
+  <li><strong>Automatic Reset:</strong> Weekly automatic reset for free job postings via cron jobs.</li>
+</ul>
+
+<br><h3><strong>Technical Stack</strong></h3>
+<ul>
+  <li><strong>Backend:</strong> PHP Laravel</li>
+  <li><strong>Frontend:</strong> JavaScript, jQuery</li>
+  <li><strong>Database:</strong> MySQL</li>
+  <li><strong>Payment Integration:</strong> Stripe</li>
+  <li><strong>Authentication:</strong> Google OAuth, Manual Authentication</li>
+  <li><strong>Real-Time Communication:</strong> Implemented chat functionalities</li>
+</ul>
+
+<br><h3><strong>Conclusion</strong></h3>
+<p><strong>BuzzHiring</strong> provides a powerful and flexible platform for both job seekers and employers, offering a range of features that facilitate the recruitment process. With robust admin controls, seamless payment integration, and user-friendly interfaces, <strong>BuzzHiring</strong> stands out as a comprehensive solution in the job portal market.</p>
+ `,
+      use: "JavaScript · PHP · React.js · MySQL · Laravel.",
+      github: "https://github.com/sahedalways/buzzhiring-job-portal",
+      demo: "https://buzzhiring.com/",
+    },
+
+
   {
-    id: 9,
-    image: Project33,
-    category: "webApp",
-    title: `Hymus Sports - Revolutionizing Sports Booking`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `Hymus Sports is an innovative booking application designed to streamline the process of booking sports facilities and managing bookings efficiently. Developed with PHP Laravel, jQuery, and MySQL, Hymus Sports offers a comprehensive solution for both users and administrators.
-
-    Key Features
-    Booking System
-
-    Users can book sports facilities by selecting date and time slots.
-    VIP code feature for privileged bookings or discounts.
-    Payment Gateway Integration
-
-    Secure payment gateway for hassle-free transactions.
-    Multiple payment options for user convenience.
-    User Authentication
-
-    Register and login functionalities for users to access the platform.
-    Forgot password feature for account recovery.
-    User Dashboard
-
-    View booking details, payment status, and cancellation status.
-    Access to booking history and account information.
-    Admin Control Panel
-
-    Comprehensive control over booking information.
-    Add, delete, and edit sports facilities/games.
-    CRUD operations for site settings to customize the platform.
-    Reports Generation
-
-    Generate detailed reports on bookings, payments, and cancellations.
-    Analyze data to make informed decisions and optimizations.
-    Additional Features
-    Notification System: Real-time notifications for booking confirmations, reminders, and cancellations.
-    Booking Confirmation: Automatic confirmation of bookings upon successful payment.
-    Email Notifications: Automated emails for account verification, booking confirmations, and password resets.
-    Customizable Booking Options: Flexible booking options such as hourly, daily, or weekly bookings.
-    Multi-Language Support: Support for multiple languages to cater to a diverse user base.
-    Beauty in Functionality
-    Hymus Sports not only offers functionality but also ensures an elegant and seamless user experience:
-
-    Intuitive User Interface: User-friendly interface for easy navigation and booking.
-    Responsive Design: Mobile-friendly design for accessibility on various devices.
-    Efficient Backend Management: Streamlined admin panel for efficient management of bookings and settings.
-    Conclusion
-    Hymus Sports transforms sports booking into a hassle-free experience, offering users and administrators a robust platform for managing bookings, payments, and facilities. With its array of features and user-friendly interface, Hymus Sports sets a new standard in sports booking applications.
-      `,
-    use: "JavaScript · MySQL · PHP · Laravel.",
-    github: "https://github.com/sahedalways/sport-booking",
-    demo: "http://hymussports.ca/",
-  },
-
-  {
-    id: 10,
+    id: 11,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Overview:
-    Led end-to-end development of a robust eCommerce platform using Next.js for the frontend, PHP-Laravel for the backend, and MySQL for database management. The project embodies essential features for a seamless eCommerce experience.
+    desc: `<p><strong>Overview:</strong><br>
+Led end-to-end development of a robust eCommerce platform using <strong>Next.js</strong> for the frontend, <strong>PHP-Laravel</strong> for the backend, and <strong>MySQL</strong> for database management. The project embodies essential features for a seamless eCommerce experience.</p>
 
-    Functionalities Implemented:
-    - Frontend Development:
-      - Utilized Next.js for an intuitive, responsive, and visually compelling user interface, enhancing user experience.
-      - Implemented robust logical functionalities for product listing, dynamic cart management, and a user-friendly checkout process.
+<br><h3><strong>Functionalities Implemented:</strong></h3>
 
-    - Backend Operations:
-      - Employed PHP-Laravel for backend management, focusing on database architecture, API design, and logic integration for an efficient transactional flow.
-      - Integrated MySQL for extensive product data, user details, and secure database structure.
+<h4><strong>Frontend Development:</strong></h4>
+<ul>
+  <li>Utilized <strong>Next.js</strong> for an intuitive, responsive, and visually compelling user interface, enhancing user experience.</li>
+  <li>Implemented robust logical functionalities for product listing, dynamic cart management, and a user-friendly checkout process.</li>
+</ul>
 
-    Key Features Included:
-    - User Authentication and Account Management
-    - Product Catalog and Search Functionality
-    - Shopping Cart, Secure Checkout, and Payment Gateway Integration
-    - Order Tracking and Admin Dashboard for Management
+<h4><strong>Backend Operations:</strong></h4>
+<ul>
+  <li>Employed <strong>PHP-Laravel</strong> for backend management, focusing on database architecture, API design, and logic integration for an efficient transactional flow.</li>
+  <li>Integrated <strong>MySQL</strong> for extensive product data, user details, and secure database structure.</li>
+</ul>
 
-    Contributions:
-    Orchestrated the development of a responsive and secure eCommerce platform, integrating frontend and backend functionalities for a comprehensive and efficient system.
+<br><h3><strong>Key Features Included:</strong></h3>
+<ul>
+  <li>User Authentication and Account Management</li>
+  <li>Product Catalog and Search Functionality</li>
+  <li>Shopping Cart, Secure Checkout, and Payment Gateway Integration</li>
+  <li>Order Tracking and Admin Dashboard for Management</li>
+</ul>
 
-    This eCommerce project showcases my ability to deliver a complete, high-functioning solution meeting the vital requirements of a thriving eCommerce application.
+<br><h3><strong>Contributions:</strong></h3>
+<p>Orchestrated the development of a responsive and secure eCommerce platform, integrating frontend and backend functionalities for a comprehensive and efficient system.</p>
 
-      `,
+<p>This eCommerce project showcases my ability to deliver a complete, high-functioning solution meeting the vital requirements of a thriving eCommerce application.</p>
+ `,
     use: "JavaScript · PHP · MySQL · Next.js · Laravel.",
     github: "https://github.com/hasancse016/ecommerce-backend",
     demo: "",
   },
 
   {
-    id: 11,
+    id: 12,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Contribution: Within a collaborative team effort, I made substantial contributions to the "Aporadhkantha" newspaper project, utilizing PHP and the Laravel framework. My key responsibilities included:
+    desc: `<p><strong>Contribution:</strong><br>
+Within a collaborative team effort, I made substantial contributions to the <strong>"Aporadhkantha"</strong> newspaper project, utilizing <strong>PHP</strong> and the <strong>Laravel</strong> framework. My key responsibilities included:</p>
 
-    News Management:
+<br><h3><strong>News Management:</strong></h3>
+<ul>
+  <li>Oversaw comprehensive news article management, including addition, editing, updating, removal, and viewing functionalities within specific sections.</li>
+</ul>
 
-    Oversaw comprehensive news article management, including addition, editing, updating, removal, and viewing functionalities within specific sections.
-    API Design:
+<h3><strong>API Design:</strong></h3>
+<ul>
+  <li>Designed and implemented efficient APIs to facilitate seamless communication between project components, significantly enhancing overall functionality.</li>
+</ul>
 
-    Designed and implemented efficient APIs to facilitate seamless communication between project components, significantly enhancing overall functionality.
-    Ajax Requests:
+<h3><strong>Ajax Requests:</strong></h3>
+<ul>
+  <li>Implemented Ajax requests for dynamic, real-time interactions, ensuring a seamless and responsive user experience on the platform.</li>
+</ul>
 
-    Implemented Ajax requests for dynamic, real-time interactions, ensuring a seamless and responsive user experience on the platform.
-    These contributions streamlined news management processes and introduced interactive features that significantly enhanced user engagement. This experience underscores my expertise in web development and my ability to contribute effectively within collaborative projects.`,
+<br><p>These contributions streamlined news management processes and introduced interactive features that significantly enhanced user engagement. This experience underscores my expertise in web development and my ability to contribute effectively within collaborative projects.</p>
+`,
     use: "JavaScript · PHP · MySQL · Laravel.",
     github: "https://github.com/hasancse016/aporadhkontha.com",
     demo: "https://www.aporadhkantha.com/",
   },
 
   {
-    id: 12,
+    id: 13,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
     authorName: "Sk Sahed Ahmed",
-    desc: `Project Overview: Developed Kleancor, a robust cleaning service application, addressing challenges faced by service providers and seekers.
+    desc: `<p><strong>Project Overview:</strong><br>
+Developed <strong>Kleancor</strong>, a robust cleaning service application, addressing challenges faced by service providers and seekers.</p>
 
-    Technologies Used:
+<br><h3><strong>Technologies Used:</strong></h3>
+<ul>
+  <li>Utilized <strong>React Native</strong> for the front-end and <strong>PHP Laravel</strong> for the back-end, ensuring scalability and efficiency.</li>
+</ul>
 
-    Utilized React Native for the front-end and PHP Laravel for the back-end, ensuring scalability and efficiency.
+<h3><strong>Key Features Implemented:</strong></h3>
 
-    Key Features Implemented:
+<h4><strong>Multi-Mode Registration:</strong></h4>
+<ul>
+  <li>Simplified user onboarding with a multi-mode registration system for various user types.</li>
+</ul>
 
-    Multi-Mode Registration:
+<h4><strong>Text Chat Integration:</strong></h4>
+<ul>
+  <li>Facilitated seamless communication between service providers and seekers with text chat.</li>
+</ul>
 
-    Simplified user onboarding with a multi-mode registration system for various user types.
-    Text Chat Integration:
+<h4><strong>Public Job View:</strong></h4>
+<ul>
+  <li>Enhanced job listing transparency, improving accessibility for potential service providers.</li>
+</ul>
 
-    Facilitated seamless communication between service providers and seekers with text chat.
-    Public Job View:
+<h4><strong>Worker & Client Dashboards:</strong></h4>
+<ul>
+  <li>Improved user experience with dedicated dashboards for both service providers and clients.</li>
+</ul>
 
-    Enhanced job listing transparency, improving accessibility for potential service providers.
-    Worker & Client Dashboards:
+<h4><strong>Admin Oversight & Push Notifications:</strong></h4>
+<ul>
+  <li>Implemented an admin oversight system and push notifications for real-time updates.</li>
+</ul>
 
-    Improved user experience with dedicated dashboards for both service providers and clients.
-    Admin Oversight & Push Notifications:
+<h3><strong>Challenges Overcome:</strong></h3>
 
-    Implemented an admin oversight system and push notifications for real-time updates.
-    Challenges Overcome:
+<h4><strong>Enhanced User Engagement:</strong></h4>
+<ul>
+  <li>Tailored user-friendly features to increase overall app usage and satisfaction.</li>
+</ul>
 
-    Enhanced User Engagement:
+<h4><strong>Real-Time Communication:</strong></h4>
+<ul>
+  <li>Integrated text chat for prompt and effective communication between users.</li>
+</ul>
 
-    Tailored user-friendly features to increase overall app usage and satisfaction.
-    Real-Time Communication:
-
-    Integrated text chat for prompt and effective communication between users.
-    Transparency and Accessibility:
-
-    Improved transparency via public job views, facilitating successful job placements.`,
+<h4><strong>Transparency and Accessibility:</strong></h4>
+<ul>
+  <li>Improved transparency via public job views, facilitating successful job placements.</li>
+</ul>
+`,
     use: "JavaScript · PHP · MySQL · React Native · Laravel",
     github: "https://github.com/hasancse016/kleancor-backend",
     demo: "https://play.google.com/store/apps/details?id=com.kleancor.kleancorapp&pcampaignid=web_share",
   },
 
   {
-    id: 13,
+    id: 14,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -518,7 +787,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 14,
+    id: 15,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -530,7 +799,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 15,
+    id: 16,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -542,7 +811,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 16,
+    id: 17,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -554,7 +823,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 17,
+    id: 18,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -566,7 +835,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 18,
+    id: 19,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -578,7 +847,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 19,
+    id: 20,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -590,7 +859,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 20,
+    id: 21,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -602,7 +871,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 21,
+    id: 22,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -615,7 +884,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 22,
+    id: 23,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -628,7 +897,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 23,
+    id: 24,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -641,7 +910,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 24,
+    id: 25,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -653,7 +922,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 25,
+    id: 26,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -665,7 +934,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 26,
+    id: 27,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -678,7 +947,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 27,
+    id: 28,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -690,7 +959,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 28,
+    id: 29,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -702,7 +971,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 29,
+    id: 30,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -715,7 +984,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 30,
+    id: 31,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -728,7 +997,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 31,
+    id: 32,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -741,7 +1010,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 32,
+    id: 33,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -754,7 +1023,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 33,
+    id: 34,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -767,7 +1036,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 34,
+    id: 35,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -780,7 +1049,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 35,
+    id: 36,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -792,7 +1061,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 36,
+    id: 37,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -805,7 +1074,7 @@ BuzzHiring provides a powerful and flexible platform for both job seekers and em
   },
 
   {
-    id: 37,
+    id: 38,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
