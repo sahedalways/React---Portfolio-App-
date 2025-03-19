@@ -96,7 +96,7 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <h5>+8801616516753</h5>
             <a
-              href="https://api.whatsapp.com/send?phone=8801602646902"
+              href="https://api.whatsapp.com/send?phone=8801616516753"
               rel="noreferrer"
               target="_blank"
             >
@@ -104,7 +104,6 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        {/* contact options ends here */}
 
         {/* form section starts from here */}
         <form data-aos="slide-left" ref={form} onSubmit={sendEmail}>
