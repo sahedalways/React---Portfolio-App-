@@ -30,7 +30,7 @@
 }
 
 .about__sahed__image img {
-  height: 30rem;
+  height: 50%;
 }
 
 .about__sahed__image:hover {
@@ -105,6 +105,10 @@
     width: 65%;
   }
 
+  #about {
+    margin-top: -17vh;
+  }
+
   .about__cards {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -115,4 +119,6 @@
   .about__content p {
     margin: 1.5rem 0;
   }
+
+ 
 }
