@@ -64,13 +64,20 @@ return (
               <section id="blog__view">
                 <div className="container blog__container__details">
                   <div className="blog__sahed__wrapper__details">
-                    <div className="blog__img__wrapper">
+                  <div className="blog__img__wrapper">
+                    {item.image ? (
                       <img
                         data-aos="zoom-in-up"
                         src={item.image}
                         alt={item.title}
                       />
-                    </div>
+                    ) : item.video ? (
+                      <div
+                        data-aos="zoom-in-up"
+                        dangerouslySetInnerHTML={{ __html: item.video }}
+                      />
+                    ) : null}
+                  </div>
                   </div>
 
                   <div className="blog__content">

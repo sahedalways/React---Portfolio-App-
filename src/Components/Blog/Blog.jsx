@@ -34,12 +34,21 @@ const Blog = () => {
  
 
       <div className="container blog__container">
-        {blogs.slice(0, 6).map(({ id, image, title, desc, author, date }) => {
+        {blogs.slice(0, 6).map(({ id, image, title, desc, author, date, video }) => {
           const truncatedDesc = desc.length > 100 ? desc.slice(0, 100) + "..." : desc;
           return (
             <article key={id} data-aos="slide-left" className="blog__item">
               <div className="blog__item__image">
-                <img src={image} alt={title} />
+              <div className="blog__img__wrapper">
+                  {image ? (
+                    <img src={image} alt={title} />
+                  ) : video ? (
+                    <div
+                      dangerouslySetInnerHTML={{ __html: video }}
+                    />
+                  ) : null}
+                </div>
+
                 <h3 className="blog_title">{title}</h3>
                 <Link to={`blog-details/${id}`}>
                   <h4 className="view__Details">View Details</h4>
