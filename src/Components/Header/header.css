@@ -1,7 +1,7 @@
 header {
   height: 100vh;
   padding-top: 7rem;
-  margin-bottom: 60vh;
+  margin-bottom: 30vh;
 }
 
 .header_container {
@@ -40,18 +40,18 @@ header {
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
-  height: 82vh;
+  height: 67vh;
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 4rem;
   margin-bottom: 4rem;
   border-radius: 12rem 12rem 0 0;
-  padding: 4rem 0.6rem 1.5rem 0.6rem;
+  padding: 4rem 0.6rem  0.6rem;
 }
 
 #pic {
   border-radius: 12rem 12rem 0 0;
-  height: 80vh;
+  height: 60vh;
   margin-top: -3.5rem;
 
 }
