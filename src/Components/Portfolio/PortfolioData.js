@@ -57,31 +57,19 @@ export const allProjects = [
     authorName: "Sk Sahed Ahmed",
     desc: `
       <p><strong>Lotus PMC</strong> is a comprehensive property management application designed to streamline property-related operations. It supports four user roles: Admin, Manager, Client, and Vendor, each with specific responsibilities.</p>
-
 <br><p><strong>Key Features:</strong></p>
-<ul>
-  <li><strong>Multi-role user system</strong>: Admin, Manager, Client, and Vendor roles with defined permissions.</li>
-  <li><strong>Property listings & management</strong>: Admin can create and manage multiple properties, assigning Managers and Clients.</li>
-  <li><strong>Report submission & tracking</strong>: Clients can submit various reports (e.g., maintenance, security issues) and track their resolution.</li>
-  <li><strong>Vendor bidding system</strong>: Vendors can bid on tasks, and Admin/Manager can assign tasks based on bids.</li>
-  <li><strong>Automated notifications</strong>: Email and push notifications for report updates, assignments, approvals, and rejections.</li>
-  <li><strong>Invoice & payment tracking</strong>: Generate invoices for completed tasks and track payments to Vendors.</li>
-  <li><strong>Audit logs & history</strong>: Maintain a record of user actions for accountability.</li>
-  <li><strong>Document management</strong>: Upload and manage documents related to properties, repairs, and transactions.</li>
-  <li><strong>Role-based access control</strong>: Restrict and manage access based on user roles.</li>
-  <li><strong>Analytics dashboard</strong>: View statistics on reports, resolution times, vendor performance, and financial summaries.</li>
-  <li><strong>Multi-language support</strong>: Switch between multiple languages for better accessibility.</li>
-</ul>
 
+<ul> <li><strong>Multi-role user system</strong>: Admin, Manager, Client, and Vendor roles with defined permissions.</li> <li><strong>Property listings & management</strong>: Admin can create and manage multiple properties, assigning Managers and Clients.</li> <li><strong>Report submission & tracking</strong>: Clients can submit various reports (e.g., maintenance, security issues) and track their resolution.</li> <li><strong>Vendor bidding system</strong>: Vendors can bid on tasks, and Admin/Manager can assign tasks based on bids.</li> <li><strong>Automated notifications</strong>: Email and push notifications for report updates, assignments, approvals, and rejections.</li> <li><strong>Invoice & payment tracking</strong>: Generate invoices for completed tasks and track payments to Vendors.</li> <li><strong>Audit logs & history</strong>: Maintain a record of user actions for accountability.</li> <li><strong>Document management</strong>: Upload and manage documents related to properties, repairs, and transactions.</li> <li><strong>Role-based access control</strong>: Restrict and manage access based on user roles.</li> <li><strong>Analytics dashboard</strong>: View statistics on reports, resolution times, vendor performance, and financial summaries.</li> <li><strong>Multi-language support</strong>: Switch between multiple languages for better accessibility.</li> </ul>
 <br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
-<ul>
-  <li><strong>Email:</strong> user@gmail.com</li>
-  <li><strong>Password:</strong> 12345678</li>
-</ul>
+
+<ul> <li><strong>Email:</strong> user@gmail.com</li> <li><strong>Password:</strong> 12345678</li> </ul>
+<br><p><strong>For checking backend:</strong></p>
+
+<ul> <li><strong>URL:</strong> <a href="https://property.shopsatkhira.com" target="_blank">property.shopsatkhira.com</a></li> <li><strong>Email:</strong> admin@gmail.com</li> <li><strong>Password:</strong> 12345678</li> </ul>
     `,
     use: "JavaScript · PHP · Next.js · MySQL · Laravel.",
     github: "https://github.com/sahedalways/lotus-pmc-web-backend",
-    demo: "https://shopsatkhira.com/",
+    demo: "https://lotus-pmc-web-frontend-lxd2vnluf-sahed44.vercel.app/",
   },
 
 
