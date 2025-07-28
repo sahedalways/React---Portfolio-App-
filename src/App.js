@@ -14,9 +14,12 @@ import SeeMore from "./Components/Screens/See_More/SeeMore";
 import SeeMoreBlogs from "./Components/Screens/See_More_Blogs/SeeMoreBlogs";
 import Services from "./Components/Services/Services";
 import Testimonial from "./Components/Testimonial/Testimonial";
+import ChatLauncher from "./Components/common/ChatLauncher";
+import ChatContainer from "./Components/common/ChatContainer";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
+  const [showChat, setShowChat] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -34,40 +37,49 @@ const App = () => {
           size={100}
         />
       ) : (
-        <Router>
-          <div style={{ overflow: "hidden" }}>
-            <Navbar />
+        <>
+          <ChatLauncher onClick={() => setShowChat(true)} />
+          <Router>
+            <div style={{ overflow: "hidden" }}>
+              <Navbar />
 
-            <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Routes>
+                <Route exact path="/" element={<Home />} />
 
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/experience" element={<Experience />} />
-              <Route exact path="/services" element={<Services />} />
-              <Route exact path="/portfolio" element={<Portfolio />} />
-              <Route exact path="/testimonial" element={<Testimonial />} />
-              <Route exact path="/contact" element={<Contact />} />
+                <Route exact path="/about" element={<About />} />
+                <Route exact path="/experience" element={<Experience />} />
+                <Route exact path="/services" element={<Services />} />
+                <Route exact path="/portfolio" element={<Portfolio />} />
+                <Route exact path="/testimonial" element={<Testimonial />} />
+                <Route exact path="/contact" element={<Contact />} />
 
-              <Route exact path="/projects" element={<SeeMore />} />
-              <Route exact path="/blogs" element={<SeeMoreBlogs />} />
+                <Route exact path="/projects" element={<SeeMore />} />
+                <Route exact path="/blogs" element={<SeeMoreBlogs />} />
 
-               <Route
-                exact
-                path="/blog-details/:id"
-                element={<BlogDetails />}
-              />
+                <Route
+                  exact
+                  path="/blog-details/:id"
+                  element={<BlogDetails />}
+                />
 
-              <Route
-                exact
-                path="/project-details/:id"
-                element={<ProjectDetails />}
-              />
+                <Route
+                  exact
+                  path="/project-details/:id"
+                  element={<ProjectDetails />}
+                />
 
-              <Route exact path="*" element={<Home />} />
-            </Routes>
-            <Footer />
-          </div>
-        </Router>
+                <Route exact path="*" element={<Home />} />
+              </Routes>
+              <Footer />
+            </div>
+          </Router>
+        </>
+      )}
+
+      {showChat && (
+        <div className="fixed bottom-20 right-6 w-80 max-w-full z-50 shadow-lg">
+          <ChatContainer isOpen={showChat} setIsOpen={setShowChat} />
+        </div>
       )}
     </>
   );

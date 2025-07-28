@@ -394,7 +394,7 @@ export const allProjects = [
     id: 8,
     image: Project40,
     category: "webApp",
-    title: "Clip Forge AI",
+    title: "Clip Forge - AI Application",
     authorName: "Sk Sahed Ahmed",
     desc: `
       <p><strong>Clip Forge AI</strong> is a powerful AI-driven platform that can automatically generate complete videos from a single topic—no manual effort required!</p>
