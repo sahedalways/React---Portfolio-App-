@@ -48,10 +48,10 @@ const Portfolio = () => {
           }`}
           onClick={() => filterResult("webApp")}
         >
-        Web | Software Development
+          Web | Software Development
         </button>
 
-         <button
+        <button
           className={`filter-btn ${
             btn === "mobileApp" ? "active_btn btn btn-primary" : "btn"
           }`}
@@ -139,12 +139,7 @@ const Portfolio = () => {
       </div>
 
       <div className="seeMore__btn">
-        <Link
-          to="/projects"
-          className="btn"
-          rel="noreferrer"
-          target="_blank"
-        >
+        <Link to="/projects" className="btn" rel="noreferrer" target="_blank">
           See More
         </Link>
       </div>

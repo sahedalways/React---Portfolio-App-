@@ -36,6 +36,7 @@ import Project6 from "../../Assets/Project6.png";
 import Project7 from "../../Assets/Project7.png";
 import Project8 from "../../Assets/Project8.png";
 import Project9 from "../../Assets/Project9.png";
+import Project40 from "../../Assets/Project40.png";
 
 export const allProjects = [
   {
@@ -49,6 +50,7 @@ export const allProjects = [
     github: "https://github.com/sahedalways/laundrybox-pos-system",
     demo: "https://pos.shopsatkhira.com",
   },
+
   {
     id: 2,
     image: Project37,
@@ -69,17 +71,16 @@ export const allProjects = [
     `,
     use: "JavaScript · PHP · Next.js · MySQL · Laravel.",
     github: "https://github.com/sahedalways/lotus-pmc-web-backend",
-    demo: "https://lotus-pmc-web-frontend-lxd2vnluf-sahed44.vercel.app/",
+    demo: "https://lotus-pmc-web-frontend-cf77vmujy-sahed44.vercel.app",
   },
 
-
   {
-    "id": 3,
-    "image": Project39,
-    "category": "webApp",
-    "title": "Virtual Mining Machine (VMM) System",
-    "authorName": "Sk Sahed Ahmed",
-    "desc": `
+    id: 3,
+    image: Project39,
+    category: "webApp",
+    title: "Virtual Mining Machine (VMM) System",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
       <p><strong>Virtual Mining Machine (VMM)</strong> is an advanced investment system that enables users to invest in virtual mining machines and earn coins. Built with <strong>PHP Laravel, MySQL, and JavaScript</strong>, it offers seamless management for both users and administrators.</p>
 
 <br><p><strong>Key Features:</strong></p>
@@ -106,19 +107,18 @@ export const allProjects = [
 
 <p><strong>Virtual Mining Machine (VMM)</strong> provides an efficient and innovative way for users to invest in virtual mining while ensuring a powerful management system for admins. With automated cloning and a dynamic lottery-based earning system, it redefines investment-based virtual mining.</p>
 `,
-    "use": "PHP · Laravel · MySQL · JavaScript.",
-    "github": "https://github.com/sahedalways/bdcoder-vmm-machine",
-    "demo": "http://vmm.shopsatkhira.com"
+    use: "PHP · Laravel · MySQL · JavaScript.",
+    github: "https://github.com/sahedalways/bdcoder-vmm-machine",
+    demo: "http://vmm.shopsatkhira.com",
   },
-  
 
   {
     id: 4,
     image: Project32,
     category: "webApp",
-    title: `Propane - Trading Application`,
+    title: `Cripto Luxor - Trading Application`,
     authorName: "Sk Sahed Ahmed",
-    desc: `<p><strong>Propane</strong> is a powerful trading web application built with <strong>PHP Laravel and MySQL</strong>, designed to manage trades, user accounts, and dynamic content through an intuitive CMS (Content Management System). With customizable site elements and seamless trading features, Propane offers a robust platform for online trading and investment management.</p>
+    desc: `<p><strong>Cripto Luxor</strong> is a powerful trading web application built with <strong>PHP Laravel and MySQL</strong>, designed to manage trades, user accounts, and dynamic content through an intuitive CMS (Content Management System). With customizable site elements and seamless trading features, Propane offers a robust platform for online trading and investment management.</p>
 
 <br><p><strong>Key Features:</strong></p>
 
@@ -168,17 +168,17 @@ export const allProjects = [
 <br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
 <ul>
   <li><strong>Admin Login</strong>:  
-    <br>Email: admin@gmail.com  
+    <br>Username: CryptoAdmin  
     <br>Password: 12345678</li>
   <li><strong>User Login</strong>:  
-    <br>Email: user@gmail.com  
+    <br>Username: sahed  
     <br>Password: 12345678</li>
 </ul>
-<p><strong>Propane</strong> provides a feature-rich and efficient platform for online trading and investment, empowering users with real-time updates, customizable features, and a seamless user experience.</p>
+<p><strong>Cripto Luxor</strong> provides a feature-rich and efficient platform for online trading and investment, empowering users with real-time updates, customizable features, and a seamless user experience.</p>
  `,
     use: "JavaScript · MySQL · PHP · Laravel.",
-    github: "https://github.com/sahedalways/propane-ecommerce",
-    demo: "https://propane.shopsatkhira.com",
+    github: "https://github.com/sahedalways/bitvault-trading",
+    demo: "https://criptluxor.shopsatkhira.com",
   },
 
   {
@@ -392,6 +392,39 @@ export const allProjects = [
 
   {
     id: 8,
+    image: Project40,
+    category: "webApp",
+    title: "Clip Forge AI",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
+      <p><strong>Clip Forge AI</strong> is a powerful AI-driven platform that can automatically generate complete videos from a single topic—no manual effort required!</p>
+
+      <p><strong>🎯 Example:</strong><br />
+      Topic: <em>AI in coding</em><br />
+      Duration: <em>5 minutes</em><br />
+      ➡️ You'll receive an exactly 5-minute video, complete with a script and visuals, fully generated by AI.</p>
+
+      <p><strong>🔧 Tech Stack:</strong><br />
+      Built using <strong>Next.js</strong> (frontend) and <strong>Laravel</strong> (backend).</p>
+
+      <p><strong>✨ Upcoming Features:</strong></p>
+      <ul>
+        <li>✅ Credit-based usage system</li>
+        <li>✅ Social login (Google, Facebook, etc.)</li>
+        <li>✅ Admin backend for monitoring usage & activity</li>
+        <li>✅ Auto-upload to YouTube, TikTok, Instagram, and more</li>
+      </ul>
+
+      <p><strong>🎬 Note:</strong><br />
+      This is currently the basic version. More customization and smarter features are on the way, In Sha Allah.</p>
+      `,
+    use: "Next.js · Laravel · jQuery · MySQL · PHP",
+    github: "https://github.com/sahedalways/ClipForgeAI-frontend",
+    demo: "https://clip-forge-ai-frontend-91gz97irp-sahed44.vercel.app/",
+  },
+
+  {
+    id: 9,
     image: Project34,
     category: "webApp",
     title: `Strategic Web - Empowering Your Digital Presence`,
@@ -458,14 +491,13 @@ export const allProjects = [
     demo: "https://strategicweb.net/",
   },
 
-  
-    {
-      id: 9,
-      image: Project33,
-      category: "webApp",
-      title: "Hymus Sports - Revolutionizing Sports Booking",
-      authorName: "Sk Sahed Ahmed",
-      desc: `
+  {
+    id: 10,
+    image: Project33,
+    category: "webApp",
+    title: "Playventor Sports - Revolutionizing Sports Booking",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
         <p><strong>Hymus Sports</strong> is an innovative booking application designed to streamline the process of booking sports facilities and managing reservations efficiently. Developed with <strong>PHP Laravel, jQuery, and MySQL</strong>, it provides a comprehensive solution for both users and administrators.</p>
 
 <br><h3><strong>Key Features</strong></h3>
@@ -534,31 +566,31 @@ export const allProjects = [
 
 <ul>
   <li><strong>Admin Login:</strong><br>
-    Email: <code>admin@gmail.com</code><br>
+    Email: <code>admin@admin.com</code><br>
     Password: <code>12345678</code>
   </li>
   <li><strong>User Login:</strong><br>
-    Email: <code>user@gmail.com</code><br>
+    Email: <code>user@user.com</code><br>
     Password: <code>12345678</code>
   </li>
 </ul>
 
 <br><h3><strong>Conclusion</strong></h3>
 
-<p><strong>Hymus Sports</strong> transforms sports booking into a hassle-free experience, offering users and administrators a robust platform for managing bookings, payments, and facilities. With its advanced features and user-friendly interface, <strong>Hymus Sports</strong> sets a new standard in sports booking applications.</p>
+<p><strong>Playventor Sports</strong> transforms sports booking into a hassle-free experience, offering users and administrators a robust platform for managing bookings, payments, and facilities. With its advanced features and user-friendly interface, <strong>Hymus Sports</strong> sets a new standard in sports booking applications.</p>
 `,
-      use: "JavaScript · MySQL · PHP · Laravel.",
-      github: "https://github.com/sahedalways/sport-booking",
-      demo: "http://hymus.shopsatkhira.com",
-    },
-    
-    {
-      id: 10,
-      image: Project35,
-      category: "webApp",
-      title: `Buzzhiring - Job Portal Application`,
-      authorName: "Sk Sahed Ahmed",
-      desc: `
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/sport-booking",
+    demo: "https://playventor.shopsatkhira.com",
+  },
+
+  {
+    id: 11,
+    image: Project35,
+    category: "webApp",
+    title: `Buzzhiring - Job Portal Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `
  <p><strong>BuzzHiring</strong> is a comprehensive job portal web application designed to streamline the recruitment process for both job seekers and employers. Developed using <strong>PHP Laravel, JavaScript, jQuery, and MySQL</strong>, the platform offers robust authentication, role management, and various features to facilitate efficient job searching and hiring. It supports multi-authentication methods, including Google and manual authentication, ensuring a secure and user-friendly experience.</p>
 
 <br><h3><strong>Key Features</strong></h3>
@@ -621,14 +653,13 @@ export const allProjects = [
 <br><h3><strong>Conclusion</strong></h3>
 <p><strong>BuzzHiring</strong> provides a powerful and flexible platform for both job seekers and employers, offering a range of features that facilitate the recruitment process. With robust admin controls, seamless payment integration, and user-friendly interfaces, <strong>BuzzHiring</strong> stands out as a comprehensive solution in the job portal market.</p>
  `,
-      use: "JavaScript · PHP · React.js · MySQL · Laravel.",
-      github: "https://github.com/sahedalways/buzzhiring-job-portal",
-      demo: "https://buzzhiring.com/",
-    },
-
+    use: "JavaScript · PHP · React.js · MySQL · Laravel.",
+    github: "https://github.com/sahedalways/buzzhiring-job-portal",
+    demo: "https://buzzhiring.com/",
+  },
 
   {
-    id: 11,
+    id: 12,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -669,7 +700,7 @@ Led end-to-end development of a robust eCommerce platform using <strong>Next.js<
   },
 
   {
-    id: 12,
+    id: 13,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -700,7 +731,7 @@ Within a collaborative team effort, I made substantial contributions to the <str
   },
 
   {
-    id: 13,
+    id: 14,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -763,7 +794,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 14,
+    id: 15,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -775,7 +806,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 15,
+    id: 16,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -787,7 +818,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 16,
+    id: 17,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -799,7 +830,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 17,
+    id: 18,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -811,7 +842,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 18,
+    id: 19,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -823,7 +854,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 19,
+    id: 20,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -835,7 +866,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 20,
+    id: 21,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -847,7 +878,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 21,
+    id: 22,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -859,7 +890,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 22,
+    id: 23,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -872,7 +903,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 23,
+    id: 24,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -885,7 +916,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 24,
+    id: 25,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -898,7 +929,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 25,
+    id: 26,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -910,7 +941,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 26,
+    id: 27,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -922,7 +953,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 27,
+    id: 28,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -935,7 +966,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 28,
+    id: 29,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -947,7 +978,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 29,
+    id: 30,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -959,7 +990,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 30,
+    id: 31,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -972,7 +1003,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 31,
+    id: 32,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -985,7 +1016,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 32,
+    id: 33,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -998,7 +1029,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 33,
+    id: 34,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -1011,7 +1042,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 34,
+    id: 35,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -1024,7 +1055,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 35,
+    id: 36,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -1037,7 +1068,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 36,
+    id: 37,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -1049,7 +1080,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 37,
+    id: 38,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -1062,7 +1093,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 38,
+    id: 39,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
