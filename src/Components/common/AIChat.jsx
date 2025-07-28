@@ -144,7 +144,7 @@ export default function AIChat({ onClose }) {
       lower.includes("email") ||
       lower.includes("reach")
     )
-      return "📧 You can contact me at ssahed65@.com or WhatsApp at +8801616516753.";
+      return "📧 You can contact me at ssahed65@gmail.com or WhatsApp at +8801616516753.";
 
     // Payment terms
     if (
