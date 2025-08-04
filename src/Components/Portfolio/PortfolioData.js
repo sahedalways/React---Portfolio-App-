@@ -178,7 +178,7 @@ export const allProjects = [
  `,
     use: "JavaScript · MySQL · PHP · Laravel.",
     github: "https://github.com/sahedalways/bitvault-trading",
-    demo: "https://criptluxor.shopsatkhira.com",
+    demo: "http://criptluxor.shopsatkhira.com/",
   },
 
   {
