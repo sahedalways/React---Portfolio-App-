@@ -1,7 +1,11 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaTwitterSquare,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import LOGO from "../../Assets/sahed_logo.png";
 import "./footer.css";
@@ -63,8 +67,11 @@ const Footer = () => {
 
       <div className="footer__copyright">
         <small>
-          Designed & Developed by <span>Sk Sahed Ahmed</span>
-          <br /> Copyright &copy; 2024, All rights reserved
+          <p>
+            Designed & Developed by <span>Sk Sahed Ahmed</span>
+            <br />
+            Copyright &copy; {new Date().getFullYear()}, All rights reserved
+          </p>
         </small>
       </div>
     </footer>
