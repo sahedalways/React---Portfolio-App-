@@ -1,7 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import emailjs from "emailjs-com";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
@@ -11,15 +10,12 @@ import "./contact.css";
 const Contact = () => {
   const [isSentMessage, setIsSentMessage] = useState("");
 
-  // show isEmailSentmessage till specific time
   useEffect(() => {
     const messageTimer = setTimeout(() => {
       setIsSentMessage("");
     }, 5000);
 
-    return () => {
-      clearTimeout(messageTimer);
-    };
+    return () => clearTimeout(messageTimer);
   }, [isSentMessage]);
 
   useEffect(() => {
@@ -34,29 +30,29 @@ const Contact = () => {
     });
   }, []);
 
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const formData = new FormData(e.target);
 
-    emailjs
-      .sendForm(
-        "service_7cgfed9",
-        "template_p8nkbxh",
-        form.current,
-        "Nk-hMLTrGFcKehoTP",
-        e.target.reset()
-      )
-      .then(
-        (result) => {
-          setIsSentMessage("Your message has been sent. Keep in touch.");
-          console.log("message", result.text);
+    try {
+      const response = await fetch("https://formspree.io/f/xnngnynw", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
         },
-        (error) => {
-          setIsSentMessage("Sorry! Your message send failed!");
-          console.log("message", error.text);
-        }
-      );
+        body: formData,
+      });
+
+      if (response.ok) {
+        setIsSentMessage("Your message has been sent. Keep in touch.");
+        e.target.reset();
+      } else {
+        setIsSentMessage("Sorry! Your message send failed!");
+      }
+    } catch (error) {
+      setIsSentMessage("Sorry! Your message send failed!");
+      console.error("Error sending message:", error);
+    }
   };
 
   return (
@@ -69,7 +65,7 @@ const Contact = () => {
       <h2>Contact Me</h2>
 
       <div className="container contact__container">
-        {/* contact options starts from here */}
+        {/* contact options */}
         <div data-aos="slide-right" className="contact__options">
           <article className="contact__option">
             <AiOutlineMail className="contact__option__icon" />
@@ -105,8 +101,8 @@ const Contact = () => {
           </article>
         </div>
 
-        {/* form section starts from here */}
-        <form data-aos="slide-left" ref={form} onSubmit={sendEmail}>
+        {/* form section */}
+        <form data-aos="slide-left" onSubmit={handleSubmit}>
           <input
             type="text"
             name="fname"
