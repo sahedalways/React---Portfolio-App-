@@ -110,7 +110,7 @@ export const allProjects = [
     `,
     use: "JavaScript · PHP · Next.js · MySQL · Laravel.",
     github: "https://github.com/sahedalways/lotus-pmc-web-backend",
-    demo: "https://lotus-pmc-web-frontend-lg3j8xlyy-sahed44.vercel.app",
+    demo: "https://lotus-pmc-web-frontend-mw9f8gxv0-sahed44.vercel.app",
   },
 
   {
