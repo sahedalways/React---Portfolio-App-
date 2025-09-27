@@ -37,10 +37,49 @@ import Project7 from "../../Assets/Project7.png";
 import Project8 from "../../Assets/Project8.png";
 import Project9 from "../../Assets/Project9.png";
 import Project40 from "../../Assets/Project40.png";
+import Project41 from "../../Assets/Project41.png";
 
 export const allProjects = [
   {
     id: 1,
+    image: Project41,
+    category: "webApp",
+    title: "AmazCart - Laravel Ecommerce System CMS Multi-Vendor",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
+    <div style="font-size:14px; line-height:1.6;">
+      <p><strong>AmazCart</strong> is a powerful <strong>Laravel-based eCommerce CMS</strong> with multi-vendor support, built-in CMS features, and advanced modules like order management, role permission, and product filtering.</p>
+
+      <h4 style="margin:8px 0;">🛠️ My Contributions</h4>
+      <ul style="margin-left:16px; list-style:disc;">
+        <li>Optimized database with proper indexing and eager loading (N+1 query fixes).</li>
+        <li>Upgraded Laravel, PHP, and package dependencies to latest stable versions.</li>
+        <li>Improved route performance using <code>route:cache</code> and restructured APIs.</li>
+        <li>Enabled <code>config:cache</code>, <code>view:cache</code> for faster response times.</li>
+        <li>Refactored and cleaned code to follow PSR-12 coding standards.</li>
+        <li>Enhanced security with proper validation, CSRF protection, and route middleware.</li>
+      </ul>
+
+      <h4 style="margin:8px 0;">🚀 Core Features</h4>
+      <ul style="margin-left:16px; list-style:disc;">
+        <li>Advanced Mega Menu Builder & Home Page Builder.</li>
+        <li>Supports Physical & Digital Products with Guest Checkout.</li>
+        <li>Multi-Currency, Multi-Language, Category-wise Commission like Daraz.</li>
+        <li>Dynamic Coupon, Wishlist, Product Compare, Quick View.</li>
+        <li>SEO Optimized, PWA Ready, Google Analytics & Facebook Pixel Integration.</li>
+        <li>Role Permission System, Staff Management, & Multi-shipping methods.</li>
+        <li>Bulk Product Import, PDF Invoice Download, Dynamic Tax/GST Setup.</li>
+        <li>11 Payment Gateways (PayPal, Stripe, Razorpay, PayTM, GPay, etc.).</li>
+      </ul>
+    </div>
+  `,
+    use: "JavaScript · PHP · MySQL · Livewire · Laravel.",
+    github: "https://github.com/sahedalways",
+    demo: "https://amazcart.ischooll.com",
+  },
+
+  {
+    id: 2,
     image: Project38,
     category: "webApp",
     title: "Sisfarma - POS Application",
@@ -52,7 +91,7 @@ export const allProjects = [
   },
 
   {
-    id: 2,
+    id: 3,
     image: Project37,
     category: "webApp",
     title: "Lotus PMC - Property Management Application",
@@ -67,15 +106,15 @@ export const allProjects = [
 <ul> <li><strong>Email:</strong> user@gmail.com</li> <li><strong>Password:</strong> 12345678</li> </ul>
 <br><p><strong>For checking backend:</strong></p>
 
-<ul> <li><strong>URL:</strong> <a href="https://property.shopsatkhira.com" target="_blank">property.shopsatkhira.com</a></li> <li><strong>Email:</strong> admin@gmail.com</li> <li><strong>Password:</strong> 12345678</li> </ul>
+<ul> <li><strong>URL:</strong> <a href="https://property.shopsatkhira.com" target="_blank">property.shopsatkhira.com</a></li> <li><strong>User Name:</strong> admin_boss_sahed</li> <li><strong>Password:</strong> 12345678</li> </ul>
     `,
     use: "JavaScript · PHP · Next.js · MySQL · Laravel.",
     github: "https://github.com/sahedalways/lotus-pmc-web-backend",
-    demo: "https://lotus-pmc-web-frontend-cf77vmujy-sahed44.vercel.app",
+    demo: "https://lotus-pmc-web-frontend-lg3j8xlyy-sahed44.vercel.app",
   },
 
   {
-    id: 3,
+    id: 4,
     image: Project39,
     category: "webApp",
     title: "Virtual Mining Machine (VMM) System",
@@ -113,7 +152,7 @@ export const allProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: Project32,
     category: "webApp",
     title: `Cripto Luxor - Trading Application`,
@@ -182,323 +221,13 @@ export const allProjects = [
   },
 
   {
-    id: 5,
-    image: Project31,
-    category: "webApp",
-    title: `Netmark Bangladesh - MLM Application`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `<p><strong>Netmark Bangladesh</strong> is a comprehensive <strong>MLM (Multi-Level Marketing)</strong> application designed to efficiently manage network marketing businesses. Built with <strong>PHP Laravel</strong> for the backend, <strong>MySQL</strong> for database management, and <strong>React.js</strong> for the frontend, it offers a robust and seamless experience for handling MLM functionalities.</p>
-
-<br><p><strong>Key Features:</strong></p>
-
-<ul>
-  <li><strong>Product Management:</strong>
-    <ul>
-      <li>Easy listing, adding, updating, and deleting of products.</li>
-    </ul>
-  </li>
-
-  <li><strong>Shopping Cart and Checkout:</strong>
-    <ul>
-      <li>Seamless shopping experience with product purchase, cart management, and secure checkout.</li>
-    </ul>
-  </li>
-
-  <li><strong>Payment Gateway Integration:</strong>
-    <ul>
-      <li>Supports <strong>bKash</strong> and <strong>Nagad</strong> for secure online transactions.</li>
-    </ul>
-  </li>
-
-  <li><strong>MLM Functionality:</strong>
-    <ul>
-      <li><strong>Tree Generation:</strong> Hierarchical representation of network members for easy management.</li>
-      <li><strong>Bonus Calculation:</strong>
-        <ul>
-          <li><strong>Generation Bonus:</strong> Distributed based on network generation levels.</li>
-          <li><strong>Matching Bonus:</strong> Rewards for matching sales within the network.</li>
-          <li><strong>Purchase Cashback Bonus:</strong> Incentives for purchases made within the network.</li>
-        </ul>
-      </li>
-      <li><strong>Referral System:</strong> Tracks referrals and calculates bonuses accordingly.</li>
-    </ul>
-  </li>
-
-  <li><strong>API Design:</strong>
-    <ul>
-      <li>Well-structured APIs for smooth communication between frontend and backend components.</li>
-    </ul>
-  </li>
-
-  <li><strong>Reporting:</strong>
-    <ul>
-      <li>Generates comprehensive reports including purchase and sales reports on a monthly and annual basis.</li>
-    </ul>
-  </li>
-
-  <li><strong>Banking Functionalities:</strong>
-    <ul>
-      <li><strong>Balance Withdrawal:</strong> Allows network members to withdraw earned balances easily.</li>
-    </ul>
-  </li>
-
-  <li><strong>Cron Job Integration:</strong>
-    <ul>
-      <li>Automates tasks such as bonus calculations and report generation.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><strong>Netmark Bangladesh</strong> offers a powerful, feature-rich, and automated solution for MLM businesses, ensuring seamless operations, real-time reporting, and smooth financial transactions.</p>
-`,
-    use: "JavaScript · jQuery · PHP · MySQL · Laravel.",
-    github: "https://github.com/hasancse016/netmarkbangladesh.com",
-    demo: "https://www.netmarkbangladesh.com/",
-  },
-
-  {
     id: 6,
-    image: Project36,
-    category: "webApp",
-    title: `Course Elevate - Course Selling Website`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `<p><strong>Course Elevate</strong> is a fully functional <strong>online course selling platform</strong> designed for users to browse, add to cart, and purchase technology-related courses. The platform offers an intuitive user experience, a seamless learning journey, and secure payment integration via the <strong>Stripe</strong> payment gateway.</p>
-
-<br><p><strong>Key Functionalities:</strong></p>
-
-<ul>
-  <li><strong>Course Listings:</strong> Displays a variety of technology courses with details such as pricing, descriptions, and instructors.</li>
-  <li><strong>Add to Cart & Checkout:</strong> Users can easily add courses to their cart, manage selections, and proceed with secure payments.</li>
-  <li><strong>User Dashboard:</strong> Enrolled students can access purchased courses, track progress, and download materials.</li>
-  <li><strong>Video Streaming:</strong> Supports video lectures with playback control for a seamless learning experience.</li>
-  <li><strong>Admin Panel:</strong> 
-    <ul>
-      <li>Full course management system (CRUD functionality).</li>
-      <li>Manage sales, track revenue, and oversee user activity.</li>
-    </ul>
-  </li>
-  <li><strong>Discount & Coupons:</strong> Admins can create and manage promotional discounts and coupon codes.</li>
-  <li><strong>Multi-Payment Support:</strong> Integrated <strong>Stripe</strong> for secure transactions, with future support for <strong>PayPal</strong> and local gateways.</li>
-  <li><strong>Category & Filter System:</strong> Users can search and filter courses based on categories, price range, and instructor.</li>
-  <li><strong>Student Reviews & Ratings:</strong> Users can leave feedback on courses they have purchased.</li>
-  <li><strong>Progress Tracking:</strong> Students can track their course completion status.</li>
-  <li><strong>Instructor Panel:</strong> Enables instructors to upload courses, manage content, and track student enrollment.</li>
-  <li><strong>Email Notifications:</strong> Automated email notifications for purchase confirmations, enrollment updates, and promotional offers.</li>
-  <li><strong>Multi-Language Support:</strong> Supports multiple languages for a global audience.</li>
-  <li><strong>Responsive Design:</strong> Optimized for desktop, tablet, and mobile devices.</li>
-</ul>
-
-<br><p><strong>Tech Stack:</strong></p>
-<ul>
-  <li><strong>Backend:</strong> PHP · Laravel</li>
-  <li><strong>Frontend:</strong> JavaScript · Blade Templates</li>
-  <li><strong>Database:</strong> MySQL</li>
-  <li><strong>Payments:</strong> Stripe Integration</li>
-  <li><strong>Enhancements:</strong> AJAX for smooth interactions, caching for optimized performance.</li>
-</ul>
-
-<br><p><strong>Login Details:</strong></p>
-<ul>
-  <li><strong>Admin Panel:</strong> <a href="https://courseelevate.shopsatkhira.com/login" target="_blank">Admin Login</a></li>
-  <li><strong>Email:</strong> admin@gmail.com</li>
-  <li><strong>Password:</strong> 12345678</li>
-</ul>
-
-<p><strong>Course Elevate</strong> provides a complete solution for online course sales, offering a user-friendly experience for students, instructors, and administrators alike.</p>
-`,
-    use: "JavaScript · MySQL · PHP · Laravel.",
-    github: "https://github.com/sahedalways/course-elevate",
-    demo: "https://courseelevate.shopsatkhira.com",
-  },
-
-  {
-    id: 7,
-    image: Project26,
-    category: "webApp",
-    title: `Caredoom - Matrimony Application`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `<p><strong>Caredoom</strong> is a revolutionary <strong>matrimony website</strong> designed to address the unique challenges and requirements of the matrimonial domain. Leveraging the power of <strong>Next.js</strong> and <strong>PHP Laravel</strong>, Caredoom offers innovative solutions and functionalities to enhance user experience and foster meaningful connections.</p>
-
-<br><p><strong>Key Features:</strong></p>
-
-<ul>
-  <li><strong>Multi-Mode Registration:</strong> 
-    <ul>
-      <li>Simplified onboarding process accommodating various user types efficiently.</li>
-      <li>Versatile registration system streamlining user registration.</li>
-    </ul>
-  </li>
-  <li><strong>Enhanced Communication Channels:</strong> 
-    <ul>
-      <li>Integrated text, video, and audio chatting features for seamless communication.</li>
-      <li>Diverse communication options fostering meaningful connections.</li>
-    </ul>
-  </li>
-  <li><strong>Multilingual Support:</strong> 
-    <ul>
-      <li>Implemented multi-language support to cater to a broader audience.</li>
-      <li>Ensured inclusivity by overcoming language barriers.</li>
-    </ul>
-  </li>
-  <li><strong>Image Resizing:</strong> 
-    <ul>
-      <li>Optimized user uploads for better performance and experience.</li>
-      <li>Implemented image resizing functionalities to enhance performance.</li>
-    </ul>
-  </li>
-  <li><strong>Ranking Mechanism:</strong> 
-    <ul>
-      <li>Enhanced user interaction through a ranking system.</li>
-      <li>Prioritized profiles to improve user engagement and visibility.</li>
-    </ul>
-  </li>
-</ul>
-
-<br><p><strong>Challenges Addressed:</strong></p>
-
-<ul>
-  <li><strong>Diverse Communication:</strong> 
-    <ul>
-      <li>Fostered connections through varied communication channels - text, video, and audio.</li>
-      <li>Provided seamless communication options for users.</li>
-    </ul>
-  </li>
-  <li><strong>Cultural Inclusivity:</strong> 
-    <ul>
-      <li>Overcame language barriers by offering a multi-language interface.</li>
-      <li>Ensured inclusivity for a diverse user base.</li>
-    </ul>
-  </li>
-  <li><strong>Optimized User Experience:</strong> 
-    <ul>
-      <li>Resolved image-related issues with image resizing functionalities.</li>
-      <li>Ensured better performance and user experience.</li>
-    </ul>
-  </li>
-  <li><strong>Improved User Interaction:</strong> 
-    <ul>
-      <li>Implemented a ranking mechanism to enhance user engagement.</li>
-      <li>Increased profile visibility for better interaction.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><strong>Caredoom Matrimony</strong> stands as a testament to <strong>innovation and inclusivity</strong> in the matrimonial domain. With its array of features and solutions, it aims to revolutionize the way people connect and find their life partners.</p>
-`,
-    use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
-    github: "https://github.com/hasancse016/matrimony-frontend-next-react",
-    demo: "https://matrimony-fn38so6pa-sahed44.vercel.app",
-  },
-
-  {
-    id: 8,
-    image: Project40,
-    category: "webApp",
-    title: "Clip Forge - AI Application",
-    authorName: "Sk Sahed Ahmed",
-    desc: `
-      <p><strong>Clip Forge AI</strong> is a powerful AI-driven platform that can automatically generate complete videos from a single topic—no manual effort required!</p>
-
-      <p><strong>🎯 Example:</strong><br />
-      Topic: <em>AI in coding</em><br />
-      Duration: <em>5 minutes</em><br />
-      ➡️ You'll receive an exactly 5-minute video, complete with a script and visuals, fully generated by AI.</p>
-
-      <p><strong>🔧 Tech Stack:</strong><br />
-      Built using <strong>Next.js</strong> (frontend) and <strong>Laravel</strong> (backend).</p>
-
-      <p><strong>✨ Upcoming Features:</strong></p>
-      <ul>
-        <li>✅ Credit-based usage system</li>
-        <li>✅ Social login (Google, Facebook, etc.)</li>
-        <li>✅ Admin backend for monitoring usage & activity</li>
-        <li>✅ Auto-upload to YouTube, TikTok, Instagram, and more</li>
-      </ul>
-
-      <p><strong>🎬 Note:</strong><br />
-      This is currently the basic version. More customization and smarter features are on the way, In Sha Allah.</p>
-      `,
-    use: "Next.js · Laravel · jQuery · MySQL · PHP",
-    github: "https://github.com/sahedalways/ClipForgeAI-frontend",
-    demo: "https://clip-forge-ai-frontend-91gz97irp-sahed44.vercel.app/",
-  },
-
-  {
-    id: 9,
-    image: Project34,
-    category: "webApp",
-    title: `Strategic Web - Empowering Your Digital Presence`,
-    authorName: "Sk Sahed Ahmed",
-    desc: `<p><strong>Strategic Web</strong> is a feature-rich platform designed to elevate your digital strategy. Crafted with precision using <strong>PHP Laravel</strong> and <strong>JavaScript jQuery</strong>, it offers a comprehensive suite of tools to optimize business operations.</p>
-
-<br><p><strong>Key Features:</strong></p>
-
-<ul>
-  <li><strong>Robust Authentication:</strong>
-    <ul>
-      <li>Securely manage user access with advanced authentication protocols.</li>
-      <li>Ensure only authorized personnel can access sensitive information.</li>
-    </ul>
-  </li>
-  <li><strong>Stringent Validation:</strong>
-    <ul>
-      <li>Built-in validation mechanisms guarantee data integrity.</li>
-      <li>Prevent unauthorized access for enhanced security.</li>
-    </ul>
-  </li>
-  <li><strong>Seamless Stripe Payment Integration:</strong>
-    <ul>
-      <li>Accept secure online payments through Stripe.</li>
-      <li>Offer customers a trustworthy and convenient transaction experience.</li>
-    </ul>
-  </li>
-  <li><strong>Sales Point of Sale (POS):</strong>
-    <ul>
-      <li>Streamline sales processes with an intuitive POS system.</li>
-      <li>Track inventory and sales data in real-time for efficient operations.</li>
-    </ul>
-  </li>
-  <li><strong>Dynamic Blog Management:</strong>
-    <ul>
-      <li>Create, edit, and manage engaging blog content effortlessly.</li>
-      <li>Boost audience engagement and drive traffic to your site.</li>
-    </ul>
-  </li>
-  <li><strong>Package Management:</strong>
-    <ul>
-      <li>Simplify package handling and delivery with a robust system.</li>
-      <li>Ensure timely and efficient service for your clients.</li>
-    </ul>
-  </li>
-  <li><strong>Seamless Company Contact Integration:</strong>
-    <ul>
-      <li>Enable smooth communication between clients and your company.</li>
-      <li>Foster strong relationships and enhance customer satisfaction.</li>
-    </ul>
-  </li>
-  <li><strong>Email Configuration:</strong>
-    <ul>
-      <li>Customize and streamline email communication.</li>
-      <li>Ensure messages always reach their intended recipients.</li>
-    </ul>
-  </li>
-</ul>
-
-<p><strong>At Strategic Web</strong>, every feature has been meticulously crafted to empower agencies in the digital landscape. From authentication and payment processing to dynamic blog management and seamless communication tools, Strategic Web is your <strong>all-in-one solution for success.</strong></p>
-`,
-    use: "JavaScript · jQuery · MySQL · PHP · Laravel.",
-    github: "https://github.com/sahedalways/strategicwebnew",
-    demo: "https://strategicweb.net/",
-  },
-
-  {
-    id: 10,
     image: Project33,
     category: "webApp",
     title: "Playventor Sports - Revolutionizing Sports Booking",
     authorName: "Sk Sahed Ahmed",
     desc: `
-        <p><strong>Hymus Sports</strong> is an innovative booking application designed to streamline the process of booking sports facilities and managing reservations efficiently. Developed with <strong>PHP Laravel, jQuery, and MySQL</strong>, it provides a comprehensive solution for both users and administrators.</p>
+        <p><strong>Playventor Sports</strong> is an innovative booking application designed to streamline the process of booking sports facilities and managing reservations efficiently. Developed with <strong>PHP Laravel, jQuery, and MySQL</strong>, it provides a comprehensive solution for both users and administrators.</p>
 
 <br><h3><strong>Key Features</strong></h3>
 
@@ -585,7 +314,317 @@ export const allProjects = [
   },
 
   {
+    id: 7,
+    image: Project31,
+    category: "webApp",
+    title: `Netmark Bangladesh - MLM Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `<p><strong>Netmark Bangladesh</strong> is a comprehensive <strong>MLM (Multi-Level Marketing)</strong> application designed to efficiently manage network marketing businesses. Built with <strong>PHP Laravel</strong> for the backend, <strong>MySQL</strong> for database management, and <strong>React.js</strong> for the frontend, it offers a robust and seamless experience for handling MLM functionalities.</p>
+
+<br><p><strong>Key Features:</strong></p>
+
+<ul>
+  <li><strong>Product Management:</strong>
+    <ul>
+      <li>Easy listing, adding, updating, and deleting of products.</li>
+    </ul>
+  </li>
+
+  <li><strong>Shopping Cart and Checkout:</strong>
+    <ul>
+      <li>Seamless shopping experience with product purchase, cart management, and secure checkout.</li>
+    </ul>
+  </li>
+
+  <li><strong>Payment Gateway Integration:</strong>
+    <ul>
+      <li>Supports <strong>bKash</strong> and <strong>Nagad</strong> for secure online transactions.</li>
+    </ul>
+  </li>
+
+  <li><strong>MLM Functionality:</strong>
+    <ul>
+      <li><strong>Tree Generation:</strong> Hierarchical representation of network members for easy management.</li>
+      <li><strong>Bonus Calculation:</strong>
+        <ul>
+          <li><strong>Generation Bonus:</strong> Distributed based on network generation levels.</li>
+          <li><strong>Matching Bonus:</strong> Rewards for matching sales within the network.</li>
+          <li><strong>Purchase Cashback Bonus:</strong> Incentives for purchases made within the network.</li>
+        </ul>
+      </li>
+      <li><strong>Referral System:</strong> Tracks referrals and calculates bonuses accordingly.</li>
+    </ul>
+  </li>
+
+  <li><strong>API Design:</strong>
+    <ul>
+      <li>Well-structured APIs for smooth communication between frontend and backend components.</li>
+    </ul>
+  </li>
+
+  <li><strong>Reporting:</strong>
+    <ul>
+      <li>Generates comprehensive reports including purchase and sales reports on a monthly and annual basis.</li>
+    </ul>
+  </li>
+
+  <li><strong>Banking Functionalities:</strong>
+    <ul>
+      <li><strong>Balance Withdrawal:</strong> Allows network members to withdraw earned balances easily.</li>
+    </ul>
+  </li>
+
+  <li><strong>Cron Job Integration:</strong>
+    <ul>
+      <li>Automates tasks such as bonus calculations and report generation.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Netmark Bangladesh</strong> offers a powerful, feature-rich, and automated solution for MLM businesses, ensuring seamless operations, real-time reporting, and smooth financial transactions.</p>
+`,
+    use: "JavaScript · jQuery · PHP · MySQL · Laravel.",
+    github: "https://github.com/hasancse016/netmarkbangladesh.com",
+    demo: "https://www.netmarkbangladesh.com/",
+  },
+
+  {
+    id: 8,
+    image: Project36,
+    category: "webApp",
+    title: `Course Elevate - Course Selling Website`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `<p><strong>Course Elevate</strong> is a fully functional <strong>online course selling platform</strong> designed for users to browse, add to cart, and purchase technology-related courses. The platform offers an intuitive user experience, a seamless learning journey, and secure payment integration via the <strong>Stripe</strong> payment gateway.</p>
+
+<br><p><strong>Key Functionalities:</strong></p>
+
+<ul>
+  <li><strong>Course Listings:</strong> Displays a variety of technology courses with details such as pricing, descriptions, and instructors.</li>
+  <li><strong>Add to Cart & Checkout:</strong> Users can easily add courses to their cart, manage selections, and proceed with secure payments.</li>
+  <li><strong>User Dashboard:</strong> Enrolled students can access purchased courses, track progress, and download materials.</li>
+  <li><strong>Video Streaming:</strong> Supports video lectures with playback control for a seamless learning experience.</li>
+  <li><strong>Admin Panel:</strong> 
+    <ul>
+      <li>Full course management system (CRUD functionality).</li>
+      <li>Manage sales, track revenue, and oversee user activity.</li>
+    </ul>
+  </li>
+  <li><strong>Discount & Coupons:</strong> Admins can create and manage promotional discounts and coupon codes.</li>
+  <li><strong>Multi-Payment Support:</strong> Integrated <strong>Stripe</strong> for secure transactions, with future support for <strong>PayPal</strong> and local gateways.</li>
+  <li><strong>Category & Filter System:</strong> Users can search and filter courses based on categories, price range, and instructor.</li>
+  <li><strong>Student Reviews & Ratings:</strong> Users can leave feedback on courses they have purchased.</li>
+  <li><strong>Progress Tracking:</strong> Students can track their course completion status.</li>
+  <li><strong>Instructor Panel:</strong> Enables instructors to upload courses, manage content, and track student enrollment.</li>
+  <li><strong>Email Notifications:</strong> Automated email notifications for purchase confirmations, enrollment updates, and promotional offers.</li>
+  <li><strong>Multi-Language Support:</strong> Supports multiple languages for a global audience.</li>
+  <li><strong>Responsive Design:</strong> Optimized for desktop, tablet, and mobile devices.</li>
+</ul>
+
+<br><p><strong>Tech Stack:</strong></p>
+<ul>
+  <li><strong>Backend:</strong> PHP · Laravel</li>
+  <li><strong>Frontend:</strong> JavaScript · Blade Templates</li>
+  <li><strong>Database:</strong> MySQL</li>
+  <li><strong>Payments:</strong> Stripe Integration</li>
+  <li><strong>Enhancements:</strong> AJAX for smooth interactions, caching for optimized performance.</li>
+</ul>
+
+<br><p><strong>Login Details:</strong></p>
+<ul>
+  <li><strong>Admin Panel:</strong> <a href="https://courseelevate.shopsatkhira.com/login" target="_blank">Admin Login</a></li>
+  <li><strong>Email:</strong> admin@gmail.com</li>
+  <li><strong>Password:</strong> 12345678</li>
+</ul>
+
+<p><strong>Course Elevate</strong> provides a complete solution for online course sales, offering a user-friendly experience for students, instructors, and administrators alike.</p>
+`,
+    use: "JavaScript · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/course-elevate",
+    demo: "https://courseelevate.shopsatkhira.com",
+  },
+
+  {
+    id: 9,
+    image: Project26,
+    category: "webApp",
+    title: `Caredoom - Matrimony Application`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `<p><strong>Caredoom</strong> is a revolutionary <strong>matrimony website</strong> designed to address the unique challenges and requirements of the matrimonial domain. Leveraging the power of <strong>Next.js</strong> and <strong>PHP Laravel</strong>, Caredoom offers innovative solutions and functionalities to enhance user experience and foster meaningful connections.</p>
+
+<br><p><strong>Key Features:</strong></p>
+
+<ul>
+  <li><strong>Multi-Mode Registration:</strong> 
+    <ul>
+      <li>Simplified onboarding process accommodating various user types efficiently.</li>
+      <li>Versatile registration system streamlining user registration.</li>
+    </ul>
+  </li>
+  <li><strong>Enhanced Communication Channels:</strong> 
+    <ul>
+      <li>Integrated text, video, and audio chatting features for seamless communication.</li>
+      <li>Diverse communication options fostering meaningful connections.</li>
+    </ul>
+  </li>
+  <li><strong>Multilingual Support:</strong> 
+    <ul>
+      <li>Implemented multi-language support to cater to a broader audience.</li>
+      <li>Ensured inclusivity by overcoming language barriers.</li>
+    </ul>
+  </li>
+  <li><strong>Image Resizing:</strong> 
+    <ul>
+      <li>Optimized user uploads for better performance and experience.</li>
+      <li>Implemented image resizing functionalities to enhance performance.</li>
+    </ul>
+  </li>
+  <li><strong>Ranking Mechanism:</strong> 
+    <ul>
+      <li>Enhanced user interaction through a ranking system.</li>
+      <li>Prioritized profiles to improve user engagement and visibility.</li>
+    </ul>
+  </li>
+</ul>
+
+<br><p><strong>Challenges Addressed:</strong></p>
+
+<ul>
+  <li><strong>Diverse Communication:</strong> 
+    <ul>
+      <li>Fostered connections through varied communication channels - text, video, and audio.</li>
+      <li>Provided seamless communication options for users.</li>
+    </ul>
+  </li>
+  <li><strong>Cultural Inclusivity:</strong> 
+    <ul>
+      <li>Overcame language barriers by offering a multi-language interface.</li>
+      <li>Ensured inclusivity for a diverse user base.</li>
+    </ul>
+  </li>
+  <li><strong>Optimized User Experience:</strong> 
+    <ul>
+      <li>Resolved image-related issues with image resizing functionalities.</li>
+      <li>Ensured better performance and user experience.</li>
+    </ul>
+  </li>
+  <li><strong>Improved User Interaction:</strong> 
+    <ul>
+      <li>Implemented a ranking mechanism to enhance user engagement.</li>
+      <li>Increased profile visibility for better interaction.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Caredoom Matrimony</strong> stands as a testament to <strong>innovation and inclusivity</strong> in the matrimonial domain. With its array of features and solutions, it aims to revolutionize the way people connect and find their life partners.</p>
+`,
+    use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
+    github: "https://github.com/hasancse016/matrimony-frontend-next-react",
+    demo: "https://matrimony-fn38so6pa-sahed44.vercel.app",
+  },
+
+  {
+    id: 10,
+    image: Project40,
+    category: "webApp",
+    title: "Clip Forge - AI Application",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
+      <p><strong>Clip Forge AI</strong> is a powerful AI-driven platform that can automatically generate complete videos from a single topic—no manual effort required!</p>
+
+      <p><strong>🎯 Example:</strong><br />
+      Topic: <em>AI in coding</em><br />
+      Duration: <em>5 minutes</em><br />
+      ➡️ You'll receive an exactly 5-minute video, complete with a script and visuals, fully generated by AI.</p>
+
+      <p><strong>🔧 Tech Stack:</strong><br />
+      Built using <strong>Next.js</strong> (frontend) and <strong>Laravel</strong> (backend).</p>
+
+      <p><strong>✨ Upcoming Features:</strong></p>
+      <ul>
+        <li>✅ Credit-based usage system</li>
+        <li>✅ Social login (Google, Facebook, etc.)</li>
+        <li>✅ Admin backend for monitoring usage & activity</li>
+        <li>✅ Auto-upload to YouTube, TikTok, Instagram, and more</li>
+      </ul>
+
+      <p><strong>🎬 Note:</strong><br />
+      This is currently the basic version. More customization and smarter features are on the way, In Sha Allah.</p>
+      `,
+    use: "Next.js · Laravel · jQuery · MySQL · PHP",
+    github: "https://github.com/sahedalways/ClipForgeAI-frontend",
+    demo: "https://clip-forge-ai-frontend-91gz97irp-sahed44.vercel.app/",
+  },
+
+  {
     id: 11,
+    image: Project34,
+    category: "webApp",
+    title: `Strategic Web - Empowering Your Digital Presence`,
+    authorName: "Sk Sahed Ahmed",
+    desc: `<p><strong>Strategic Web</strong> is a feature-rich platform designed to elevate your digital strategy. Crafted with precision using <strong>PHP Laravel</strong> and <strong>JavaScript jQuery</strong>, it offers a comprehensive suite of tools to optimize business operations.</p>
+
+<br><p><strong>Key Features:</strong></p>
+
+<ul>
+  <li><strong>Robust Authentication:</strong>
+    <ul>
+      <li>Securely manage user access with advanced authentication protocols.</li>
+      <li>Ensure only authorized personnel can access sensitive information.</li>
+    </ul>
+  </li>
+  <li><strong>Stringent Validation:</strong>
+    <ul>
+      <li>Built-in validation mechanisms guarantee data integrity.</li>
+      <li>Prevent unauthorized access for enhanced security.</li>
+    </ul>
+  </li>
+  <li><strong>Seamless Stripe Payment Integration:</strong>
+    <ul>
+      <li>Accept secure online payments through Stripe.</li>
+      <li>Offer customers a trustworthy and convenient transaction experience.</li>
+    </ul>
+  </li>
+  <li><strong>Sales Point of Sale (POS):</strong>
+    <ul>
+      <li>Streamline sales processes with an intuitive POS system.</li>
+      <li>Track inventory and sales data in real-time for efficient operations.</li>
+    </ul>
+  </li>
+  <li><strong>Dynamic Blog Management:</strong>
+    <ul>
+      <li>Create, edit, and manage engaging blog content effortlessly.</li>
+      <li>Boost audience engagement and drive traffic to your site.</li>
+    </ul>
+  </li>
+  <li><strong>Package Management:</strong>
+    <ul>
+      <li>Simplify package handling and delivery with a robust system.</li>
+      <li>Ensure timely and efficient service for your clients.</li>
+    </ul>
+  </li>
+  <li><strong>Seamless Company Contact Integration:</strong>
+    <ul>
+      <li>Enable smooth communication between clients and your company.</li>
+      <li>Foster strong relationships and enhance customer satisfaction.</li>
+    </ul>
+  </li>
+  <li><strong>Email Configuration:</strong>
+    <ul>
+      <li>Customize and streamline email communication.</li>
+      <li>Ensure messages always reach their intended recipients.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>At Strategic Web</strong>, every feature has been meticulously crafted to empower agencies in the digital landscape. From authentication and payment processing to dynamic blog management and seamless communication tools, Strategic Web is your <strong>all-in-one solution for success.</strong></p>
+`,
+    use: "JavaScript · jQuery · MySQL · PHP · Laravel.",
+    github: "https://github.com/sahedalways/strategicwebnew",
+    demo: "https://strategicweb.net/",
+  },
+
+  {
+    id: 12,
     image: Project35,
     category: "webApp",
     title: `Buzzhiring - Job Portal Application`,
@@ -659,7 +698,7 @@ export const allProjects = [
   },
 
   {
-    id: 12,
+    id: 13,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -700,7 +739,7 @@ Led end-to-end development of a robust eCommerce platform using <strong>Next.js<
   },
 
   {
-    id: 13,
+    id: 14,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -731,7 +770,7 @@ Within a collaborative team effort, I made substantial contributions to the <str
   },
 
   {
-    id: 14,
+    id: 15,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -794,7 +833,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 15,
+    id: 16,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -806,7 +845,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 16,
+    id: 17,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -818,7 +857,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 17,
+    id: 18,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -830,7 +869,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 18,
+    id: 19,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -842,7 +881,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 19,
+    id: 20,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -854,7 +893,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 20,
+    id: 21,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -866,7 +905,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 21,
+    id: 22,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -878,7 +917,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 22,
+    id: 23,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -890,7 +929,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 23,
+    id: 24,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -903,7 +942,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 24,
+    id: 25,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -916,7 +955,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 25,
+    id: 26,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -929,7 +968,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 26,
+    id: 27,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -941,7 +980,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 27,
+    id: 28,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -953,7 +992,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 28,
+    id: 29,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -966,7 +1005,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 29,
+    id: 30,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -978,7 +1017,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 30,
+    id: 31,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -990,7 +1029,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 31,
+    id: 32,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -1003,7 +1042,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 32,
+    id: 33,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -1016,7 +1055,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 33,
+    id: 34,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -1029,7 +1068,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 34,
+    id: 35,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -1042,7 +1081,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 35,
+    id: 36,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -1055,7 +1094,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 36,
+    id: 37,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -1068,7 +1107,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 37,
+    id: 38,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -1080,7 +1119,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 38,
+    id: 39,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -1093,7 +1132,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 39,
+    id: 40,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
