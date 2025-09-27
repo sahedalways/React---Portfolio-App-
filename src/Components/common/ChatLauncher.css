@@ -23,9 +23,9 @@
 .chat-launcher-btn::after {
   content: "Hi! I’m Sahed’s AI Assistant";
   position: fixed;
-  bottom: 4.75rem; /* Adjust vertical position */
-  right: 2.5rem; /* Align horizontally */
-  background: #1e40af; /* Darker blue */
+  bottom: 4.75rem;
+  right: 2.5rem;
+  background: #1e40af;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -47,13 +47,13 @@
 .chat-launcher-btn::before {
   content: "";
   position: fixed;
-  bottom: 4.3rem; /* slightly below tooltip */
-  right: 3.35rem; /* position arrow horizontally (centered under tooltip) */
+  bottom: 4.3rem;
+  right: 3.35rem;
   width: 0;
   height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
-  border-top: 7px solid #1e40af; /* same color as tooltip background */
+  border-top: 7px solid #1e40af;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -67,4 +67,11 @@
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .chat-launcher-btn {
+    bottom: 4.5rem;
+    right: 1.5rem;
+  }
 }
