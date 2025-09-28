@@ -518,8 +518,8 @@ export const allProjects = [
 <p><strong>Caredoom Matrimony</strong> stands as a testament to <strong>innovation and inclusivity</strong> in the matrimonial domain. With its array of features and solutions, it aims to revolutionize the way people connect and find their life partners.</p>
 `,
     use: "JavaScript · PHP · React.js · MySQL · Next.js · Laravel.",
-    github: "https://github.com/hasancse016/matrimony-frontend-next-react",
-    demo: "https://matrimony-fn38so6pa-sahed44.vercel.app",
+    github: "https://github.com/sahedalways/matrimony-frontend-next-react",
+    demo: "https://matrimony-sable.vercel.app",
   },
 
   {
