@@ -1,12 +1,29 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-
 import { allProjects } from "../../Portfolio/PortfolioData";
 import "./SeeMore.css";
 
 const SeeMore = () => {
-  const [projects, setProjects] = useState(allProjects);
+  const [projects] = useState(allProjects);
+
+  // Group projects by category dynamically
+  const categories = [...new Set(projects.map((p) => p.category))];
+
+  // Optional: Custom category title formatting
+  const formatCategoryTitle = (category) => {
+    const mapping = {
+      webApp: "Web / Software Development",
+      reactFullApp: "React Full App",
+      reactMiniApp: "React Mini App",
+      mernApp: "MERN App",
+      phpApp: "PHP App",
+      jqueryApp: "jQuery App",
+      domManipulations: "DOM Manipulations",
+      mobileApp: "Mobile Apps Development",
+    };
+    return mapping[category] || category;
+  };
 
   return (
     <>
@@ -17,309 +34,55 @@ const SeeMore = () => {
         <h5>My Recent Works</h5>
         <h2>Portfolio</h2>
 
-        <h3 className="project__category__title">Web / Software development</h3>
-        <div className="container portfolio__container">
-          {projects.slice(0, 14).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
+        {/* Dynamically render categories */}
+        {categories.map((category) => {
+          const filteredProjects = projects.filter(
+            (p) => p.category === category
+          );
+          return (
+            <div key={category}>
+              <h3 className="project__category__title">
+                {formatCategoryTitle(category)}
+              </h3>
 
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
+              <div className="container portfolio__container">
+                {filteredProjects.map(({ id, image, title, github, demo }) => (
+                  <article
+                    key={id}
+                    data-aos="slide-left"
+                    className="portfolio__item"
+                  >
+                    <div className="portfolio__item__image">
+                      <img src={image} alt={title} />
+                      <h3>{title}</h3>
+                      <Link to={`/project-details/${id}`}>
+                        <h4 className="view__Details">View Details</h4>
+                      </Link>
+                    </div>
 
-        <h3 className="project__category__title">Apps Development</h3>
-        <div className="container portfolio__container">
-          {projects.slice(14, 15).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
+                    <a
+                      href={github}
+                      className="btn"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Github
+                    </a>
+                    <a
+                      href={demo}
+                      className="btn btn-primary"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Live Demo
+                    </a>
+                  </article>
+                ))}
+              </div>
+            </div>
+          );
+        })}
 
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <h3 className="project__category__title">React Full App</h3>
-        <div className="container portfolio__container">
-          {projects.slice(15, 24).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
-
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <h3 className="project__category__title">React Mini App</h3>
-        <div className="container portfolio__container">
-          {projects.slice(24, 30).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
-
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <h3 className="project__category__title">Mern App</h3>
-        <div className="container portfolio__container">
-          {projects.slice(30, 31).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
-
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <h3 className="project__category__title">DOM Manipulations</h3>
-        <div className="container portfolio__container">
-          {projects.slice(31, 37).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
-
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <h3 className="project__category__title">PHP App</h3>
-        <div className="container portfolio__container">
-          {projects.slice(36, 38).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
-
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
-
-        <h3 className="project__category__title">jQuery App</h3>
-        <div className="container portfolio__container">
-          {projects.slice(38, 39).map(({ id, image, title, github, demo }) => {
-            return (
-              <article
-                key={id}
-                data-aos="slide-left"
-                className="portfolio__item"
-              >
-                <div className="portfolio__item__image">
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <Link to={`/project-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
-                  </Link>
-                </div>
-
-                <a
-                  href={github}
-                  className="btn"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </article>
-            );
-          })}
-        </div>
         <div className="seeMore__btn">
           <a
             href="https://github.com/sahedalways"

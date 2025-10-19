@@ -38,6 +38,7 @@ import Project8 from "../../Assets/Project8.png";
 import Project9 from "../../Assets/Project9.png";
 import Project40 from "../../Assets/Project40.png";
 import Project41 from "../../Assets/Project41.png";
+import Project42 from "../../Assets/Project42.png";
 
 export const allProjects = [
   {
@@ -115,40 +116,46 @@ export const allProjects = [
 
   {
     id: 4,
-    image: Project39,
+    image: Project42,
     category: "webApp",
-    title: "Virtual Mining Machine (VMM) System",
+    title: "BookingXpert - Resort & Event Booking Management Application",
     authorName: "Sk Sahed Ahmed",
     desc: `
-      <p><strong>Virtual Mining Machine (VMM)</strong> is an advanced investment system that enables users to invest in virtual mining machines and earn coins. Built with <strong>PHP Laravel, MySQL, and JavaScript</strong>, it offers seamless management for both users and administrators.</p>
-
+    <p><strong>BookingXpert</strong> is a modern resort and event booking management application built to simplify resort reservations and event management. It provides a smooth and user-friendly experience for customers, admins, and resort owners.</p>
 <br><p><strong>Key Features:</strong></p>
+
 <ul>
-  <li><strong>VMM Creation by Admin</strong>: Admin can create and manage Virtual Mining Machines (VMMs) with specific attributes like title, lifetime, minimum investment, execution time, preparation time, and status.</li>
-  <li><strong>Coin Distribution Algorithm</strong>: Coins are distributed through a lottery-like mechanism where a user’s probability of winning is based on investment size.</li>
-  <li><strong>Automatic Cloning</strong>: VMMs automatically clone themselves based on execution time to ensure continuous operation.</li>
-  <li><strong>User Investment and Withdrawal</strong>: Users can invest in active VMMs and withdraw their earnings, subject to admin approval.</li>
-  <li><strong>User Wallets</strong>: Users have two wallets—VMM Coins (earned from mining) and TAKA (used for investments).</li>
-  <li><strong>Admin Control Panel</strong>: Admins can manage VMMs, approve/reject withdrawals, and track transactions efficiently.</li>
-  <li><strong>Real-Time Updates</strong>: Live updates on VMM status, investments, and transactions.</li>
-  <li><strong>Lottery Mechanism</strong>: Higher investments increase chances of winning, but outcomes are probability-based.</li>
+  <li><strong>Resort & event listings:</strong> View detailed resort and event information with photos, pricing, and descriptions.</li>
+  <li><strong>Advanced search & filter:</strong> Find the perfect resort by location, price range, date, and availability.</li>
+  <li><strong>User authentication:</strong> Secure login and registration system for users and administrators.</li>
+  <li><strong>Online booking system:</strong> Book resorts or events directly from the platform with real-time updates.</li>
+  <li><strong>Admin dashboard:</strong> Manage users, bookings, resorts, and event data efficiently from a central panel.</li>
+  <li><strong>Promotions & offers:</strong> Display ongoing discounts and deals to attract more customers.</li>
+  <li><strong>Responsive design:</strong> Fully optimized for mobile, tablet, and desktop devices.</li>
+  <li><strong>Multi-role system:</strong> Separate dashboards and features for Admin and User roles.</li>
+  <li><strong>Notification system:</strong> Email or in-app notifications for booking confirmations, updates, and cancellations.</li>
+  <li><strong>Analytics overview:</strong> Admins can monitor bookings, revenue, and customer activities through charts and insights.</li>
 </ul>
 
 <br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
+
 <ul>
-  <li><strong>Admin Login</strong>:  
-    <br>Email: admin@gmail.com  
-    <br>Password: 12345678</li>
-  <li><strong>User Login</strong>:  
-    <br>Email: user@gmail.com  
-    <br>Password: 12345678</li>
+  <li><strong>Frontend URL:</strong> <a href="https://resort-booking-gules.vercel.app" target="_blank">resort-booking-gules.vercel.app</a></li>
+  <li><strong>User Email:</strong> user@user.com</li>
+  <li><strong>Password:</strong> 12345678</li>
 </ul>
 
-<p><strong>Virtual Mining Machine (VMM)</strong> provides an efficient and innovative way for users to invest in virtual mining while ensuring a powerful management system for admins. With automated cloning and a dynamic lottery-based earning system, it redefines investment-based virtual mining.</p>
-`,
-    use: "PHP · Laravel · MySQL · JavaScript.",
-    github: "https://github.com/sahedalways/bdcoder-vmm-machine",
-    demo: "http://vmm.shopsatkhira.com",
+<br><p><strong>For checking backend:</strong></p>
+
+<ul>
+  <li><strong>Backend URL:</strong> <a href="https://buzzhiring.shopsatkhira.com" target="_blank">buzzhiring.shopsatkhira.com</a></li>
+  <li><strong>Admin Email:</strong> admin@admin.com</li>
+  <li><strong>Password:</strong> 12345678</li>
+</ul>
+  `,
+    use: "JavaScript · Next.js · Laravel · MySQL · Tailwind CSS · REST API",
+    github: "https://github.com/sahedalways/resort-booking-frontend",
+    demo: "https://resort-booking-gules.vercel.app",
   },
 
   {
@@ -524,6 +531,44 @@ export const allProjects = [
 
   {
     id: 10,
+    image: Project39,
+    category: "webApp",
+    title: "Virtual Mining Machine (VMM) System",
+    authorName: "Sk Sahed Ahmed",
+    desc: `
+      <p><strong>Virtual Mining Machine (VMM)</strong> is an advanced investment system that enables users to invest in virtual mining machines and earn coins. Built with <strong>PHP Laravel, MySQL, and JavaScript</strong>, it offers seamless management for both users and administrators.</p>
+
+<br><p><strong>Key Features:</strong></p>
+<ul>
+  <li><strong>VMM Creation by Admin</strong>: Admin can create and manage Virtual Mining Machines (VMMs) with specific attributes like title, lifetime, minimum investment, execution time, preparation time, and status.</li>
+  <li><strong>Coin Distribution Algorithm</strong>: Coins are distributed through a lottery-like mechanism where a user’s probability of winning is based on investment size.</li>
+  <li><strong>Automatic Cloning</strong>: VMMs automatically clone themselves based on execution time to ensure continuous operation.</li>
+  <li><strong>User Investment and Withdrawal</strong>: Users can invest in active VMMs and withdraw their earnings, subject to admin approval.</li>
+  <li><strong>User Wallets</strong>: Users have two wallets—VMM Coins (earned from mining) and TAKA (used for investments).</li>
+  <li><strong>Admin Control Panel</strong>: Admins can manage VMMs, approve/reject withdrawals, and track transactions efficiently.</li>
+  <li><strong>Real-Time Updates</strong>: Live updates on VMM status, investments, and transactions.</li>
+  <li><strong>Lottery Mechanism</strong>: Higher investments increase chances of winning, but outcomes are probability-based.</li>
+</ul>
+
+<br><p><strong>For testing purposes, you can log in with the following credentials:</strong></p>
+<ul>
+  <li><strong>Admin Login</strong>:  
+    <br>Email: admin@gmail.com  
+    <br>Password: 12345678</li>
+  <li><strong>User Login</strong>:  
+    <br>Email: user@gmail.com  
+    <br>Password: 12345678</li>
+</ul>
+
+<p><strong>Virtual Mining Machine (VMM)</strong> provides an efficient and innovative way for users to invest in virtual mining while ensuring a powerful management system for admins. With automated cloning and a dynamic lottery-based earning system, it redefines investment-based virtual mining.</p>
+`,
+    use: "PHP · Laravel · MySQL · JavaScript.",
+    github: "https://github.com/sahedalways/bdcoder-vmm-machine",
+    demo: "http://vmm.shopsatkhira.com",
+  },
+
+  {
+    id: 11,
     image: Project40,
     category: "webApp",
     title: "Clip Forge - AI Application",
@@ -556,7 +601,7 @@ export const allProjects = [
   },
 
   {
-    id: 11,
+    id: 12,
     image: Project34,
     category: "webApp",
     title: `Strategic Web - Empowering Your Digital Presence`,
@@ -624,7 +669,7 @@ export const allProjects = [
   },
 
   {
-    id: 12,
+    id: 13,
     image: Project35,
     category: "webApp",
     title: `Buzzhiring - Job Portal Application`,
@@ -698,7 +743,7 @@ export const allProjects = [
   },
 
   {
-    id: 13,
+    id: 14,
     image: Project27,
     category: "webApp",
     title: `Multikart - Comprehensive eCommerce Website`,
@@ -739,7 +784,7 @@ Led end-to-end development of a robust eCommerce platform using <strong>Next.js<
   },
 
   {
-    id: 14,
+    id: 15,
     image: Project28,
     category: "webApp",
     title: `Aporadhkantha - Newspaper Website`,
@@ -770,7 +815,7 @@ Within a collaborative team effort, I made substantial contributions to the <str
   },
 
   {
-    id: 15,
+    id: 16,
     image: Project29,
     category: "mobileApp",
     title: `Kleancor - Cleaning Service App`,
@@ -833,7 +878,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 16,
+    id: 17,
     image: Project1,
     category: "reactFullApp",
     title: "React - Restaurant App",
@@ -845,7 +890,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 17,
+    id: 18,
     image: Project2,
     category: "reactFullApp",
     title: "React - Educational App",
@@ -857,7 +902,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 18,
+    id: 19,
     image: Project3,
     category: "reactFullApp",
     title: "React - Technology App",
@@ -869,7 +914,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 19,
+    id: 20,
     image: Project4,
     category: "reactFullApp",
     title: "React - Blog App",
@@ -881,7 +926,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 20,
+    id: 21,
     image: Project5,
     category: "reactFullApp",
     title: "React - Travel Agency App",
@@ -893,7 +938,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 21,
+    id: 22,
     image: Project6,
     category: "reactFullApp",
     title: "React - News Portal App",
@@ -905,7 +950,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 22,
+    id: 23,
     image: Project7,
     category: "reactFullApp",
     title: "React - Ruhi Fitness Gym",
@@ -917,7 +962,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 23,
+    id: 24,
     image: Project8,
     category: "reactFullApp",
     title: "React - Ecommerce App",
@@ -929,7 +974,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 24,
+    id: 25,
     image: Project9,
     category: "reactFullApp",
     title: "React - Pizza Recipes App",
@@ -942,7 +987,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 25,
+    id: 26,
     image: Project10,
     category: "reactMiniApp",
     title: "React - Admin Dashboard",
@@ -955,7 +1000,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 26,
+    id: 27,
     image: Project11,
     category: "reactMiniApp",
     title: "React - Full Ecommerce App Functionalities",
@@ -968,7 +1013,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 27,
+    id: 28,
     image: Project12,
     category: "reactMiniApp",
     title: "React - CRUD Operation with mongoDB",
@@ -980,7 +1025,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 28,
+    id: 29,
     image: Project13,
     category: "reactMiniApp",
     title: "React+Next - Crypto App",
@@ -992,7 +1037,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 29,
+    id: 30,
     image: Project14,
     category: "reactMiniApp",
     title: "React+Firebase - Chat App",
@@ -1005,7 +1050,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 30,
+    id: 31,
     image: Project15,
     category: "reactMiniApp",
     title: "React - Country App",
@@ -1017,7 +1062,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 31,
+    id: 32,
     image: Project25,
     category: "mernApp",
     title: "MERN - Full Ecommerce App",
@@ -1029,7 +1074,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 32,
+    id: 33,
     image: Project16,
     category: "domManipulations",
     title: "Dom Manipulation - Calculator App",
@@ -1042,7 +1087,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 33,
+    id: 34,
     image: Project17,
     category: "domManipulations",
     title: "Dom Manipulation - Quiz App",
@@ -1055,7 +1100,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 34,
+    id: 35,
     image: Project18,
     category: "domManipulations",
     title: "Dom Manipulation - Color Generator App",
@@ -1068,7 +1113,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 35,
+    id: 36,
     image: Project19,
     category: "domManipulations",
     title: "Dom Manipulation - Clone Programming Hero App",
@@ -1081,7 +1126,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 36,
+    id: 37,
     image: Project20,
     category: "domManipulations",
     title: "Dom Manipulation - Todo App",
@@ -1094,7 +1139,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 37,
+    id: 38,
     image: Project21,
     category: "domManipulations",
     title: "Dom Manipulation - Drag & Drop App",
@@ -1107,7 +1152,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 38,
+    id: 39,
     image: Project23,
     category: "phpApp",
     title: "PHP - Photography Agency App",
@@ -1119,7 +1164,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 39,
+    id: 40,
     image: Project24,
     category: "phpApp",
     title: "PHP - Educational App",
@@ -1132,7 +1177,7 @@ Developed <strong>Kleancor</strong>, a robust cleaning service application, addr
   },
 
   {
-    id: 40,
+    id: 41,
     image: Project22,
     category: "jqueryApp",
     title: "jQuery - Portfolio App",
