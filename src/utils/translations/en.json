@@ -1,0 +1,81 @@
+{
+    "greeting": "Hey there! I am",
+    "intro": "Sk Sahed Ahmed",
+    "cta": {
+        "get_cv": "Get CV",
+        "lets_talk": "Let's Talk"
+    },
+    "scroll_below": "Scroll Below",
+    "get_to_know": "Get to Know",
+    "about_me": "About Me",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "about": {
+        "intro_section": {
+            "title": "Full-Stack Software Developer",
+            "description": "I build fast and scalable web & mobile applications using React, Next.js, React Native, and Laravel. I help startups and businesses turn ideas into reliable digital products with clean architecture and great user experience.",
+            "cta_line": "Have a project in mind? Let’s build it together."
+        },
+        "stats": [
+            {
+                "label": "Experience",
+                "value": "4+ Years Working"
+            },
+            {
+                "label": "Clients",
+                "value": "40+ Worldwide"
+            },
+            {
+                "label": "Projects",
+                "value": "60+ Total Projects"
+            }
+        ]
+    },
+
+    "skills_section": {
+        "title": "Skills I Have",
+        "subtitle": "My Experience",
+
+        "frontend": "Frontend Development",
+        "backend": "Backend Development",
+
+        "levels": {
+            "skilled": "Skilled",
+            "basic": "Basic",
+            "midway": "Midway"
+        }
+    },
+    "projects": {
+        "title": "My",
+        "subtitle": "Projects",
+        "view_live": "Live Preview",
+        "view_code": "View Code"
+    },
+    "contact": {
+        "title": "Get in",
+        "subtitle": "Touch",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "form": {
+            "name": "Your Name",
+            "email": "Your Email",
+            "message": "Your Message",
+            "send": "Send Message"
+        }
+    },
+    "footer": {
+        "copyright": "© 2024 Sk Sahed Ahmed. All rights reserved.",
+        "made_with": "Made with"
+    },
+    "buttons": {
+        "read_more": "Read More",
+        "show_less": "Show Less",
+        "download": "Download CV"
+    }
+}
