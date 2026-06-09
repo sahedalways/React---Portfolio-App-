@@ -167,7 +167,7 @@ export const allProjects = [
   `,
         use: 'PHP · Laravel · Livewire · JavaScript · NextJs · MySQL ',
         github: 'https://github.com/sahedalways/kahadhr-hrm-backend',
-        demo: 'https://kahadhr.vercel.app/',
+        demo: 'https://kahadhr.com/',
     },
 
     {
@@ -280,7 +280,7 @@ export const allProjects = [
  `,
         use: 'JavaScript · MySQL · PHP · Laravel.',
         github: 'https://github.com/sahedalways/bitvault-trading',
-        demo: 'http://criptluxor.shopsatkhira.com/',
+        demo: 'http://cryptoluxor.com/',
     },
 
     {

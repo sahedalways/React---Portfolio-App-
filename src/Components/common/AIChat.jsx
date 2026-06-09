@@ -3,72 +3,47 @@ import { FiSend, FiX } from 'react-icons/fi';
 import { isLeadMessage } from './../../utils/isLeadMessage';
 import './AIChat.css';
 
-export default function AIChat({ onClose }) {
+export default function AIChat({ onClose, email }) {
     const [isTyping, setIsTyping] = useState(false);
-
-    const [email, setEmail] = useState('');
-    const [isEmailCollected, setIsEmailCollected] = useState(false);
 
     const [messages, setMessages] = useState([
         {
             role: 'bot',
-            text: '👋 Hello! Before starting, please enter your email to continue.',
+            text: '👋 Hello! I’m here to help you with Sahed’s services. Ask anything.',
         },
     ]);
-
     const [input, setInput] = useState('');
     const messagesEndRef = useRef(null);
 
-    // Load saved email
-    useEffect(() => {
-        const savedEmail = localStorage.getItem('chat_email');
-        if (savedEmail) {
-            setEmail(savedEmail);
-            setIsEmailCollected(true);
+    const quickQuestions = [
+        {
+            question: 'How to get started?',
+            answer: '🚀 To start, an advance payment is required. Then payments follow project milestones.',
+        },
 
-            setMessages([
-                {
-                    role: 'bot',
-                    text: '👋 Welcome back! How can I help you?',
-                },
-            ]);
+        {
+            question: 'What technologies do you use?',
+            answer: '🛠️ I primarily work with Next.js, Laravel (PHP), and React Native for mobile app development technologies.',
+        },
+
+        {
+            question: 'How do you ensure project quality?',
+            answer: '✅ I follow best coding practices, test thoroughly, and maintain clear documentation.',
+        },
+
+        {
+            question: 'About Payment Terms',
+            answer: '💰 Payment Terms:\n- 35% advance before starting.\n- 35% after 50% completion.\n- Remaining 30% after final delivery.',
+        },
+    ];
+
+    useEffect(() => {
+        if (messagesEndRef.current) {
+            messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
         }
-    }, []);
-
-    // auto scroll
-    useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [messages]);
 
-    // EMAIL submit
-    const handleEmailSubmit = (value) => {
-        const emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]+/;
-
-        if (!emailRegex.test(value)) {
-            alert('Please enter a valid email');
-            return;
-        }
-
-        setEmail(value);
-        setIsEmailCollected(true);
-        localStorage.setItem('chat_email', value);
-
-        setMessages((prev) => [
-            ...prev,
-            { role: 'bot', text: '✅ Thanks! Now you can chat with me.' },
-        ]);
-    };
-
-    // SEND MESSAGE
     const handleSend = async () => {
-        if (!isEmailCollected) {
-            setMessages((prev) => [
-                ...prev,
-                { role: 'bot', text: '👋 Please enter your email first to continue.' },
-            ]);
-            return;
-        }
-
         if (!input.trim()) return;
 
         const userMessage = input;
@@ -84,11 +59,7 @@ export default function AIChat({ onClose }) {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({
-                    message: userMessage,
-                    email,
-                    timestamp: new Date().toISOString(),
-                }),
+                body: JSON.stringify({ message: userMessage }),
             });
 
             const data = await res.json();
@@ -100,20 +71,19 @@ export default function AIChat({ onClose }) {
 
             setMessages((prev) => [...prev, { role: 'bot', text: reply }]);
 
-            // Lead detect
             if (isLeadMessage(userMessage)) {
                 fetch('/.netlify/functions/lead', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         message: userMessage,
-                        email,
                         timestamp: new Date().toISOString(),
+                        email: email,
                     }),
                 });
             }
         } catch (err) {
-            console.error(err);
+            console.error('Chat error:', err);
 
             setMessages((prev) => [
                 ...prev,
@@ -124,20 +94,15 @@ export default function AIChat({ onClose }) {
         }
     };
 
-    // safe render helper (fix split crash)
-    const renderMessage = (text) => {
-        if (!text) return null;
-
-        return text.split('\n').map((line, i) => (
-            <p key={i} style={{ margin: 0 }}>
-                {line}
-            </p>
-        ));
+    // This triggers on quick question click
+    const handleQuickQuestionClick = (answer) => {
+        console.log('Quick question clicked:', answer);
+        setMessages((prev) => [...prev, { role: 'bot', text: answer }]);
     };
 
     return (
         <div className="ai-chat-container">
-            {/* HEADER */}
+            {/* Header */}
             <div className="ai-chat-header">
                 <h2>AI Assistant</h2>
                 <button onClick={onClose}>
@@ -145,32 +110,34 @@ export default function AIChat({ onClose }) {
                 </button>
             </div>
 
-            {/* EMAIL GATE */}
-            {!isEmailCollected && (
-                <div className="email-gate">
-                    <input
-                        type="email"
-                        placeholder="Enter your email..."
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
-                                handleEmailSubmit(e.target.value);
-                            }
-                        }}
-                    />
-                </div>
-            )}
+            {/* Quick Questions */}
+            <div className="quick-questions">
+                {quickQuestions.map(({ question, answer }, idx) => (
+                    <button
+                        key={idx}
+                        onClick={() => handleQuickQuestionClick(answer)}
+                        className="quick-question-btn"
+                        type="button"
+                    >
+                        {question}
+                    </button>
+                ))}
+            </div>
 
-            {/* MESSAGES */}
+            {/* Messages */}
             <div className="ai-chat-messages" style={{ overflowY: 'auto', flex: 1 }}>
                 {messages.map((msg, i) => (
                     <div key={i} className={msg.role === 'user' ? 'message-user' : 'message-bot'}>
-                        {renderMessage(msg.text)}
+                        {msg.text.split('\n').map((line, idx) => (
+                            <p key={idx} style={{ margin: 0 }}>
+                                {line}
+                            </p>
+                        ))}
                     </div>
                 ))}
                 <div ref={messagesEndRef} />
             </div>
 
-            {/* TYPING */}
             {isTyping && (
                 <div className="message-bot typing">
                     <span className="dot"></span>
@@ -180,22 +147,20 @@ export default function AIChat({ onClose }) {
                 </div>
             )}
 
-            {/* INPUT */}
+            {/* Input */}
             <div className="ai-chat-input-area">
                 <input
                     type="text"
-                    placeholder={
-                        isEmailCollected ? 'Type your question...' : 'Enter email first...'
-                    }
+                    placeholder="Type your question..."
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
+                    className="ai-chat-input"
                     onKeyDown={(e) => {
                         if (e.key === 'Enter') handleSend();
                     }}
                     style={{ color: 'black' }}
                 />
-
-                <button onClick={handleSend} className="ai-chat-send-btn">
+                <button onClick={handleSend} className="ai-chat-send-btn" aria-label="Send message">
                     <FiSend size={18} />
                 </button>
             </div>

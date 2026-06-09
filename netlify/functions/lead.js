@@ -1,7 +1,7 @@
 exports.handler = async (event) => {
     const data = JSON.parse(event.body);
 
-    const { message, timestamp } = data;
+    const { message, timestamp, email } = data;
 
     try {
         await fetch('https://formspree.io/f/xnngnynw', {
@@ -12,6 +12,7 @@ exports.handler = async (event) => {
             },
             body: JSON.stringify({
                 message: message,
+                email: email,
                 time: timestamp,
             }),
         });

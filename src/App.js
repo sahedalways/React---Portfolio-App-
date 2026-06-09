@@ -21,6 +21,8 @@ import TranslationLauncher from './Components/common/TranslationLauncher';
 const App = () => {
     const [loading, setLoading] = useState(false);
     const [showChat, setShowChat] = useState(false);
+    const [email, setEmail] = useState('');
+    const [isChatAllowed, setIsChatAllowed] = useState(false);
 
     useEffect(() => {
         setLoading(true);
@@ -28,6 +30,37 @@ const App = () => {
             setLoading(false);
         }, 1000);
     }, []);
+
+    const handleStartChat = () => {
+        if (!email.includes('@')) {
+            alert('Valid email required');
+            return;
+        }
+        const savedEmail = localStorage.getItem('chat_email');
+
+        if (savedEmail) {
+            setEmail(savedEmail);
+            setIsChatAllowed(true);
+        }
+
+        setShowChat(true);
+    };
+
+    useEffect(() => {
+        setLoading(true);
+
+        setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+
+        const savedEmail = localStorage.getItem('chat_email');
+
+        if (savedEmail) {
+            setEmail(savedEmail);
+            setIsChatAllowed(true);
+        }
+    }, []);
+
     return (
         <>
             {loading ? (
@@ -70,9 +103,34 @@ const App = () => {
                 </>
             )}
 
+            {showChat && !isChatAllowed && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+                    <div className="bg-white p-5 rounded-lg w-80">
+                        <h2 className="text-lg font-semibold mb-3">
+                            Enter your email to start chat
+                        </h2>
+
+                        <input
+                            type="email"
+                            placeholder="your@email.com"
+                            className="w-full border p-2 mb-3"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+
+                        <button
+                            className="bg-blue-500 text-white w-full p-2 rounded"
+                            onClick={handleStartChat}
+                        >
+                            Start Chat
+                        </button>
+                    </div>
+                </div>
+            )}
+
             {showChat && (
                 <div className="fixed bottom-20 right-6 w-80 max-w-full z-50 shadow-lg">
-                    <ChatContainer isOpen={showChat} setIsOpen={setShowChat} />
+                    <ChatContainer isOpen={showChat} setIsOpen={setShowChat} email={email} />
                 </div>
             )}
         </>

@@ -3,7 +3,7 @@
 import AIChat from './AIChat';
 import { FiMessageCircle } from 'react-icons/fi';
 
-export default function ChatContainer({ isOpen, setIsOpen }) {
+export default function ChatContainer({ isOpen, setIsOpen, email }) {
     return (
         <>
             {/* Chat launcher button */}
@@ -55,7 +55,7 @@ export default function ChatContainer({ isOpen, setIsOpen }) {
                         flexDirection: 'column',
                     }}
                 >
-                    <AIChat onClose={() => setIsOpen(false)} />
+                    <AIChat onClose={() => setIsOpen(false)} email={email} />
                 </div>
             )}
         </>
