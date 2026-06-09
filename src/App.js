@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { HashLoader } from 'react-spinners';
+
 import About from './Components/About/About';
 import BlogDetails from './Components/Blog/BlogDetails';
 import Contact from './Components/Contact/Contact';
@@ -14,9 +15,9 @@ import SeeMore from './Components/Screens/See_More/SeeMore';
 import SeeMoreBlogs from './Components/Screens/See_More_Blogs/SeeMoreBlogs';
 import Services from './Components/Services/Services';
 import Testimonial from './Components/Testimonial/Testimonial';
+
 import ChatLauncher from './Components/common/ChatLauncher';
 import ChatContainer from './Components/common/ChatContainer';
-import TranslationLauncher from './Components/common/TranslationLauncher';
 
 const App = () => {
     const [loading, setLoading] = useState(false);
@@ -24,42 +25,53 @@ const App = () => {
     const [email, setEmail] = useState('');
     const [isChatAllowed, setIsChatAllowed] = useState(false);
 
+    // ========================
+    // INIT (loading + localStorage check)
+    // ========================
     useEffect(() => {
         setLoading(true);
+
         setTimeout(() => {
             setLoading(false);
         }, 1000);
-    }, []);
 
-    const handleStartChat = () => {
-        if (!email.includes('@')) {
-            alert('Valid email required');
-            return;
-        }
         const savedEmail = localStorage.getItem('chat_email');
 
         if (savedEmail) {
             setEmail(savedEmail);
             setIsChatAllowed(true);
+        }
+    }, []);
+
+    // ========================
+    // START CHAT (save email)
+    // ========================
+    const handleStartChat = () => {
+        if (!email || !email.includes('@')) {
+            alert('Valid email required');
+            return;
+        }
+
+        localStorage.setItem('chat_email', email);
+        setIsChatAllowed(true);
+    };
+
+    // ========================
+    // OPEN CHAT
+    // ========================
+    const handleOpenChat = () => {
+        console.log('Opening chat...');
+        const savedEmail = localStorage.getItem('chat_email');
+
+        if (savedEmail) {
+            setEmail(savedEmail);
+            setIsChatAllowed(true);
+        } else {
+            setIsChatAllowed(false);
         }
 
         setShowChat(true);
     };
-
-    useEffect(() => {
-        setLoading(true);
-
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
-
-        const savedEmail = localStorage.getItem('chat_email');
-
-        if (savedEmail) {
-            setEmail(savedEmail);
-            setIsChatAllowed(true);
-        }
-    }, []);
 
     return (
         <>
@@ -67,68 +79,107 @@ const App = () => {
                 <HashLoader color="#007ACC" loading={loading} className="override" size={100} />
             ) : (
                 <>
-                    {/* <TranslationLauncher /> */}
+                    {/* Chat Launcher */}
+                    <ChatLauncher onClick={handleOpenChat} />
 
-                    <ChatLauncher onClick={() => setShowChat(true)} />
                     <Router>
                         <div style={{ overflow: 'hidden' }}>
                             <Navbar />
 
                             <Routes>
-                                <Route exact path="/" element={<Home />} />
-
-                                <Route exact path="/about" element={<About />} />
-                                <Route exact path="/experience" element={<Experience />} />
-                                <Route exact path="/services" element={<Services />} />
-                                <Route exact path="/portfolio" element={<Portfolio />} />
-                                <Route exact path="/testimonial" element={<Testimonial />} />
-                                <Route exact path="/contact" element={<Contact />} />
-
-                                <Route exact path="/projects" element={<SeeMore />} />
-                                <Route exact path="/blogs" element={<SeeMoreBlogs />} />
-
-                                <Route exact path="/blog-details/:id" element={<BlogDetails />} />
-
-                                <Route
-                                    exact
-                                    path="/project-details/:id"
-                                    element={<ProjectDetails />}
-                                />
-
-                                <Route exact path="*" element={<Home />} />
+                                <Route path="/" element={<Home />} />
+                                <Route path="/about" element={<About />} />
+                                <Route path="/experience" element={<Experience />} />
+                                <Route path="/services" element={<Services />} />
+                                <Route path="/portfolio" element={<Portfolio />} />
+                                <Route path="/testimonial" element={<Testimonial />} />
+                                <Route path="/contact" element={<Contact />} />
+                                <Route path="/projects" element={<SeeMore />} />
+                                <Route path="/blogs" element={<SeeMoreBlogs />} />
+                                <Route path="/blog-details/:id" element={<BlogDetails />} />
+                                <Route path="/project-details/:id" element={<ProjectDetails />} />
+                                <Route path="*" element={<Home />} />
                             </Routes>
+
                             <Footer />
                         </div>
                     </Router>
                 </>
             )}
 
+            {/* =========================
+                EMAIL GATE MODAL
+            ========================= */}
             {showChat && !isChatAllowed && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-                    <div className="bg-white p-5 rounded-lg w-80">
-                        <h2 className="text-lg font-semibold mb-3">
+                <div
+                    style={{
+                        position: 'fixed',
+                        bottom: '1.5rem',
+                        right: '1.5rem',
+                        width: '320px',
+                        height: '450px',
+                        borderRadius: '12px',
+                        zIndex: 2000,
+                        backgroundColor: 'white',
+                        boxShadow:
+                            '0 10px 15px -3px rgba(0,0,0,0.3), 0 4px 6px -4px rgba(0,0,0,0.2)',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        overflow: 'hidden',
+                    }}
+                >
+                    {/* Header */}
+                    <div
+                        style={{
+                            padding: '12px',
+                            background: '#007acc',
+                            color: 'white',
+                            fontWeight: 'bold',
+                        }}
+                    >
+                        AI Assistant
+                    </div>
+
+                    <div style={{ padding: '20px', flex: 1 }}>
+                        <h3 style={{ marginBottom: '10px', color: 'black' }}>
                             Enter your email to start chat
-                        </h2>
+                        </h3>
 
                         <input
                             type="email"
                             placeholder="your@email.com"
-                            className="w-full border p-2 mb-3"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
+                            style={{
+                                width: '100%',
+                                padding: '10px',
+                                border: '1px solid #ccc',
+                                borderRadius: '6px',
+                                marginBottom: '10px',
+                            }}
                         />
 
                         <button
-                            className="bg-blue-500 text-white w-full p-2 rounded"
                             onClick={handleStartChat}
+                            style={{
+                                width: '100%',
+                                padding: '10px',
+                                backgroundColor: '#007acc',
+                                color: 'white',
+                                border: 'none',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                            }}
                         >
                             Start Chat
                         </button>
                     </div>
                 </div>
             )}
-
-            {showChat && (
+            {/* =========================
+                CHAT UI
+            ========================= */}
+            {showChat && isChatAllowed && (
                 <div className="fixed bottom-20 right-6 w-80 max-w-full z-50 shadow-lg">
                     <ChatContainer isOpen={showChat} setIsOpen={setShowChat} email={email} />
                 </div>
