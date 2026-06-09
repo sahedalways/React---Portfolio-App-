@@ -135,9 +135,27 @@ const App = () => {
                             background: '#007acc',
                             color: 'white',
                             fontWeight: 'bold',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
                         }}
                     >
-                        AI Assistant
+                        <span>AI Assistant</span>
+
+                        <button
+                            onClick={() => setShowChat(false)}
+                            style={{
+                                background: 'transparent',
+                                border: 'none',
+                                color: 'white',
+                                fontSize: '18px',
+                                cursor: 'pointer',
+                                lineHeight: 1,
+                            }}
+                            aria-label="Close Chat"
+                        >
+                            ✕
+                        </button>
                     </div>
 
                     <div style={{ padding: '20px', flex: 1 }}>
