@@ -7,13 +7,15 @@ import { RiMessengerLine } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
 import './contact.css';
 import SEO from '../common/SEO';
+import Modal from '../common/Modal';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_PATTERN = /^\+?[0-9\s-]{7,15}$/;
 
 const Contact = () => {
     const { t } = useTranslation();
-    const [isSentMessage, setIsSentMessage] = useState('');
+    const [modalOpen, setModalOpen] = useState(false);
+    const [modalType, setModalType] = useState('success');
     const [errors, setErrors] = useState({});
     const [formValues, setFormValues] = useState({
         name: '',
@@ -22,14 +24,6 @@ const Contact = () => {
         projectType: '',
         message: '',
     });
-
-    useEffect(() => {
-        const messageTimer = setTimeout(() => {
-            setIsSentMessage('');
-        }, 5000);
-
-        return () => clearTimeout(messageTimer);
-    }, [isSentMessage]);
 
     useEffect(() => {
         AOS.init({
@@ -89,7 +83,8 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                setIsSentMessage(t('contact_form.success'));
+                setModalType('success');
+                setModalOpen(true);
                 setFormValues({
                     name: '',
                     email: '',
@@ -98,10 +93,12 @@ const Contact = () => {
                     message: '',
                 });
             } else {
-                setIsSentMessage(t('contact_form.error'));
+                setModalType('error');
+                setModalOpen(true);
             }
         } catch (error) {
-            setIsSentMessage(t('contact_form.error'));
+            setModalType('error');
+            setModalOpen(true);
             console.error('Error sending message:', error);
         }
     };
@@ -228,17 +225,20 @@ const Contact = () => {
                     <button type="submit" className="btn btn-primary">
                         {t('contact_form.send')}
                     </button>
-                    {isSentMessage && (
-                        <p
-                            className={
-                                isSentMessage === t('contact_form.error') ? 'msg-error' : 'msg-success'
-                            }
-                        >
-                            {isSentMessage}
-                        </p>
-                    )}
                 </form>
             </div>
+
+            <Modal
+                open={modalOpen}
+                type={modalType}
+                message={
+                    modalType === 'success'
+                        ? t('contact_form.success')
+                        : t('contact_form.error')
+                }
+                closeLabel={t('contact_form.modal_close')}
+                onClose={() => setModalOpen(false)}
+            />
         </section>
     );
 };

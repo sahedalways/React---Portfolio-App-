@@ -78,7 +78,7 @@
         "title": "Services",
         "frontend_title": "Frontend Development",
         "backend_title": "Backend Development",
-        "wordpress_title": "Wordpress Development",
+        "ai_title": "AI Automation",
         "frontend": [
             {
                 "title": "Intuitive UI/UX Design",
@@ -159,38 +159,38 @@
                 "description": "Design your backend to handle growth and high traffic without breaking down."
             }
         ],
-        "wordpress": [
+        "ai": [
             {
-                "title": "Custom Plugin Development",
-                "description": "Crafting tailor-made WordPress plugins to enhance website functionality and meet unique business needs."
+                "title": "Custom AI Chatbots",
+                "description": "Build AI chatbots trained on your business data to answer customers instantly, 24/7."
             },
             {
-                "title": "Feature Extension",
-                "description": "Extending website capabilities by creating custom functionalities through plugins, catering to specific requirements."
+                "title": "Workflow Automation",
+                "description": "Automate repetitive tasks and processes to save time and reduce human errors."
             },
             {
-                "title": "Plugin Customization",
-                "description": "Adapting and customizing existing plugins to align with individual site design and functionalities."
+                "title": "AI Integration",
+                "description": "Integrate powerful AI models (OpenAI, Gemini, Groq) into your website or app."
             },
             {
-                "title": "Performance Optimization",
-                "description": "Optimizing plugins for better site performance and user experience, ensuring efficiency."
+                "title": "Intelligent Data Extraction",
+                "description": "Extract, clean and organize data from documents, images and forms automatically."
             },
             {
-                "title": "Plugin Integration",
-                "description": "Seamlessly integrating and configuring plugins to enhance the website's overall functionality and user interaction."
+                "title": "Content Generation Systems",
+                "description": "Generate product descriptions, blog posts and marketing copy with AI at scale."
             },
             {
-                "title": "Security Enhancements",
-                "description": "Implementing secure coding practices to develop plugins, ensuring website security and data protection."
+                "title": "Predictive Analytics",
+                "description": "Turn your business data into forecasts and insights for smarter decision-making."
             },
             {
-                "title": "Responsive Support & Maintenance",
-                "description": "Providing ongoing support, updates, and maintenance for developed plugins to ensure optimal performance."
+                "title": "AI-Powered Search",
+                "description": "Improve site search with semantic search that understands what users really mean."
             },
             {
-                "title": "Cross-Compatibility",
-                "description": "Developing plugins that are compatible with various WordPress versions and other common plugins."
+                "title": "Custom Automation Dashboards",
+                "description": "Monitor and control all your automated workflows from one clean dashboard."
             }
         ]
     },
@@ -243,6 +243,7 @@
         "project_type": "Select project type...",
         "message": "Write your message...",
         "send": "Send Message",
+        "modal_close": "OK",
         "success": "Your message has been sent. Keep in touch.",
         "error": "Sorry! Your message send failed!",
         "project_types": {

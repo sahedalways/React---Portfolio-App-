@@ -25,7 +25,7 @@ const Services = () => {
 
   const frontendServices = t('services.frontend', { returnObjects: true });
   const backendServices = t('services.backend', { returnObjects: true });
-  const wordpressServices = t('services.wordpress', { returnObjects: true });
+  const aiServices = t('services.ai', { returnObjects: true });
 
   return (
     <>
@@ -72,14 +72,14 @@ const Services = () => {
       </ul>
     </article>
 
-        {/* Wordpress development section ends here */}
+        {/* AI Automation section ends here */}
       <article className="service">
   <div data-aos="slide-left" className="service__head">
-    <h3><strong>{t('services.wordpress_title')}</strong></h3>
+    <h3><strong>{t('services.ai_title')}</strong></h3>
   </div>
 
   <ul data-aos="slide-left" className="service__list">
-    {wordpressServices.map((point, index) => (
+    {aiServices.map((point, index) => (
       <li key={index}>
         <BiCheck className="service__list__icon" />
         <p><strong>{point.title}</strong>: {point.description}</p>
