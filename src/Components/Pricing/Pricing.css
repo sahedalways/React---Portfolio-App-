@@ -52,7 +52,7 @@
 
 .pricing__name {
     color: var(--color-primary);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .pricing__amount {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--color-white);
 }
@@ -79,9 +79,7 @@
 .pricing__note {
     color: var(--color-light);
     font-size: 0.8rem;
-}
-
-.pricing__features {
+}.pricing__features {
     list-style: none;
     flex: 1;
     margin: 0 0 1.5rem;
