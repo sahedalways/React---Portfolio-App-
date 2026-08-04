@@ -5,7 +5,6 @@ import Contact from "../../Contact/Contact";
 import Experience from "../../Experience/Experience";
 import Header from "../../Header/Header";
 import Portfolio from "../../Portfolio/Portfolio";
-import Process from "../../Process/Process";
 import Services from "../../Services/Services";
 import Testimonial from "../../Testimonial/Testimonial";
 import SEO from "../../common/SEO";
@@ -64,7 +63,6 @@ const Home = () => {
       <About />
       <Experience />
       <Services />
-      <Process />
       <Portfolio />
       <Blog />
       <Testimonial />

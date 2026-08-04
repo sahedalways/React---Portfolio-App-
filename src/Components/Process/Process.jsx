@@ -1,4 +1,6 @@
-import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiClipboard, FiLayout, FiCode, FiCheckCircle, FiTruck } from 'react-icons/fi';
 import './Process.css';
@@ -9,6 +11,18 @@ const Process = () => {
     const { t } = useTranslation();
     const steps = t('process.steps', { returnObjects: true });
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            disable: false,
+            startEvent: 'DOMContentLoaded',
+            offset: 120,
+            easing: 'ease',
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
+
     return (
         <section id="process" className="process__section">
             <h5>{t('process.subtitle')}</h5>
@@ -18,7 +32,12 @@ const Process = () => {
                 {steps.map((step, index) => {
                     const Icon = ICONS[index % ICONS.length];
                     return (
-                        <article key={index} className="process__step">
+                        <article
+                            key={index}
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
+                            className="process__step"
+                        >
                             <div className="process__step__icon">
                                 <Icon />
                             </div>

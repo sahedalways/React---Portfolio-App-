@@ -8,7 +8,11 @@ footer {
 }
 
 footer a {
-    color: var(--color-light);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+footer a:hover {
+    color: #fff;
 }
 
 .footer__logo {
@@ -72,7 +76,7 @@ footer a {
 }
 
 .footer__copyright small span {
-    color: var(--color-light);
+    color: #fff;
 }
 
 /*Media queries for SMALL DEVICES ----->>> */
