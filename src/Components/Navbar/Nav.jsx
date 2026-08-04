@@ -11,7 +11,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#header");
 
   return (
     <nav>
