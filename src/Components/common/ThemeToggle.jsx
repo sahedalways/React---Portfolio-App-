@@ -19,7 +19,7 @@ const ThemeToggle = () => {
             style={{
                 position: 'fixed',
                 top: '20px',
-                right: '76px',
+                right: '88px',
                 zIndex: 9999,
                 display: 'flex',
                 alignItems: 'center',
