@@ -6,7 +6,6 @@ import 'aos/dist/aos.css';
 import { FaQuoteLeft } from 'react-icons/fa'; // রিঅ্যাক্ট আইকন যোগ করলে সুন্দর দেখাবে
 import { useTranslation } from 'react-i18next';
 import SEO from '../common/SEO';
-import TestimonialForm from '../common/TestimonialForm';
 
 import { Pagination, Autoplay } from 'swiper'; // Autoplay ইমপোর্ট করুন
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -63,8 +62,6 @@ const Testimonial = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-
-            <TestimonialForm />
         </section>
     );
 };

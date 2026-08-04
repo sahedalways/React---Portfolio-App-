@@ -7,7 +7,6 @@ import { RiMessengerLine } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
 import './contact.css';
 import SEO from '../common/SEO';
-import Availability from '../common/Availability';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_PATTERN = /^\+?[0-9\s-]{7,15}$/;
@@ -17,9 +16,7 @@ const Contact = () => {
     const [isSentMessage, setIsSentMessage] = useState('');
     const [errors, setErrors] = useState({});
     const [formValues, setFormValues] = useState({
-        fname: '',
-        lname: '',
-        subject: '',
+        name: '',
         email: '',
         phone: '',
         projectType: '',
@@ -58,13 +55,12 @@ const Contact = () => {
     const validate = () => {
         const newErrors = {};
 
-        if (!formValues.fname.trim()) newErrors.fname = t('contact_form.errors.name');
+        if (!formValues.name.trim()) newErrors.name = t('contact_form.errors.name');
         if (!formValues.email.trim()) {
             newErrors.email = t('contact_form.errors.email');
         } else if (!EMAIL_PATTERN.test(formValues.email)) {
             newErrors.email = t('contact_form.errors.email');
         }
-        if (!formValues.subject.trim()) newErrors.subject = t('contact_form.errors.subject');
         if (!formValues.projectType) newErrors.projectType = t('contact_form.errors.project_type');
         if (!formValues.budget) newErrors.budget = t('contact_form.errors.budget');
         if (formValues.phone && !PHONE_PATTERN.test(formValues.phone)) {
@@ -97,9 +93,7 @@ const Contact = () => {
             if (response.ok) {
                 setIsSentMessage(t('contact_form.success'));
                 setFormValues({
-                    fname: '',
-                    lname: '',
-                    subject: '',
+                    name: '',
                     email: '',
                     phone: '',
                     projectType: '',
@@ -139,8 +133,6 @@ const Contact = () => {
             <div className="container contact__container">
                 {/* contact options */}
                 <div data-aos="slide-right" className="contact__options">
-                    <Availability showDetails={true} />
-
                     <article className="contact__option">
                         <AiOutlineMail className="contact__option__icon" />
                         <h4>{t('contact.email')}</h4>
@@ -175,33 +167,14 @@ const Contact = () => {
                 <form data-aos="slide-left" onSubmit={handleSubmit} noValidate>
                     <input
                         type="text"
-                        name="fname"
-                        placeholder={t('contact_form.first_name')}
-                        value={formValues.fname}
+                        name="name"
+                        placeholder={t('contact_form.name')}
+                        value={formValues.name}
                         onChange={handleChange}
-                        className={errors.fname ? 'form-error' : ''}
+                        className={errors.name ? 'form-error' : ''}
                         required
                     />
-                    {errors.fname && <small className="form-error-msg">{errors.fname}</small>}
-
-                    <input
-                        type="text"
-                        name="lname"
-                        placeholder={t('contact_form.last_name')}
-                        value={formValues.lname}
-                        onChange={handleChange}
-                    />
-
-                    <input
-                        type="text"
-                        name="subject"
-                        placeholder={t('contact_form.subject')}
-                        value={formValues.subject}
-                        onChange={handleChange}
-                        className={errors.subject ? 'form-error' : ''}
-                        required
-                    />
-                    {errors.subject && <small className="form-error-msg">{errors.subject}</small>}
+                    {errors.name && <small className="form-error-msg">{errors.name}</small>}
 
                     <input
                         type="email"

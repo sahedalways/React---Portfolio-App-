@@ -237,9 +237,7 @@
     },
 
     "contact_form": {
-        "first_name": "Enter first name...",
-        "last_name": "Enter last name...",
-        "subject": "Enter your subject...",
+        "name": "Enter your name...",
         "email": "Enter your email...",
         "phone": "Enter your phone number (optional)",
         "project_type": "Select project type...",
@@ -266,7 +264,6 @@
         "errors": {
             "name": "Please enter your name.",
             "email": "Please enter a valid email address.",
-            "subject": "Please enter a subject.",
             "phone": "Please enter a valid phone number.",
             "project_type": "Please select a project type.",
             "budget": "Please select a budget range.",
