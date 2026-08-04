@@ -241,7 +241,6 @@
         "email": "Enter your email...",
         "phone": "Enter your phone number (optional)",
         "project_type": "Select project type...",
-        "budget": "Select your budget range...",
         "message": "Write your message...",
         "send": "Send Message",
         "success": "Your message has been sent. Keep in touch.",
@@ -254,19 +253,11 @@
             "wordpress": "WordPress Website",
             "other": "Other / Not sure yet"
         },
-        "budgets": {
-            "under_500": "Under $500",
-            "500_1500": "$500 - $1,500",
-            "1500_5000": "$1,500 - $5,000",
-            "over_5000": "Above $5,000",
-            "discuss": "Let's discuss"
-        },
         "errors": {
             "name": "Please enter your name.",
             "email": "Please enter a valid email address.",
             "phone": "Please enter a valid phone number.",
             "project_type": "Please select a project type.",
-            "budget": "Please select a budget range.",
             "message": "Please write a message of at least 10 characters."
         }
     },

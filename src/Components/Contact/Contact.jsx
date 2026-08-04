@@ -20,7 +20,6 @@ const Contact = () => {
         email: '',
         phone: '',
         projectType: '',
-        budget: '',
         message: '',
     });
 
@@ -62,7 +61,6 @@ const Contact = () => {
             newErrors.email = t('contact_form.errors.email');
         }
         if (!formValues.projectType) newErrors.projectType = t('contact_form.errors.project_type');
-        if (!formValues.budget) newErrors.budget = t('contact_form.errors.budget');
         if (formValues.phone && !PHONE_PATTERN.test(formValues.phone)) {
             newErrors.phone = t('contact_form.errors.phone');
         }
@@ -97,7 +95,6 @@ const Contact = () => {
                     email: '',
                     phone: '',
                     projectType: '',
-                    budget: '',
                     message: '',
                 });
             } else {
@@ -117,7 +114,6 @@ const Contact = () => {
         'wordpress',
         'other',
     ];
-    const budgetOptions = ['under_500', '500_1500', '1500_5000', 'over_5000', 'discuss'];
 
     return (
         <section id="contact">
@@ -216,24 +212,6 @@ const Contact = () => {
                     {errors.projectType && (
                         <small className="form-error-msg">{errors.projectType}</small>
                     )}
-
-                    <select
-                        name="budget"
-                        value={formValues.budget}
-                        onChange={handleChange}
-                        className={errors.budget ? 'form-error' : ''}
-                        required
-                    >
-                        <option value="" disabled>
-                            {t('contact_form.budget')}
-                        </option>
-                        {budgetOptions.map((key) => (
-                            <option key={key} value={t(`contact_form.budgets.${key}`)}>
-                                {t(`contact_form.budgets.${key}`)}
-                            </option>
-                        ))}
-                    </select>
-                    {errors.budget && <small className="form-error-msg">{errors.budget}</small>}
 
                     <textarea
                         name="message"
