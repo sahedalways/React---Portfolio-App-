@@ -24,6 +24,15 @@
   --transition: all 0.3s ease;
 }
 
+:root[data-theme="light"] {
+  --color-bg: #f4f6fb;
+  --color-bg-variant: #e4e9f4;
+  --color-primary: #007acc;
+  --color-primary-variant: rgba(0, 122, 204, 0.2);
+  --color-white: #15181d;
+  --color-light: rgba(0, 0, 0, 0.65);
+}
+
 /*EA562B*/
 
 html {
@@ -155,6 +164,36 @@ img {
   section > h2 {
     margin-bottom: 2rem;
   }
+}
+
+/* Light theme adjustments for translucent dark bars */
+:root[data-theme="light"] nav {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+:root[data-theme="light"] nav a {
+  color: var(--color-bg);
+}
+
+:root[data-theme="light"] nav a.active {
+  background: var(--color-bg-variant);
+  color: var(--color-white);
+}
+
+:root[data-theme="light"] .btn:hover {
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+
+:root[data-theme="light"] input,
+:root[data-theme="light"] textarea,
+:root[data-theme="light"] select {
+  color: var(--color-white);
+}
+
+:root[data-theme="light"] input::placeholder,
+:root[data-theme="light"] textarea::placeholder {
+  color: var(--color-light);
 }
 
 /*===========Finished All Css here==============*/

@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { CgProfile } from 'react-icons/cg';
 import { FaCalendarAlt } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import { HashLoader } from 'react-spinners';
+import { useTranslation } from 'react-i18next';
 import { allBlogs } from './BlogData';
 import './blogDetails.css';
+import SEO from '../common/SEO';
 
 const BlogDetails = () => {
     const { id } = useParams();
+    const { t } = useTranslation();
     const [item, setItem] = useState(null);
     const [loading, setLoading] = useState(false);
 
@@ -16,19 +18,6 @@ const BlogDetails = () => {
         const item = allBlogs.find((item) => item.id === parseInt(id));
         window.scrollTo(0, 0);
         if (item) {
-            // Update document title
-            document.title = item.title;
-
-            // Update Open Graph meta tags dynamically
-            const ogTitle = document.querySelector('meta[property="og:title"]');
-            if (ogTitle) {
-                ogTitle.setAttribute('content', item.title);
-            }
-            const ogImage = document.querySelector('meta[property="og:image"]');
-            if (ogImage) {
-                ogImage.setAttribute('content', item.image);
-            }
-
             setItem(item);
         }
     }, [id]);
@@ -53,9 +42,13 @@ const BlogDetails = () => {
                         />
                     ) : (
                         <>
-                            <Helmet>
-                                <title>Sahed's blogs</title>
-                            </Helmet>
+                            <SEO
+                                title={item.title}
+                                description={typeof item.desc === 'string' ? item.desc.replace(/<[^>]*>/g, '').slice(0, 160) : `Blog by Sk Sahed Ahmed`}
+                                image={item.image}
+                                url={`https://sahedahmed.netlify.app/blog-details/${id}`}
+                                type="article"
+                            />
 
                             <section id="blog__view">
                                 <div className="container blog__container__details">
@@ -99,19 +92,19 @@ const BlogDetails = () => {
                                     </div>
 
                                     <div className="blog__content">
-                                        <h5 className="blog__subtitle">Title of the blog</h5>
+                                        <h5 className="blog__subtitle">{t('blog_details.subtitle')}</h5>
                                         <h2 className="blog__title">{item.title}</h2>
 
                                         <div className="blog__cards">
                                             <article data-aos="fade-right" className="blog__card">
                                                 <CgProfile className="blog__icon" />
-                                                <h5>Author Name</h5>
+                                                <h5>{t('blog_details.author')}</h5>
                                                 <small>{item.author}</small>
                                             </article>
 
                                             <article data-aos="fade-left" className="blog__card">
                                                 <FaCalendarAlt className="blog__icon" />
-                                                <h5>Publish Date</h5>
+                                                <h5>{t('blog_details.publish_date')}</h5>
                                                 <small>{item.date}</small>
                                             </article>
                                         </div>
@@ -124,7 +117,7 @@ const BlogDetails = () => {
                     )}
                 </>
             ) : (
-                <h1>Item not found!</h1>
+                <h1>{t('blog_details.not_found')}</h1>
             )}
         </>
     );

@@ -1,12 +1,16 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 import { BiCheck } from "react-icons/bi";
-import { WordpressServices, backendServices, frontendServices } from "./ServicesPoints";
+import { useTranslation } from 'react-i18next';
 import "./services.css";
+import SEO from '../common/SEO';
+import Process from '../Process/Process';
+import BrochureDownload from '../common/BrochureDownload';
 
 const Services = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -19,19 +23,26 @@ const Services = () => {
     });
   }, []);
 
+  const frontendServices = t('services.frontend', { returnObjects: true });
+  const backendServices = t('services.backend', { returnObjects: true });
+  const wordpressServices = t('services.wordpress', { returnObjects: true });
+
   return (
-    <section id="services">
-      <Helmet>
-        <title>Sahed's Services</title>
-      </Helmet>
-      <h5>Offers I Provide</h5>
-      <h2>Services</h2>
+    <>
+      <section id="services">
+      <SEO
+        title="Services"
+        description="Web development services by Sk Sahed Ahmed: Frontend development with React & Next.js, Backend development with PHP & Laravel, and WordPress plugin development."
+        url="https://sahedahmed.netlify.app/services"
+      />
+      <h5>{t('services.subtitle')}</h5>
+      <h2>{t('services.title')}</h2>
 
       <div className="container services__container">
         {/* Frontend section starts from here */}
       <article className="service">
       <div data-aos="slide-right" className="service__head">
-        <h3><strong>Frontend Development</strong></h3>
+        <h3><strong>{t('services.frontend_title')}</strong></h3>
       </div>
 
       <ul data-aos="slide-right" className="service__list">
@@ -48,7 +59,7 @@ const Services = () => {
 
        <article className="service">
       <div data-aos="slide-down" className="service__head">
-        <h3><strong>Backend Development</strong></h3>
+        <h3><strong>{t('services.backend_title')}</strong></h3>
       </div>
 
       <ul data-aos="slide-up" className="service__list">
@@ -64,11 +75,11 @@ const Services = () => {
         {/* Wordpress development section ends here */}
       <article className="service">
   <div data-aos="slide-left" className="service__head">
-    <h3><strong>Wordpress Development</strong></h3>
+    <h3><strong>{t('services.wordpress_title')}</strong></h3>
   </div>
 
   <ul data-aos="slide-left" className="service__list">
-    {WordpressServices.map((point, index) => (
+    {wordpressServices.map((point, index) => (
       <li key={index}>
         <BiCheck className="service__list__icon" />
         <p><strong>{point.title}</strong>: {point.description}</p>
@@ -79,7 +90,14 @@ const Services = () => {
 
 
       </div>
+
+      <div className="brochure-cta" style={{ textAlign: 'center', marginTop: '3rem' }}>
+        <BrochureDownload />
+      </div>
     </section>
+
+    <Process />
+    </>
   );
 };
 

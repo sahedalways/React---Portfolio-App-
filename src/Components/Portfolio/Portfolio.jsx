@@ -1,13 +1,24 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import './portfolio.css';
-import { supabase } from '../../libs/supabaseClient';
+import { useTranslation } from 'react-i18next';
 import { usePortfolioProject } from '../../hooks/usePortfolioProject';
+import SEO from '../common/SEO';
+import Skeleton from '../common/Skeleton';
+
+const CATEGORIES = [
+    'webApp',
+    'mobileApp',
+    'reactFullApp',
+    'reactMiniApp',
+    'mernApp',
+    'domManipulations',
+    'phpApp',
+    'jqueryApp',
+];
 
 const Portfolio = () => {
+    const { t } = useTranslation();
     const [btn, setBtn] = useState('webApp');
 
     const { data: projects = [], isLoading } = usePortfolioProject();
@@ -32,95 +43,44 @@ const Portfolio = () => {
 
     return (
         <section id="portfolio">
-            <Helmet>
-                <title>Projects of Sahed</title>
-            </Helmet>
+            <SEO
+                title="Portfolio & Projects"
+                description="Explore projects by Sk Sahed Ahmed: web applications, mobile apps, React apps, MERN apps, PHP apps and more."
+                url="https://sahedahmed.netlify.app/portfolio"
+            />
 
-            <h5>My Recent Works</h5>
-            <h2>Portfolio</h2>
+            <h5>{t('portfolio.subtitle')}</h5>
+            <h2>{t('portfolio.title')}</h2>
 
             <div className="btn_Area">
-                <button
-                    className={`filter-btn ${
-                        btn === 'webApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('webApp')}
-                >
-                    Web | Software Development
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'mobileApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('mobileApp')}
-                >
-                    Mobile Apps Development
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'reactFullApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('reactFullApp')}
-                >
-                    React Full App
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'reactMiniApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('reactMiniApp')}
-                >
-                    React Mini App
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'mernApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('mernApp')}
-                >
-                    MERN App
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'domManipulations' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('domManipulations')}
-                >
-                    DOM Manipulations
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'phpApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('phpApp')}
-                >
-                    PHP App
-                </button>
-
-                <button
-                    className={`filter-btn ${
-                        btn === 'jqueryApp' ? 'active_btn btn btn-primary' : 'btn'
-                    }`}
-                    onClick={() => filterResult('jqueryApp')}
-                >
-                    jQuery App
-                </button>
+                {CATEGORIES.map((category) => (
+                    <button
+                        key={category}
+                        className={`filter-btn ${
+                            btn === category ? 'active_btn btn btn-primary' : 'btn'
+                        }`}
+                        onClick={() => filterResult(category)}
+                    >
+                        {t(`portfolio.filter.${category}`)}
+                    </button>
+                ))}
             </div>
 
             {isLoading ? (
-                <div className="loader-wrapper">
-                    <div className="spinner"></div>
-                    <p>Loading projects...</p>
+                <div className="container portfolio__container">
+                    {[...Array(6)].map((_, i) => (
+                        <article key={i} className="portfolio__item">
+                            <div className="portfolio__item__image">
+                                <Skeleton height="220px" />
+                                <Skeleton height="20px" style={{ marginTop: '12px' }} />
+                            </div>
+                            <Skeleton height="42px" style={{ marginTop: '12px' }} />
+                        </article>
+                    ))}
                 </div>
             ) : filteredProjects.length === 0 ? (
                 <div style={{ textAlign: 'center', padding: '40px' }}>
-                    <p>No projects found for this category.</p>
+                    <p>{t('portfolio.empty')}</p>
                 </div>
             ) : (
                 <div className="container portfolio__container">
@@ -131,12 +91,12 @@ const Portfolio = () => {
                                     <img src={image} alt={title} />
                                     <h3>{title}</h3>
                                     <Link to={`project-details/${id}`}>
-                                        <h4 className="view__Details">View Details</h4>
+                                        <h4 className="view__Details">{t('portfolio.view_details')}</h4>
                                     </Link>
                                 </div>
 
                                 <a href={github} className="btn" rel="noreferrer" target="_blank">
-                                    Github
+                                    {t('portfolio.github')}
                                 </a>
                                 <a
                                     href={demo}
@@ -144,7 +104,7 @@ const Portfolio = () => {
                                     rel="noreferrer"
                                     target="_blank"
                                 >
-                                    Live Demo
+                                    {t('portfolio.live_demo')}
                                 </a>
                             </article>
                         );
@@ -154,7 +114,7 @@ const Portfolio = () => {
 
             <div className="seeMore__btn">
                 <Link to="/projects" className="btn" rel="noreferrer" target="_blank">
-                    See More
+                    {t('portfolio.see_more')}
                 </Link>
             </div>
         </section>

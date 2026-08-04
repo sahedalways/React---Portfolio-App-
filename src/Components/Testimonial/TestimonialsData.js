@@ -1,5 +1,4 @@
 import avatar1 from '../../Assets/avatar1.svg';
-import avatar2 from '../../Assets/avatar2.jpg';
 
 const TestimonialData = [
     {

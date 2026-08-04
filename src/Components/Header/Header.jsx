@@ -46,7 +46,7 @@ const Header = () => {
                 <HeaderSocials />
 
                 <div data-aos="fade-up" className="me">
-                    <img id="pic" src={SAHED} alt="sahed-photo" />
+                    <img id="pic" src={SAHED} alt="Sk Sahed Ahmed" />
                 </div>
 
                 <a href="#contact" className="scroll__down">

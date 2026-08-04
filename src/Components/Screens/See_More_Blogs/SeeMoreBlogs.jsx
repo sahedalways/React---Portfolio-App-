@@ -1,19 +1,23 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import { allBlogs } from "../../Blog/BlogData";
 import "./seeMoreBlogs.css";
+import SEO from "../../common/SEO";
 
 const SeeMoreBlogs = () => {
-  const [blogs, setBlogs] = useState(allBlogs);
+  const [blogs] = useState(allBlogs);
+  const { t } = useTranslation();
 
   return (
     <>
       <section id="blog">
-        <Helmet>
-          <title>Sahed's Portfolio - All Blogs</title>
-        </Helmet>
-        <h2>All Blogs</h2>
+        <SEO
+          title="All Blogs"
+          description="Browse all technical blogs by Sk Sahed Ahmed on web development, React, Next.js, Laravel and software engineering."
+          url="https://sahedahmed.netlify.app/blogs"
+        />
+        <h2>{t('blog.all_blogs')}</h2>
 
         <div className="container blog__container">
           {blogs
@@ -28,7 +32,7 @@ const SeeMoreBlogs = () => {
                     <img src={image} alt={title} />
                     <h3 className="blog_title">{title}</h3>
                     <Link to={`/blog-details/${id}`}>
-                      <h4 className="view__Details">View Details</h4>
+                      <h4 className="view__Details">{t('blog.view_details')}</h4>
                       <div className="blog_sub_info">
                         <span className="blog_author">{author}</span>
                         <span className="blog_date">{date}</span>

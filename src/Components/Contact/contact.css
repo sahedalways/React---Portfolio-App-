@@ -48,14 +48,54 @@ form {
 }
 
 input,
-textarea {
+textarea,
+select {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
   background: transparent;
   border: 2px solid var(--color-primary-variant);
   resize: none;
-  color: white;
+  color: var(--color-white);
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+select option {
+  background: var(--color-bg-variant);
+  color: var(--color-white);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-light);
+}
+
+input.form-error,
+textarea.form-error,
+select.form-error {
+  border-color: #ff4d4f;
+}
+
+.form-error-msg {
+  color: #ff4d4f;
+  margin-top: -0.6rem;
+  font-size: 0.85rem;
+}
+
+.msg-success {
+  color: #4caf50;
+  text-align: center;
+}
+
+.msg-error {
+  color: #ff4d4f;
+  text-align: center;
 }
 
 /*form ends here */

@@ -1,7 +1,6 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
 import { AiFillHtml5, AiOutlineNodeCollapse } from "react-icons/ai";
 import { BsBootstrapFill } from "react-icons/bs";
 import { DiSass } from "react-icons/di";
@@ -13,10 +12,13 @@ import {
   SiReact,
   SiTailwindcss
 } from "react-icons/si";
+import { useTranslation } from 'react-i18next';
+import SEO from '../common/SEO';
 
 import "./experience.css";
 
 const Experience = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -31,16 +33,18 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <Helmet>
-        <title>Experience of Sahed</title>
-      </Helmet>
-      <h5>Skills I Have</h5>
-      <h2>My Experience</h2>
+      <SEO
+        title="Experience & Skills"
+        description="Skills and experience of Sk Sahed Ahmed: Frontend (React, Next.js, JavaScript, Tailwind) and Backend (PHP, Laravel, MySQL, Node.js) development."
+        url="https://sahedahmed.netlify.app/experience"
+      />
+      <h5>{t('skills_section.title')}</h5>
+      <h2>{t('skills_section.subtitle')}</h2>
 
       <div className="container experience__container" id="responsive">
         {/* Start of the frontend section */}
        <div data-aos="slide-right" className="experience__frontend">
-  <h3>Frontend Development</h3>
+  <h3>{t('skills_section.frontend')}</h3>
   <div className="experience__content">
 
 
@@ -48,7 +52,7 @@ const Experience = () => {
       <IoLogoJavascript className="experience__details__icon" />
       <div>
         <h4>JavaScript</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -56,7 +60,7 @@ const Experience = () => {
       <FaReact className="experience__details__icon" />
       <div>
         <h4>React Js</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -64,7 +68,7 @@ const Experience = () => {
     <SiNextdotjs className="experience__details__icon" />
       <div>
         <h4>Next Js</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -72,7 +76,7 @@ const Experience = () => {
      <SiReact className="experience__details__icon" />
       <div>
         <h4>React Native</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -80,7 +84,7 @@ const Experience = () => {
       <SiFirebase className="experience__details__icon" />
       <div>
         <h4>Firebase</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -88,7 +92,7 @@ const Experience = () => {
       <DiSass className="experience__details__icon" />
       <div>
         <h4>SASS</h4>
-        <small className="text-light">Midway</small>
+        <small className="text-light">{t('skills_section.levels.midway')}</small>
       </div>
     </article>
 
@@ -96,14 +100,14 @@ const Experience = () => {
         <article className="experience__details">
       <AiFillHtml5 className="experience__details__icon" />
       <h4>HTML</h4>
-      <small className="text-light">Skilled</small>
+      <small className="text-light">{t('skills_section.levels.skilled')}</small>
     </article>
 
     <article className="experience__details">
       <FaCss3 className="experience__details__icon" />
       <div>
         <h4>CSS</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -111,7 +115,7 @@ const Experience = () => {
       <SiTailwindcss className="experience__details__icon" />
       <div>
         <h4>Tailwind CSS</h4>
-        <small className="text-light">Basic</small>
+        <small className="text-light">{t('skills_section.levels.basic')}</small>
       </div>
     </article>
 
@@ -119,7 +123,7 @@ const Experience = () => {
       <BsBootstrapFill className="experience__details__icon" />
       <div>
         <h4>Bootstrap</h4>
-        <small className="text-light">Skilled</small>
+        <small className="text-light">{t('skills_section.levels.skilled')}</small>
       </div>
     </article>
 
@@ -131,13 +135,13 @@ const Experience = () => {
 
         {/* Start of the backend section */}
         <div data-aos="slide-left" className="experience__backend">
-          <h3>Backend Development</h3>
+          <h3>{t('skills_section.backend')}</h3>
           <div className="experience__content">
             <article className="experience__details">
               <SiPhp className="experience__details__icon" />
               <div>
                 <h4>PHP</h4>
-                <small className="text-light">Skilled</small>
+                <small className="text-light">{t('skills_section.levels.skilled')}</small>
               </div>
             </article>
 
@@ -145,7 +149,7 @@ const Experience = () => {
               <FaLaravel className="experience__details__icon" />
               <div>
                 <h4>Laravel</h4>
-                <small className="text-light">Skilled</small>
+                <small className="text-light">{t('skills_section.levels.skilled')}</small>
               </div>
             </article>
 
@@ -153,7 +157,7 @@ const Experience = () => {
               <GrMysql className="experience__details__icon" />
               <div>
                 <h4>MySQL</h4>
-                <small className="text-light">Skilled</small>
+                <small className="text-light">{t('skills_section.levels.skilled')}</small>
               </div>
             </article>
 
@@ -161,7 +165,7 @@ const Experience = () => {
               <AiOutlineNodeCollapse className="experience__details__icon" />
               <div>
                 <h4>Node Js</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">{t('skills_section.levels.basic')}</small>
               </div>
             </article>
 
@@ -169,7 +173,7 @@ const Experience = () => {
               <SiMongodb className="experience__details__icon" />
               <div>
                 <h4>MongoDB</h4>
-                <small className="text-light">Midway</small>
+                <small className="text-light">{t('skills_section.levels.midway')}</small>
               </div>
             </article>
 
@@ -177,7 +181,7 @@ const Experience = () => {
               <SiExpress className="experience__details__icon" />
               <div>
                 <h4>Express Js</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">{t('skills_section.levels.basic')}</small>
               </div>
             </article>
           </div>

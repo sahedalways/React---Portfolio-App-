@@ -127,7 +127,7 @@ var_dump($handler);
 <hr>
 <h2>🌍 IntlListFormatter</h2>
 <div style="margin-bottom:20px;">
-<pre><code class="language-php">$formatter = new \Intl\IntlListFormatter('en', \Intl\IntlListFormatter::TYPE_AND);
+<pre><code class="language-php">$formatter = new \\Intl\\IntlListFormatter('en', \\Intl\\IntlListFormatter::TYPE_AND);
 echo $formatter->format(['Lisbon', 'Porto', 'Coimbra']);
 // Output: "Lisbon, Porto, and Coimbra"
 </code></pre>

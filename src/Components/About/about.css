@@ -123,14 +123,14 @@
 .intro-title {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #111;
+    color: var(--color-white);
     margin-bottom: 0.3rem;
 }
 
 .intro-text {
     font-size: 1rem;
     line-height: 1.6;
-    color: #4b5563;
+    color: var(--color-light);
     margin-bottom: 0.5rem;
 }
 

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { HashLoader } from 'react-spinners';
 
 import About from './Components/About/About';
 import BlogDetails from './Components/Blog/BlogDetails';
@@ -9,39 +8,25 @@ import Experience from './Components/Experience/Experience';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Nav';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Pricing from './Components/Pricing/Pricing';
 import Home from './Components/Screens/Home/Home';
+import NotFound from './Components/Screens/NotFound/NotFound';
 import ProjectDetails from './Components/Screens/Project_Details/ProjectDetails';
 import SeeMore from './Components/Screens/See_More/SeeMore';
 import SeeMoreBlogs from './Components/Screens/See_More_Blogs/SeeMoreBlogs';
 import Services from './Components/Services/Services';
 import Testimonial from './Components/Testimonial/Testimonial';
 
+import BackToTop from './Components/common/BackToTop';
 import ChatLauncher from './Components/common/ChatLauncher';
 import ChatContainer from './Components/common/ChatContainer';
+import ThemeToggle from './Components/common/ThemeToggle';
+import TranslationLauncher from './Components/common/TranslationLauncher';
 
 const App = () => {
-    const [loading, setLoading] = useState(false);
     const [showChat, setShowChat] = useState(false);
     const [email, setEmail] = useState('');
     const [isChatAllowed, setIsChatAllowed] = useState(false);
-
-    // ========================
-    // INIT (loading + localStorage check)
-    // ========================
-    useEffect(() => {
-        setLoading(true);
-
-        setTimeout(() => {
-            setLoading(false);
-        }, 1000);
-
-        const savedEmail = localStorage.getItem('chat_email');
-
-        if (savedEmail) {
-            setEmail(savedEmail);
-            setIsChatAllowed(true);
-        }
-    }, []);
 
     // ========================
     // START CHAT (save email)
@@ -75,37 +60,36 @@ const App = () => {
 
     return (
         <>
-            {loading ? (
-                <HashLoader color="#007ACC" loading={loading} className="override" size={100} />
-            ) : (
-                <>
-                    {/* Chat Launcher */}
-                    <ChatLauncher onClick={handleOpenChat} />
+            <ThemeToggle />
+            <TranslationLauncher />
+            <BackToTop />
 
-                    <Router>
-                        <div style={{ overflow: 'hidden' }}>
-                            <Navbar />
+            {/* Chat Launcher */}
+            <ChatLauncher onClick={handleOpenChat} />
 
-                            <Routes>
-                                <Route path="/" element={<Home />} />
-                                <Route path="/about" element={<About />} />
-                                <Route path="/experience" element={<Experience />} />
-                                <Route path="/services" element={<Services />} />
-                                <Route path="/portfolio" element={<Portfolio />} />
-                                <Route path="/testimonial" element={<Testimonial />} />
-                                <Route path="/contact" element={<Contact />} />
-                                <Route path="/projects" element={<SeeMore />} />
-                                <Route path="/blogs" element={<SeeMoreBlogs />} />
-                                <Route path="/blog-details/:id" element={<BlogDetails />} />
-                                <Route path="/project-details/:id" element={<ProjectDetails />} />
-                                <Route path="*" element={<Home />} />
-                            </Routes>
+            <Router>
+                <div style={{ overflow: 'hidden' }}>
+                    <Navbar />
 
-                            <Footer />
-                        </div>
-                    </Router>
-                </>
-            )}
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/experience" element={<Experience />} />
+                        <Route path="/services" element={<Services />} />
+                        <Route path="/portfolio" element={<Portfolio />} />
+                        <Route path="/pricing" element={<Pricing />} />
+                        <Route path="/testimonial" element={<Testimonial />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/projects" element={<SeeMore />} />
+                        <Route path="/blogs" element={<SeeMoreBlogs />} />
+                        <Route path="/blog-details/:id" element={<BlogDetails />} />
+                        <Route path="/project-details/:id" element={<ProjectDetails />} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+
+                    <Footer />
+                </div>
+            </Router>
 
             {/* =========================
                 EMAIL GATE MODAL

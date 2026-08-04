@@ -139,11 +139,10 @@ export default function AIChat({ onClose, email }) {
             </div>
 
             {isTyping && (
-                <div className="message-bot typing">
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <span> AI is typing...</span>
+                <div className="typing-indicator">
+                    <span className="typing-dot"></span>
+                    <span className="typing-dot"></span>
+                    <span className="typing-dot"></span>
                 </div>
             )}
 

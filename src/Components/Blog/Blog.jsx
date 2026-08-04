@@ -1,13 +1,15 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import { allBlogs } from "./BlogData";
 import "./blog.css";
+import SEO from '../common/SEO';
 
 const Blog = () => {
-  const [blogs, setProject] = useState(allBlogs);
+  const [blogs] = useState(allBlogs);
+  const { t } = useTranslation();
 
   useEffect(() => {
     AOS.init({
@@ -23,12 +25,14 @@ const Blog = () => {
 
   return (
     <section id="blog">
-      <Helmet>
-        <title>Blogs</title>
-      </Helmet>
+      <SEO
+        title="Blog"
+        description="Read technical articles and insights by Sk Sahed Ahmed on web development, React, Next.js, Laravel and software engineering."
+        url="https://sahedahmed.netlify.app/blogs"
+      />
 
-      <h5>Recent Blogs</h5>
-      <h2>Blog</h2>
+      <h5>{t('blog.subtitle')}</h5>
+      <h2>{t('blog.title')}</h2>
 
       <div className="container blog__container">
         {blogs
@@ -51,7 +55,7 @@ const Blog = () => {
 
                   <h3 className="blog_title">{title}</h3>
                   <Link to={`blog-details/${id}`}>
-                    <h4 className="view__Details">View Details</h4>
+                    <h4 className="view__Details">{t('blog.view_details')}</h4>
                     <div className="blog_sub_info">
                       <span className="blog_author">{author}</span>
                       <span className="blog_date">{date}</span>
@@ -69,7 +73,7 @@ const Blog = () => {
 
       <div className="seeMore__btn">
         <Link to="/blogs" className="btn" rel="noreferrer" target="_blank">
-          See More
+          {t('blog.see_more')}
         </Link>
       </div>
     </section>

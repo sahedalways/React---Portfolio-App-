@@ -61,13 +61,7 @@
         "subtitle": "Touch",
         "email": "Email",
         "phone": "Phone",
-        "location": "Location",
-        "form": {
-            "name": "Your Name",
-            "email": "Your Email",
-            "message": "Your Message",
-            "send": "Send Message"
-        }
+        "location": "Location"
     },
     "footer": {
         "copyright": "© 2024 Sk Sahed Ahmed. All rights reserved.",
@@ -77,5 +71,360 @@
         "read_more": "Read More",
         "show_less": "Show Less",
         "download": "Download CV"
+    },
+
+    "services": {
+        "subtitle": "Offers I Provide",
+        "title": "Services",
+        "frontend_title": "Frontend Development",
+        "backend_title": "Backend Development",
+        "wordpress_title": "Wordpress Development",
+        "frontend": [
+            {
+                "title": "Intuitive UI/UX Design",
+                "description": "Create user-friendly interfaces that make your website or app easy and enjoyable to use."
+            },
+            {
+                "title": "Responsive Web Development",
+                "description": "Build websites that look perfect on all devices—desktop, tablet, and mobile."
+            },
+            {
+                "title": "Modern Frontend Frameworks",
+                "description": "Leverage React, Next.js, and React Native to build fast and dynamic applications."
+            },
+            {
+                "title": "Reusable Components",
+                "description": "Use modular design for consistent layouts and faster development."
+            },
+            {
+                "title": "Optimized User Experience",
+                "description": "Ensure your website/app is smooth, easy to navigate, and keeps users engaged."
+            },
+            {
+                "title": "Cross-Browser Compatibility",
+                "description": "Guarantee your site works perfectly across all major web browsers."
+            },
+            {
+                "title": "Interactive Features",
+                "description": "Add dynamic elements to make your website or app engaging and modern."
+            },
+            {
+                "title": "Accessibility Ready",
+                "description": "Make your website usable for everyone, including people with disabilities."
+            },
+            {
+                "title": "Performance Optimization",
+                "description": "Improve load times and responsiveness to keep users happy and engaged."
+            }
+        ],
+        "backend": [
+            {
+                "title": "Robust Backend Development",
+                "description": "Create scalable, reliable server-side applications using PHP & Laravel for your business."
+            },
+            {
+                "title": "Secure Database Management",
+                "description": "Design and manage databases to safely handle your data and improve performance."
+            },
+            {
+                "title": "API Design & Integration",
+                "description": "Develop APIs that connect your website or app seamlessly with other systems."
+            },
+            {
+                "title": "Business Logic Implementation",
+                "description": "Automate complex workflows to make your applications smarter and more efficient."
+            },
+            {
+                "title": "Admin Panel Development",
+                "description": "Build easy-to-use control panels for managing users, content, and system settings."
+            },
+            {
+                "title": "Secure Authentication",
+                "description": "Protect your platform with secure login, roles, and permissions."
+            },
+            {
+                "title": "RESTful Services",
+                "description": "Ensure smooth communication between frontend and backend through well-built APIs."
+            },
+            {
+                "title": "Error Handling & Debugging",
+                "description": "Fix issues quickly and maintain smooth operations across your system."
+            },
+            {
+                "title": "System Security",
+                "description": "Protect sensitive data and ensure compliance with the latest security standards."
+            },
+            {
+                "title": "Scalable Architecture",
+                "description": "Design your backend to handle growth and high traffic without breaking down."
+            }
+        ],
+        "wordpress": [
+            {
+                "title": "Custom Plugin Development",
+                "description": "Crafting tailor-made WordPress plugins to enhance website functionality and meet unique business needs."
+            },
+            {
+                "title": "Feature Extension",
+                "description": "Extending website capabilities by creating custom functionalities through plugins, catering to specific requirements."
+            },
+            {
+                "title": "Plugin Customization",
+                "description": "Adapting and customizing existing plugins to align with individual site design and functionalities."
+            },
+            {
+                "title": "Performance Optimization",
+                "description": "Optimizing plugins for better site performance and user experience, ensuring efficiency."
+            },
+            {
+                "title": "Plugin Integration",
+                "description": "Seamlessly integrating and configuring plugins to enhance the website's overall functionality and user interaction."
+            },
+            {
+                "title": "Security Enhancements",
+                "description": "Implementing secure coding practices to develop plugins, ensuring website security and data protection."
+            },
+            {
+                "title": "Responsive Support & Maintenance",
+                "description": "Providing ongoing support, updates, and maintenance for developed plugins to ensure optimal performance."
+            },
+            {
+                "title": "Cross-Compatibility",
+                "description": "Developing plugins that are compatible with various WordPress versions and other common plugins."
+            }
+        ]
+    },
+
+    "portfolio": {
+        "subtitle": "My Recent Works",
+        "title": "Portfolio",
+        "filter": {
+            "webApp": "Web | Software Development",
+            "mobileApp": "Mobile Apps Development",
+            "reactFullApp": "React Full App",
+            "reactMiniApp": "React Mini App",
+            "mernApp": "MERN App",
+            "domManipulations": "DOM Manipulations",
+            "phpApp": "PHP App",
+            "jqueryApp": "jQuery App"
+        },
+        "view_details": "View Details",
+        "github": "Github",
+        "live_demo": "Live Demo",
+        "see_more": "See More",
+        "more_projects": "More Projects",
+        "loading": "Loading projects...",
+        "empty": "No projects found for this category."
+    },
+
+    "blog": {
+        "subtitle": "Recent Blogs",
+        "title": "Blog",
+        "all_blogs": "All Blogs",
+        "view_details": "View Details",
+        "see_more": "See More"
+    },
+
+    "testimonial": {
+        "subtitle": "Review from Clients",
+        "title": "Testimonials"
+    },
+
+    "contact_section": {
+        "subtitle": "Be in Touch",
+        "title": "Contact Me",
+        "send_message": "Send a Message"
+    },
+
+    "contact_form": {
+        "first_name": "Enter first name...",
+        "last_name": "Enter last name...",
+        "subject": "Enter your subject...",
+        "email": "Enter your email...",
+        "phone": "Enter your phone number (optional)",
+        "project_type": "Select project type...",
+        "budget": "Select your budget range...",
+        "message": "Write your message...",
+        "send": "Send Message",
+        "success": "Your message has been sent. Keep in touch.",
+        "error": "Sorry! Your message send failed!",
+        "project_types": {
+            "website": "Business / Corporate Website",
+            "ecommerce": "E-commerce Website",
+            "webapp": "Web Application (SaaS / ERP / CRM)",
+            "mobileapp": "Mobile App",
+            "wordpress": "WordPress Website",
+            "other": "Other / Not sure yet"
+        },
+        "budgets": {
+            "under_500": "Under $500",
+            "500_1500": "$500 - $1,500",
+            "1500_5000": "$1,500 - $5,000",
+            "over_5000": "Above $5,000",
+            "discuss": "Let's discuss"
+        },
+        "errors": {
+            "name": "Please enter your name.",
+            "email": "Please enter a valid email address.",
+            "subject": "Please enter a subject.",
+            "phone": "Please enter a valid phone number.",
+            "project_type": "Please select a project type.",
+            "budget": "Please select a budget range.",
+            "message": "Please write a message of at least 10 characters."
+        }
+    },
+
+    "project_details": {
+        "subtitle": "Name of the project",
+        "author": "Author Name",
+        "technologies": "Used Technologies",
+        "github": "Github",
+        "live_demo": "Live Demo",
+        "not_found": "Item not found!"
+    },
+
+    "blog_details": {
+        "subtitle": "Title of the blog",
+        "author": "Author Name",
+        "publish_date": "Publish Date",
+        "not_found": "Item not found!"
+    },
+
+    "pricing": {
+        "subtitle": "Transparent & Flexible",
+        "title": "Pricing Packages",
+        "popular": "Most Popular",
+        "get_started": "Get Started",
+        "plans": [
+            {
+                "name": "Basic",
+                "description": "Ideal for landing pages, personal websites and simple business sites.",
+                "price": "$150",
+                "priceNote": "Starting from",
+                "features": [
+                    "Up to 5 pages (Landing/Business website)",
+                    "Responsive design for all devices",
+                    "Contact form & basic SEO setup",
+                    "1 revision round",
+                    "Delivery in 3-7 days",
+                    "7 days free support"
+                ],
+                "cta": "Start with Basic"
+            },
+            {
+                "name": "Standard",
+                "description": "Best for growing businesses needing a full-featured web or mobile application.",
+                "price": "$500",
+                "priceNote": "Starting from",
+                "featured": true,
+                "features": [
+                    "Web app or mobile app (custom development)",
+                    "Admin panel & database design",
+                    "Payment gateway integration",
+                    "API development & third-party integration",
+                    "2 revision rounds",
+                    "Delivery in 1-3 weeks",
+                    "30 days free support"
+                ],
+                "cta": "Choose Standard"
+            },
+            {
+                "name": "Premium",
+                "description": "For complex platforms: SaaS, ERP, CRM, e-commerce or custom business systems.",
+                "price": "Custom",
+                "priceNote": "Based on requirements",
+                "features": [
+                    "Full SaaS / ERP / CRM / e-commerce platform",
+                    "AI integration & automation systems",
+                    "Scalable architecture & security",
+                    "Priority milestone-based development",
+                    "Unlimited revisions within scope",
+                    "Delivery in 1-3+ months",
+                    "Ongoing support & maintenance"
+                ],
+                "cta": "Request a Quote"
+            }
+        ]
+    },
+
+    "process": {
+        "subtitle": "How I Work",
+        "title": "My Delivery Process",
+        "steps": [
+            {
+                "title": "Discovery",
+                "description": "I analyze your requirements, goals and budget to plan the right solution."
+            },
+            {
+                "title": "Design",
+                "description": "Wireframes and UI/UX design so you can see the product before development."
+            },
+            {
+                "title": "Development",
+                "description": "Milestone-based coding with regular progress updates and transparency."
+            },
+            {
+                "title": "Testing & QA",
+                "description": "Thorough testing for bugs, performance and cross-device compatibility."
+            },
+            {
+                "title": "Delivery & Support",
+                "description": "Deployment, handover with documentation, and ongoing support."
+            }
+        ]
+    },
+
+    "faq": {
+        "subtitle": "Common Questions",
+        "title": "Frequently Asked Questions",
+        "items": [
+            {
+                "question": "How much does a website or app cost?",
+                "answer": "Pricing depends on project requirements, features and complexity. Simple landing pages start from $150, web/mobile apps from $500, and complex platforms like SaaS or ERP are custom quoted. Share your requirements for an exact estimate."
+            },
+            {
+                "question": "How long does a project take?",
+                "answer": "Simple projects: 3-7 days. Medium projects: 1-3 weeks. Large platforms (SaaS/ERP): 1-3+ months. Timelines are finalized after requirement analysis."
+            },
+            {
+                "question": "What are the payment terms?",
+                "answer": "35% advance before starting, 35% milestone payment at 50% completion, and the remaining 30% after final delivery."
+            },
+            {
+                "question": "Do you provide support after delivery?",
+                "answer": "Yes. Every project includes free support after delivery. Ongoing maintenance and feature updates are also available."
+            },
+            {
+                "question": "Can you work on an existing project?",
+                "answer": "Yes. I can take over, fix, upgrade or complete existing projects including code reviews and performance improvements."
+            },
+            {
+                "question": "How do we communicate during the project?",
+                "answer": "We can communicate via WhatsApp, Messenger, email or scheduled video calls. You get regular progress updates at every milestone."
+            }
+        ]
+    },
+
+    "availability": {
+        "open": "Available for new projects",
+        "busy": "Currently fully booked",
+        "checking": "Checking availability..."
+    },
+
+    "testimonial_form": {
+        "title": "Share Your Experience",
+        "subtitle": "Worked with me? Leave a review below.",
+        "name": "Your name",
+        "company": "Company / Country",
+        "review": "Write your review...",
+        "submit": "Submit Review",
+        "success": "Thank you! Your review has been submitted.",
+        "failed": "Sorry! Could not submit your review.",
+        "errors": "Please fill your name and a review of at least 10 characters."
+    },
+
+    "case_study": {
+        "title": "Project Delivery Process",
+        "subtitle": "A behind-the-scenes look at how this project was built."
     }
 }

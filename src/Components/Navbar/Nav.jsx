@@ -6,6 +6,7 @@ import { GiNotebook } from "react-icons/gi";
 import { MdMedicalServices } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { AiFillProject } from "react-icons/ai";
+import { BsTag } from "react-icons/bs";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -42,6 +43,14 @@ const Nav = () => {
         className={activeNav === "#services" ? "active" : ""}
       >
         <MdMedicalServices />
+      </Link>
+
+      <Link
+        to="/pricing"
+        onClick={() => setActiveNav("#pricing")}
+        className={activeNav === "#pricing" ? "active" : ""}
+      >
+        <BsTag />
       </Link>
 
       <Link

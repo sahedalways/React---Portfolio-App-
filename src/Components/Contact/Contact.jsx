@@ -1,14 +1,31 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsWhatsapp } from 'react-icons/bs';
 import { RiMessengerLine } from 'react-icons/ri';
+import { useTranslation } from 'react-i18next';
 import './contact.css';
+import SEO from '../common/SEO';
+import Availability from '../common/Availability';
+
+const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_PATTERN = /^\+?[0-9\s-]{7,15}$/;
 
 const Contact = () => {
+    const { t } = useTranslation();
     const [isSentMessage, setIsSentMessage] = useState('');
+    const [errors, setErrors] = useState({});
+    const [formValues, setFormValues] = useState({
+        fname: '',
+        lname: '',
+        subject: '',
+        email: '',
+        phone: '',
+        projectType: '',
+        budget: '',
+        message: '',
+    });
 
     useEffect(() => {
         const messageTimer = setTimeout(() => {
@@ -30,8 +47,42 @@ const Contact = () => {
         });
     }, []);
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues((prev) => ({ ...prev, [name]: value }));
+        if (errors[name]) {
+            setErrors((prev) => ({ ...prev, [name]: '' }));
+        }
+    };
+
+    const validate = () => {
+        const newErrors = {};
+
+        if (!formValues.fname.trim()) newErrors.fname = t('contact_form.errors.name');
+        if (!formValues.email.trim()) {
+            newErrors.email = t('contact_form.errors.email');
+        } else if (!EMAIL_PATTERN.test(formValues.email)) {
+            newErrors.email = t('contact_form.errors.email');
+        }
+        if (!formValues.subject.trim()) newErrors.subject = t('contact_form.errors.subject');
+        if (!formValues.projectType) newErrors.projectType = t('contact_form.errors.project_type');
+        if (!formValues.budget) newErrors.budget = t('contact_form.errors.budget');
+        if (formValues.phone && !PHONE_PATTERN.test(formValues.phone)) {
+            newErrors.phone = t('contact_form.errors.phone');
+        }
+        if (formValues.message.trim().length < 10) {
+            newErrors.message = t('contact_form.errors.message');
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (!validate()) return;
+
         const formData = new FormData(e.target);
 
         try {
@@ -44,34 +95,57 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                setIsSentMessage('Your message has been sent. Keep in touch.');
-                e.target.reset();
+                setIsSentMessage(t('contact_form.success'));
+                setFormValues({
+                    fname: '',
+                    lname: '',
+                    subject: '',
+                    email: '',
+                    phone: '',
+                    projectType: '',
+                    budget: '',
+                    message: '',
+                });
             } else {
-                setIsSentMessage('Sorry! Your message send failed!');
+                setIsSentMessage(t('contact_form.error'));
             }
         } catch (error) {
-            setIsSentMessage('Sorry! Your message send failed!');
+            setIsSentMessage(t('contact_form.error'));
             console.error('Error sending message:', error);
         }
     };
 
+    const projectTypes = [
+        'website',
+        'ecommerce',
+        'webapp',
+        'mobileapp',
+        'wordpress',
+        'other',
+    ];
+    const budgetOptions = ['under_500', '500_1500', '1500_5000', 'over_5000', 'discuss'];
+
     return (
         <section id="contact">
-            <Helmet>
-                <title>Sk Sahed Ahmed</title>
-            </Helmet>
+            <SEO
+                title="Contact"
+                description="Get in touch with Sk Sahed Ahmed for web & mobile app development. Email, WhatsApp, Messenger or use the contact form to discuss your project."
+                url="https://sahedahmed.netlify.app/contact"
+            />
 
-            <h5>Be in Touch</h5>
-            <h2>Contact Me</h2>
+            <h5>{t('contact_section.subtitle')}</h5>
+            <h2>{t('contact_section.title')}</h2>
 
             <div className="container contact__container">
                 {/* contact options */}
                 <div data-aos="slide-right" className="contact__options">
+                    <Availability showDetails={true} />
+
                     <article className="contact__option">
                         <AiOutlineMail className="contact__option__icon" />
-                        <h4>Email</h4>
+                        <h4>{t('contact.email')}</h4>
                         <h5>ssahed65@gmail.com</h5>
-                        <a href="mailto: ssahed65@gmail.com">Send a Message</a>
+                        <a href="mailto: ssahed65@gmail.com">{t('contact_section.send_message')}</a>
                     </article>
 
                     <article className="contact__option">
@@ -79,7 +153,7 @@ const Contact = () => {
                         <h4>Messanger</h4>
                         <h5>Sk Sahed Ahmed</h5>
                         <a href="https://www.m.me/sahedstar" rel="noreferrer" target="_blank">
-                            Send a Message
+                            {t('contact_section.send_message')}
                         </a>
                     </article>
 
@@ -92,38 +166,126 @@ const Contact = () => {
                             rel="noreferrer"
                             target="_blank"
                         >
-                            Send a Message
+                            {t('contact_section.send_message')}
                         </a>
                     </article>
                 </div>
 
                 {/* form section */}
-                <form data-aos="slide-left" onSubmit={handleSubmit}>
-                    <input type="text" name="fname" placeholder="Enter first name..." required />
+                <form data-aos="slide-left" onSubmit={handleSubmit} noValidate>
+                    <input
+                        type="text"
+                        name="fname"
+                        placeholder={t('contact_form.first_name')}
+                        value={formValues.fname}
+                        onChange={handleChange}
+                        className={errors.fname ? 'form-error' : ''}
+                        required
+                    />
+                    {errors.fname && <small className="form-error-msg">{errors.fname}</small>}
 
-                    <input type="text" name="lname" placeholder="Enter last name..." required />
+                    <input
+                        type="text"
+                        name="lname"
+                        placeholder={t('contact_form.last_name')}
+                        value={formValues.lname}
+                        onChange={handleChange}
+                    />
 
                     <input
                         type="text"
                         name="subject"
-                        placeholder="Enter your subject..."
+                        placeholder={t('contact_form.subject')}
+                        value={formValues.subject}
+                        onChange={handleChange}
+                        className={errors.subject ? 'form-error' : ''}
                         required
                     />
+                    {errors.subject && <small className="form-error-msg">{errors.subject}</small>}
 
-                    <input type="email" name="email" placeholder="Enter your email..." required />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder={t('contact_form.email')}
+                        value={formValues.email}
+                        onChange={handleChange}
+                        className={errors.email ? 'form-error' : ''}
+                        required
+                    />
+                    {errors.email && <small className="form-error-msg">{errors.email}</small>}
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder={t('contact_form.phone')}
+                        value={formValues.phone}
+                        onChange={handleChange}
+                        className={errors.phone ? 'form-error' : ''}
+                    />
+                    {errors.phone && <small className="form-error-msg">{errors.phone}</small>}
+
+                    <select
+                        name="projectType"
+                        value={formValues.projectType}
+                        onChange={handleChange}
+                        className={errors.projectType ? 'form-error' : ''}
+                        required
+                    >
+                        <option value="" disabled>
+                            {t('contact_form.project_type')}
+                        </option>
+                        {projectTypes.map((key) => (
+                            <option key={key} value={t(`contact_form.project_types.${key}`)}>
+                                {t(`contact_form.project_types.${key}`)}
+                            </option>
+                        ))}
+                    </select>
+                    {errors.projectType && (
+                        <small className="form-error-msg">{errors.projectType}</small>
+                    )}
+
+                    <select
+                        name="budget"
+                        value={formValues.budget}
+                        onChange={handleChange}
+                        className={errors.budget ? 'form-error' : ''}
+                        required
+                    >
+                        <option value="" disabled>
+                            {t('contact_form.budget')}
+                        </option>
+                        {budgetOptions.map((key) => (
+                            <option key={key} value={t(`contact_form.budgets.${key}`)}>
+                                {t(`contact_form.budgets.${key}`)}
+                            </option>
+                        ))}
+                    </select>
+                    {errors.budget && <small className="form-error-msg">{errors.budget}</small>}
 
                     <textarea
                         name="message"
                         rows="10"
                         cols="10"
-                        placeholder="Write your message..."
+                        placeholder={t('contact_form.message')}
+                        value={formValues.message}
+                        onChange={handleChange}
+                        className={errors.message ? 'form-error' : ''}
                         required
                     ></textarea>
+                    {errors.message && <small className="form-error-msg">{errors.message}</small>}
 
                     <button type="submit" className="btn btn-primary">
-                        Send Message
+                        {t('contact_form.send')}
                     </button>
-                    {isSentMessage && <p>{isSentMessage}</p>}
+                    {isSentMessage && (
+                        <p
+                            className={
+                                isSentMessage === t('contact_form.error') ? 'msg-error' : 'msg-success'
+                            }
+                        >
+                            {isSentMessage}
+                        </p>
+                    )}
                 </form>
             </div>
         </section>

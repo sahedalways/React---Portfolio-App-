@@ -1,0 +1,110 @@
+.pricing__section {
+    margin-top: 8rem;
+}
+
+.pricing__section > h2,
+.pricing__section > h5 {
+    text-align: center;
+    color: var(--color-light);
+}
+
+.pricing__section > h2 {
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.pricing__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.pricing__card {
+    background: var(--color-bg-variant);
+    border-radius: 1.2rem;
+    padding: 2.5rem 2rem;
+    position: relative;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+}
+
+.pricing__card--featured {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 30px rgba(0, 122, 204, 0.25);
+}
+
+.pricing__badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 9999px;
+    white-space: nowrap;
+}
+
+.pricing__name {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pricing__desc {
+    color: var(--color-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    min-height: 3.2rem;
+}
+
+.pricing__price {
+    margin: 1.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.pricing__amount {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.pricing__note {
+    color: var(--color-light);
+    font-size: 0.8rem;
+}
+
+.pricing__features {
+    list-style: none;
+    flex: 1;
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.pricing__features li {
+    color: var(--color-white);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.pricing__check {
+    color: var(--color-primary);
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.pricing__cta {
+    width: 100%;
+    text-align: center;
+}
