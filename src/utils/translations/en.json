@@ -243,6 +243,7 @@
         "project_type": "Select project type...",
         "message": "Write your message...",
         "send": "Send Message",
+        "sending": "Sending...",
         "modal_close": "OK",
         "success": "Your message has been sent. Keep in touch.",
         "error": "Sorry! Your message send failed!",

@@ -16,6 +16,7 @@ const Contact = () => {
     const { t } = useTranslation();
     const [modalOpen, setModalOpen] = useState(false);
     const [modalType, setModalType] = useState('success');
+    const [sending, setSending] = useState(false);
     const [errors, setErrors] = useState({});
     const [formValues, setFormValues] = useState({
         name: '',
@@ -72,6 +73,7 @@ const Contact = () => {
         if (!validate()) return;
 
         const formData = new FormData(e.target);
+        setSending(true);
 
         try {
             const response = await fetch('https://formspree.io/f/xnngnynw', {
@@ -100,6 +102,8 @@ const Contact = () => {
             setModalType('error');
             setModalOpen(true);
             console.error('Error sending message:', error);
+        } finally {
+            setSending(false);
         }
     };
 
@@ -120,8 +124,8 @@ const Contact = () => {
                 url="https://sahedahmed.netlify.app/contact"
             />
 
-            <h5>{t('contact_section.subtitle')}</h5>
-            <h2>{t('contact_section.title')}</h2>
+            <h5 data-aos="fade-up">{t('contact_section.subtitle')}</h5>
+            <h2 data-aos="fade-up" data-aos-delay="100">{t('contact_section.title')}</h2>
 
             <div className="container contact__container">
                 {/* contact options */}
@@ -222,8 +226,8 @@ const Contact = () => {
                     ></textarea>
                     {errors.message && <small className="form-error-msg">{errors.message}</small>}
 
-                    <button type="submit" className="btn btn-primary">
-                        {t('contact_form.send')}
+                    <button type="submit" className="btn btn-primary" disabled={sending}>
+                        {sending ? t('contact_form.sending') : t('contact_form.send')}
                     </button>
                 </form>
             </div>

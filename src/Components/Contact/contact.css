@@ -88,6 +88,11 @@ select.form-error {
   font-size: 0.85rem;
 }
 
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .msg-success {
   color: #4caf50;
   text-align: center;

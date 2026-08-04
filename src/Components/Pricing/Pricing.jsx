@@ -20,8 +20,10 @@ const Pricing = () => {
                     url="https://sahedahmed.netlify.app/pricing"
                 />
 
-                <h5>{t('pricing.subtitle')}</h5>
-                <h2>{t('pricing.title')}</h2>
+                <h5 data-aos="fade-up">{t('pricing.subtitle')}</h5>
+                <h2 data-aos="fade-up" data-aos-delay="100">
+                    {t('pricing.title')}
+                </h2>
 
                 <div className="container pricing__container">
                     {plans.map((plan) => (
