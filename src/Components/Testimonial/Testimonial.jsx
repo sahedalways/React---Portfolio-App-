@@ -5,7 +5,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaQuoteLeft } from 'react-icons/fa'; // রিঅ্যাক্ট আইকন যোগ করলে সুন্দর দেখাবে
 import { useTranslation } from 'react-i18next';
-import SEO from '../common/SEO';
 
 import { Pagination, Autoplay } from 'swiper'; // Autoplay ইমপোর্ট করুন
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -23,11 +22,6 @@ const Testimonial = () => {
 
     return (
         <section id="testimonials">
-            <SEO
-                title="Testimonials"
-                description="Read reviews from clients who have worked with Sk Sahed Ahmed on web & mobile app development projects."
-                url="https://sahedahmed.netlify.app/testimonial"
-            />
             <h5>{t('testimonial.subtitle')}</h5>
             <h2>{t('testimonial.title')}</h2>
 

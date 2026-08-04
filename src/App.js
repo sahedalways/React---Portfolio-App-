@@ -20,6 +20,7 @@ import Testimonial from './Components/Testimonial/Testimonial';
 import BackToTop from './Components/common/BackToTop';
 import ChatLauncher from './Components/common/ChatLauncher';
 import ChatContainer from './Components/common/ChatContainer';
+import Page from './Components/common/Page';
 import ThemeToggle from './Components/common/ThemeToggle';
 import TranslationLauncher from './Components/common/TranslationLauncher';
 
@@ -73,13 +74,79 @@ const App = () => {
 
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/experience" element={<Experience />} />
-                        <Route path="/services" element={<Services />} />
-                        <Route path="/portfolio" element={<Portfolio />} />
+                        <Route
+                            path="/about"
+                            element={
+                                <Page
+                                    title="About Sahed"
+                                    description="Learn more about Sk Sahed Ahmed, a fullstack software developer with 4+ years of experience building scalable web & mobile applications with React, Next.js, Laravel and React Native."
+                                    url="https://sahedahmed.netlify.app/about"
+                                >
+                                    <About />
+                                </Page>
+                            }
+                        />
+                        <Route
+                            path="/experience"
+                            element={
+                                <Page
+                                    title="Experience & Skills"
+                                    description="Skills and experience of Sk Sahed Ahmed: Frontend (React, Next.js, JavaScript, Tailwind) and Backend (PHP, Laravel, MySQL, Node.js) development."
+                                    url="https://sahedahmed.netlify.app/experience"
+                                >
+                                    <Experience />
+                                </Page>
+                            }
+                        />
+                        <Route
+                            path="/services"
+                            element={
+                                <Page
+                                    title="Services"
+                                    description="Services by Sk Sahed Ahmed: Frontend development with React & Next.js, Backend development with PHP & Laravel, and AI Automation systems."
+                                    url="https://sahedahmed.netlify.app/services"
+                                >
+                                    <Services />
+                                </Page>
+                            }
+                        />
+                        <Route
+                            path="/portfolio"
+                            element={
+                                <Page
+                                    title="Portfolio & Projects"
+                                    description="Explore projects by Sk Sahed Ahmed: web applications, mobile apps, React apps, MERN apps, PHP apps and more."
+                                    url="https://sahedahmed.netlify.app/portfolio"
+                                >
+                                    <Portfolio />
+                                </Page>
+                            }
+                        />
                         <Route path="/pricing" element={<Pricing />} />
-                        <Route path="/testimonial" element={<Testimonial />} />
-                        <Route path="/contact" element={<Contact />} />
+                        <Route
+                            path="/testimonial"
+                            element={
+                                <Page
+                                    title="Testimonials"
+                                    description="Read reviews from clients who have worked with Sk Sahed Ahmed on web & mobile app development projects."
+                                    url="https://sahedahmed.netlify.app/testimonial"
+                                >
+                                    <Testimonial />
+                                </Page>
+                            }
+                        />
+                        <Route
+                            path="/contact"
+                            element={
+                                <Page
+                                    title="Contact"
+                                    description="Get in touch with Sk Sahed Ahmed for web & mobile app development. Email, WhatsApp, Messenger or use the contact form to discuss your project."
+                                    url="https://sahedahmed.netlify.app/contact"
+                                >
+                                    <Contact />
+                                </Page>
+                            }
+                        />
                         <Route path="/projects" element={<SeeMore />} />
                         <Route path="/blogs" element={<SeeMoreBlogs />} />
                         <Route path="/blog-details/:id" element={<BlogDetails />} />

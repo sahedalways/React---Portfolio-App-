@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { allBlogs } from "./BlogData";
 import "./blog.css";
-import SEO from '../common/SEO';
 
 const Blog = () => {
   const [blogs] = useState(allBlogs);
@@ -25,12 +24,6 @@ const Blog = () => {
 
   return (
     <section id="blog">
-      <SEO
-        title="Blog"
-        description="Read technical articles and insights by Sk Sahed Ahmed on web development, React, Next.js, Laravel and software engineering."
-        url="https://sahedahmed.netlify.app/blogs"
-      />
-
       <h5>{t('blog.subtitle')}</h5>
       <h2>{t('blog.title')}</h2>
 

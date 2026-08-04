@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Sk Sahed Ahmed - Fullstack Software Developer"
+        title="Home"
         description="Portfolio of Sk Sahed Ahmed, fullstack software developer from Bangladesh. Web, mobile & SaaS development using React, Next.js, Laravel and React Native."
         url="https://sahedahmed.netlify.app"
         jsonLd={[personJsonLd, websiteJsonLd]}

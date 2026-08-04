@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './portfolio.css';
 import { useTranslation } from 'react-i18next';
 import { usePortfolioProject } from '../../hooks/usePortfolioProject';
-import SEO from '../common/SEO';
 import Skeleton from '../common/Skeleton';
 
 const CATEGORIES = [
@@ -43,12 +42,6 @@ const Portfolio = () => {
 
     return (
         <section id="portfolio">
-            <SEO
-                title="Portfolio & Projects"
-                description="Explore projects by Sk Sahed Ahmed: web applications, mobile apps, React apps, MERN apps, PHP apps and more."
-                url="https://sahedahmed.netlify.app/portfolio"
-            />
-
             <h5>{t('portfolio.subtitle')}</h5>
             <h2>{t('portfolio.title')}</h2>
 

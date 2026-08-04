@@ -7,7 +7,6 @@ import { FaUsers } from 'react-icons/fa';
 import SAHED from '../../Assets/about-sahed.jpg';
 import './about.css';
 import { useTranslation } from 'react-i18next';
-import SEO from '../common/SEO';
 
 const About = () => {
     const { t } = useTranslation();
@@ -25,12 +24,6 @@ const About = () => {
 
     return (
         <section id="about">
-            <SEO
-                title="About Sahed"
-                description="Learn more about Sk Sahed Ahmed, a fullstack software developer with 4+ years of experience building scalable web & mobile applications with React, Next.js, Laravel and React Native."
-                url="https://sahedahmed.netlify.app/about"
-            />
-
             <h5>{t('get_to_know')}</h5>
             <h2>{t('about_me')}</h2>
 

@@ -6,7 +6,6 @@ import { BsWhatsapp } from 'react-icons/bs';
 import { RiMessengerLine } from 'react-icons/ri';
 import { useTranslation } from 'react-i18next';
 import './contact.css';
-import SEO from '../common/SEO';
 import Modal from '../common/Modal';
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -118,12 +117,6 @@ const Contact = () => {
 
     return (
         <section id="contact">
-            <SEO
-                title="Contact"
-                description="Get in touch with Sk Sahed Ahmed for web & mobile app development. Email, WhatsApp, Messenger or use the contact form to discuss your project."
-                url="https://sahedahmed.netlify.app/contact"
-            />
-
             <h5 data-aos="fade-up">{t('contact_section.subtitle')}</h5>
             <h2 data-aos="fade-up" data-aos-delay="100">{t('contact_section.title')}</h2>
 

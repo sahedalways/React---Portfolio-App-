@@ -13,7 +13,6 @@ import {
   SiTailwindcss
 } from "react-icons/si";
 import { useTranslation } from 'react-i18next';
-import SEO from '../common/SEO';
 
 import "./experience.css";
 
@@ -33,11 +32,6 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <SEO
-        title="Experience & Skills"
-        description="Skills and experience of Sk Sahed Ahmed: Frontend (React, Next.js, JavaScript, Tailwind) and Backend (PHP, Laravel, MySQL, Node.js) development."
-        url="https://sahedahmed.netlify.app/experience"
-      />
       <h5>{t('skills_section.title')}</h5>
       <h2>{t('skills_section.subtitle')}</h2>
 

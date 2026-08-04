@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import { BiCheck } from "react-icons/bi";
 import { useTranslation } from 'react-i18next';
 import "./services.css";
-import SEO from '../common/SEO';
 import Process from '../Process/Process';
 import BrochureDownload from '../common/BrochureDownload';
 
@@ -30,11 +29,6 @@ const Services = () => {
   return (
     <>
       <section id="services">
-      <SEO
-        title="Services"
-        description="Web development services by Sk Sahed Ahmed: Frontend development with React & Next.js, Backend development with PHP & Laravel, and WordPress plugin development."
-        url="https://sahedahmed.netlify.app/services"
-      />
       <h5>{t('services.subtitle')}</h5>
       <h2>{t('services.title')}</h2>
 
