@@ -22,8 +22,8 @@ const Testimonial = () => {
 
     return (
         <section id="testimonials">
-            <h5>{t('testimonial.subtitle')}</h5>
-            <h2>{t('testimonial.title')}</h2>
+            <h5 data-aos="fade-up">{t('testimonial.subtitle')}</h5>
+            <h2 data-aos="fade-up" data-aos-delay="100">{t('testimonial.title')}</h2>
 
             <Swiper
                 className="container testimonials__container"
