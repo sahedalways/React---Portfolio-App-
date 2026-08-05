@@ -21,7 +21,6 @@ import BackToTop from './Components/common/BackToTop';
 import ChatLauncher from './Components/common/ChatLauncher';
 import ChatContainer from './Components/common/ChatContainer';
 import Page from './Components/common/Page';
-import ThemeToggle from './Components/common/ThemeToggle';
 import TranslationLauncher from './Components/common/TranslationLauncher';
 
 const App = () => {
@@ -61,7 +60,6 @@ const App = () => {
 
     return (
         <>
-            <ThemeToggle />
             <TranslationLauncher />
             <BackToTop />
 
