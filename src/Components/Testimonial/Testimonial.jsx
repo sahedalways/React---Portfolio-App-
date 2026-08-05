@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Testimonial.css';
 import TestimonialsData from './TestimonialsData';
+import ReviewModal from './ReviewModal';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaQuoteLeft } from 'react-icons/fa'; // রিঅ্যাক্ট আইকন যোগ করলে সুন্দর দেখাবে
@@ -19,6 +20,7 @@ const Testimonial = () => {
 
     const { t } = useTranslation();
     const [Data] = useState(TestimonialsData);
+    const [reviewOpen, setReviewOpen] = useState(false);
 
     return (
         <section id="testimonials">
@@ -56,6 +58,18 @@ const Testimonial = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <div className="testimonial__review-btn-wrap" data-aos="fade-up">
+                <button
+                    type="button"
+                    className="btn btn-primary"
+                    onClick={() => setReviewOpen(true)}
+                >
+                    {t('review_form.write_review')}
+                </button>
+            </div>
+
+            <ReviewModal open={reviewOpen} onClose={() => setReviewOpen(false)} />
         </section>
     );
 };

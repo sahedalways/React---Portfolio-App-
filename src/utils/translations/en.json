@@ -230,6 +230,27 @@
         "title": "Testimonials"
     },
 
+    "review_form": {
+        "write_review": "Write a Review",
+        "title": "Submit Your Review",
+        "subtitle": "Share your experience working with me",
+        "name": "Enter your name...",
+        "email": "Enter your email...",
+        "rating": "Your Rating",
+        "review": "Write your review...",
+        "submit": "Submit Review",
+        "sending": "Submitting...",
+        "modal_close": "OK",
+        "success": "Thank you! Your review has been submitted.",
+        "error": "Sorry! Your review submission failed!",
+        "errors": {
+            "name": "Name is required.",
+            "email": "Enter a valid email address.",
+            "rating": "Please select a rating.",
+            "review": "Review must be at least 5 characters."
+        }
+    },
+
     "contact_section": {
         "subtitle": "Be in Touch",
         "title": "Contact Me",
